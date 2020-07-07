@@ -1,0 +1,88 @@
+[
+    {
+    "id": "airi-flies",
+    "title": "Airi Flies",
+    
+    "image": "airi-flies.png",
+    
+    "description": "In this game developed with p5.play, help Airi fly by saying PEW.",
+    
+    "author": "Phuong Ngo",
+    
+    "pronouns": "she/her",
+    
+    "resources":
+    [ 
+        {
+        "name":"link1",
+        "link": "https://www.google.com/"
+        },
+        { 
+        "name":"link1",
+        "link": "https://www.google.com/"
+        }
+    ],
+    
+    "type": "game",
+    
+    "tools":
+    [ 
+        {
+        "name":"link1",
+        "link": "https://www.google.com/"
+        },
+        { 
+        "name":"link1",
+        "link": "https://www.google.com/"
+        }
+    ],
+    
+    "qanda": {
+        "answer1":"I'm a creative coder and designer, a School of Machines, Making & Make-Believe diversity scholarship recipient, and just a curious creature.\n\nI was taking a course at the School of Machines in Berlin this summer called \"Bots and Machine Learning,\" mainly taught by Yining Shi.",
+        "answer2":"I used p5.js to work on the visual part of the game. The animation sprites for Airi and the ghosts were drawn on an iPad app called Pixaki and then integrated into p5.play code. I mainly used examples at p5.play as a reference.\n\nFor the endless scrolling background, I found a p5 sketch by chjno. I set a condition so whenever the word \"pew\" or a mouse click was detected, the scrolling speed would change to make an illusion of Airi flying up. When the user does not do anything, the scrolling speed is negative, which makes it look like Airi is falling down.\n\nFor sound recognition, I used Google's Teachable Machine 2 (currently, there is a beta version not available in public yet, but it will be very soon!). I added around 120 samples of my classmates saying the word \"pew\" with different intonations and 80 samples of background noise to train it. Then I integrated the model into the game with ml5.js."
+    }
+    },
+    {
+        "id": "programmed-plotter",
+        "title": "Programmed Plotter Drawings",
+        
+        "image": "programmed-plotter.png",
+        
+        "description": "Sine waves and lerps generated in p5.js, exported as SVG, and drawn with a plotter and pens.",
+        
+        "author": "Roni Cantor",
+        
+        "pronouns": "she/her",
+        
+        "resources":
+        [ 
+            {
+            "name":"link1",
+            "link": "https://www.google.com/"
+            },
+            { 
+            "name":"link1",
+            "link": "https://www.google.com/"
+            }
+        ],
+        
+        "type": "game",
+        
+        "tools":
+        [ 
+            {
+            "name":"link1",
+            "link": "https://www.google.com/"
+            },
+            { 
+            "name":"link1",
+            "link": "https://www.google.com/"
+            }
+        ],
+        
+        "qanda": {
+            "answer1":"I'm a creative coder and designer, a School of Machines, Making & Make-Believe diversity scholarship recipient, and just a curious creature.\n\nI was taking a course at the School of Machines in Berlin this summer called \"Bots and Machine Learning,\" mainly taught by Yining Shi.",
+            "answer2":"I used p5.js to work on the visual part of the game. The animation sprites for Airi and the ghosts were drawn on an iPad app called Pixaki and then integrated into p5.play code. I mainly used examples at p5.play as a reference.\n\nFor the endless scrolling background, I found a p5 sketch by chjno. I set a condition so whenever the word \"pew\" or a mouse click was detected, the scrolling speed would change to make an illusion of Airi flying up. When the user does not do anything, the scrolling speed is negative, which makes it look like Airi is falling down.\n\nFor sound recognition, I used Google's Teachable Machine 2 (currently, there is a beta version not available in public yet, but it will be very soon!). I added around 120 samples of my classmates saying the word \"pew\" with different intonations and 80 samples of background noise to train it. Then I integrated the model into the game with ml5.js."
+        }
+        }
+]

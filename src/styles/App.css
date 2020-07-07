@@ -1,0 +1,71 @@
+@import "~antd/dist/antd.css";
+
+@font-face{
+    font-family: "Montserrat Bold";
+    src: url("fonts/Montserrat-Bold.ttf");
+  }
+@font-face{
+    font-family: "Montserrat";
+    src: url("fonts/Montserrat-Regular.ttf");
+  }
+body{
+    font-family: "Montserrat";
+  }
+
+.App-header {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.App-title {
+  cursor: pointer;
+}
+
+.App-logo {
+  height: 40px;
+}
+
+.App-content {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 80vw;
+}
+
+.Project-text {
+  padding: 20px;
+  margin: 20px 0;
+  background: white;
+  border-radius: 2px;
+}
+
+.Project-text a {
+  color: #a15ffb;
+}
+
+.Project-text h1 {
+  font-size: 48px;
+  font-family: "Montserrat Bold";
+  color: #DB3B60;
+}
+
+.Project-text p {
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+.Examples-Container {
+  display: flex;
+}
+.detailsbody{
+  margin-left: 120px;
+  margin-right: 120px;
+}
+.detailsbody p{
+  font-size: 16px;
+  white-space: pre-line;
+}
