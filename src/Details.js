@@ -2,28 +2,39 @@ import React from 'react';
 import './styles/App.css';
 
 const Details= ({piece}) => {
-const {title, image, author, pronouns, resources, type, tools, qanda}=piece;
+const {title, image, author, pronouns, resources, type, tools, qanda, location}=piece;
 return (
-  
       <div className="detailsbody">
+        <div className="row">
+          <div className="details-image">
             <img
               src={
-                require(`./images/${image}`)
+                require(`../public/images/${image}`)
               }
               alt={title}
-              className="Card-image"
             />
-            <h1>{title}</h1>
-            <h1>Created By</h1>
-            <h2>{author}{pronouns}</h2>
-            <h2>Project Links</h2>
-            {resources.map(i => (
-             <a href={i.link}>{i.name}</a>
-          ))}
-            <h2>Tools</h2>
-            {tools.map(i => (
-             <a href={i.link}>{i.name}</a>
-          ))}
+            </div>
+            <div className="col">
+                <h1>{title}</h1>
+                <h2>Created By</h2>
+                <h3>{author} <span class="small">{pronouns}</span></h3>
+                <h3 class="small">{location}</h3>
+            <div className="row">
+                <div className="col">
+                  <h2>Project Links</h2>
+                  {resources.map(i => (
+                  <a href={i.link}>{i.name}</a>
+                ))}
+                </div>
+                <div className="col">
+                    <h2>Tools</h2>
+                    {tools.map(i => (
+                      <a href={i.link}>{i.name}</a>
+                  ))}
+                </div>
+            </div>
+          </div>
+          </div>
           <h1>Q and A</h1>
           <h2>What are you up to? How did you get started with p5.js?</h2>
           <div id="answer1"></div> 

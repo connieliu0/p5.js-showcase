@@ -24,51 +24,23 @@ const TAGS = {
 
 function TestCard (props){
   //const modelTags = props.qanda.split(",");
-  const { Meta } = Card;
-
   return (
-    
-    <Col xs={{ span: 24 }} md={{ span: 12 }} lg={{ span: 8 }} xl={{ span: 8 }}>
-      <Card
-        hoverable
-        style={{ width: "100%" }}
-        cover={
-          <div style={{ overflow: "hidden" }}>
+    <div className="bigcard">
+      <div className="cardimage">
             <img
               src={
-                require(`./images/${props.image}`)
+                require(`../public/images/${props.image}`)
               }
               alt={props.title}
               className="Card-image"
             />
-          </div>
-        }
-      
-      >
-        <Meta
-          title={
-            <div className="Name">
-              {props.title}<br></br>
-              {props.author}
-            </div>
-          }
-          description={<div className="Description">{props.description}</div>}
-        />
-    { 
-    // <Popup
-    //   trigger={<button className="button"> Open Modal </button>}
-    //   modal
-    //   closeOnDocumentClick
-    // >
-    //   <span> <Details 
-    //   title = {title}
-    //   description = {description}
-    //   /> </span>
-    // </Popup>
-  }
-        
-      </Card>
-    </Col>
+      </div>
+      <div className="Name">
+        <h2>{props.title}</h2>
+        <h2><em>{props.author}</em></h2>
+      </div>
+          <div className="Description">{props.description}</div>
+    </div>
   );
 };
 
