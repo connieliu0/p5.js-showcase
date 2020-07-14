@@ -5,25 +5,7 @@ import Details from "./Details.js";
 import { openLink } from "./util";
 import Title from "antd/lib/skeleton/Title";
 
-const TAGS = {
-  FaceAPI: {
-    color: "magenta",
-    link: "https://learn.ml5js.org/docs/#/reference/face-api",
-  },
-  FeatureExtractor: {
-    color: "orange",
-    link: "https://learn.ml5js.org/docs/#/reference/feature-extractor",
-  },
-  ImageClassifier: {
-    color: "green",
-    link: "https://learn.ml5js.org/docs/#/reference/image-classifier",
-  },
-
-};
-
-
 function TestCard (props){
-  //const modelTags = props.qanda.split(",");
   return (
     <div className="bigcard">
       <div className="cardimage">

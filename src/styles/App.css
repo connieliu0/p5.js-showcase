@@ -12,6 +12,9 @@
     font-family: "Montserrat Medium";
     src: url("fonts/Montserrat-Medium.ttf");
   }
+.right{
+  text-align: right;
+}
 body{
     font-family: "Montserrat";
     margin-bottom: 40px;
@@ -33,7 +36,7 @@ body{
 
 .Name{
   position: absolute;
-  bottom: 90px;
+  bottom: 30%;
   left: 20px;
 }
 .Name h2{
@@ -101,10 +104,14 @@ h1{
   border-radius: 25px;
   border-style:  dotted;
   border-width: thick;
-  border-color: darkred;
+  border-color: #730522;
 }
 
 .bigcard:hover{
+  border-color: #DB3B60;
+}
+.cardimage:hover{
+  background:#DB3B60;
 }
 .Description{
   margin-top: 20px;
@@ -113,7 +120,7 @@ h1{
   color: darkred;
 }
 .cardimage img{
-  width: 450px;
+  width: 24.5vw;
   border-radius: 25px;
   opacity: .7;
   height: 280px;
@@ -124,7 +131,7 @@ h1{
   height: 280px;
 }
 .bigcard {
-  width: 460px;
+  width: 25vw;
 }
 .row{
   width: 100%;

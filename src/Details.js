@@ -1,8 +1,14 @@
 import React from 'react';
 import './styles/App.css';
+import tools from './data/tools.json';
+import { useTranslation } from 'react-i18next';
 
 const Details= ({piece}) => {
 const {title, image, author, pronouns, resources, type, tools, qanda, location}=piece;
+const toolslinks = tools.split(",");
+var Markdown = require('react-markdown');
+const { t } = useTranslation();
+
 return (
       <div className="detailsbody">
         <div className="row">
@@ -16,35 +22,43 @@ return (
             </div>
             <div className="col">
                 <h1>{title}</h1>
-                <h2>Created By</h2>
+                <h2>{t('Created By')}</h2>
                 <h3>{author} <span class="small">{pronouns}</span></h3>
                 <h3 class="small">{location}</h3>
             <div className="row">
                 <div className="col">
-                  <h2>Project Links</h2>
+                  <h2>{t('Project Links')}</h2>
                   {resources.map(i => (
                   <a href={i.link}>{i.name}</a>
                 ))}
                 </div>
                 <div className="col">
-                    <h2>Tools</h2>
-                    {tools.map(i => (
-                      <a href={i.link}>{i.name}</a>
-                  ))}
+                    <h2>{t('Tools')}</h2>
+                    {toolslinks.map((tool, index) => {
+                      const toolsinfo = {
+                        link: toolslinks[tool] ? toolslinks[tool]: "https://p5js.org/"
+                      };
+                      return(
+                        <a href={toolsinfo} target="_blank">{tool}</a>
+                      );
+                      })}
+                  
                 </div>
             </div>
           </div>
           </div>
           <h1>Q and A</h1>
-          <h2>What are you up to? How did you get started with p5.js?</h2>
+          <h2>{t('Question1')}</h2>
           <div id="answer1"></div> 
-          <p>{qanda.answer1}</p>
+          <p>{<Markdown source={qanda.answer1}/>}</p>
           {/* { document.getElementById("answer1").innerHTML =qanda.answer1} */}
           {/* is innerHTML bad, do I use dangerously set inner html? */}
-          <h2>How did you use p5.js in this project? </h2>
-          <p>{qanda.answer2}</p>
-          <h2>What's your favorite p5.js feature? </h2>
-          <h2>Did you face any challenges working on this project? If so, how did you overcome them?</h2>
+          <h2>{t('Question2')}</h2>
+          <p><Markdown source={qanda.answer2}/></p>
+          <h2>{t('Question3')}</h2>
+          <p><Markdown source={qanda.answer3}/></p>
+          <h2>{t('Question4')}</h2>
+          <p><Markdown source={qanda.answer4}/></p>
       </div>
     )
   };
