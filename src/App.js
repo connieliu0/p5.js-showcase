@@ -42,35 +42,11 @@ export default function App() {
     <Route exact path="/es" children={<Gallerytwenty />}/>
     <Route exact path="/gallery2019" children={<Gallerynineteen/>} />
      <Route path="/2019/:id" children={<DetailedPage />}/>
-    {/* <Route exact path="/es/gallery2019" children={<Gallerynineteen/>} /> */}
-    {/* <Route path="/es/2019/:id" children={<DetailedPage />} /> */}
     <Route exact path="/about" children = {<About />}/>
     </Switch>{" "}
     </Router>
   );
 }
-// function NavBar(props){
-//   if (props.language=="es"){
-//     return(
-//       <div>
-//       <Link to="/es" className="item">2020</Link>
-//       <Link to="/es/gallery2019" className="item">2019</Link>
-//       <Link to="/es/about" className="item">about</Link>
-//       <a href="https://p5js.org">p5.js</a>
-//       </div>
-//     );
-//   }
-//   else if (props.language=="en"){
-//     return(
-//       <div>
-//       <Link to="/" className="item">2020</Link>
-//       <Link to="/gallery2019" className="item">2019</Link>
-//       <Link to="/about" className="item">about</Link>
-//       <a href="https://p5js.org">p5.js</a>
-//       </div>
-//     );
-//   }
-// }
 
 function About(){
   const { t, i18n } = useTranslation();
@@ -89,7 +65,7 @@ function Gallerynineteen(){
   const { t, i18n } = useTranslation();
 return(      
   <div className="body">
-    <h1>p5.js 2019 Showcase! </h1>
+    <h1>p5.js 2019 Showcase!</h1>
       <Trans i18nKey="Curated by">
           <p>
             Curated by{" "}<a target="_blank" rel="noopener noreferrer" href="https://ashleykang.dev/" >Ashley Kang</a>{" "}in the summer of 2019, below is the first ever curated collection of the p5.js showcase! We compiled different ways to use p5.js and learn more about each one by clicking on it.
@@ -116,9 +92,10 @@ return(
 }
 
 function Gallerytwenty() {
+  const { t, i18n } = useTranslation();
 return(
   <div className="body">
-    <h1>Welcome to the p5.js 2020 Showcase!</h1>
+    <h1>{t('Welcome')}</h1>
     <h2>Full version is coming out at the end of August!</h2>
     </div>
   );

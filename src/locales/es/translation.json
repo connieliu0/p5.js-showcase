@@ -6,6 +6,7 @@
  "Question3":"¿Cuál es tu función favorita de p5.js? ",
  "Question4":"¿Enfrentó algún desafío al trabajar en este proyecto? Si es así, ¿cómo los superaste? ",
  "About":"What is p5.js showcase!",
+ "Welcome":"¡Bienvenido a p5.js 2020 Showcase!",
  "showcase":[
     {
     "id": "airi-flies",
