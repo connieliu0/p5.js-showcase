@@ -4,7 +4,7 @@ import tools from './data/tools.json';
 import { useTranslation } from 'react-i18next';
 
 const Details= ({piece}) => {
-const {title, image, author, pronouns, resources, type, tools, qanda, location}=piece;
+const {title, image, author, pronouns, resources, type, tools, qanda, location, socials}=piece;
 const toolslinks = tools.split(",");
 var Markdown = require('react-markdown');
 const { t } = useTranslation();
@@ -23,13 +23,15 @@ return (
             <div className="col">
                 <h1>{title}</h1>
                 <h2>{t('Created By')}</h2>
-                <h3>{author} <span class="small">{pronouns}</span></h3>
-                <h3 class="small">{location}</h3>
+                <h3>{author} <span class="small">({pronouns}) from {location}</span></h3>
+                {socials.map(i => (
+                  <a href={i.link} target="_blank">{i.name}</a>
+                ))}
             <div className="row">
                 <div className="col">
                   <h2>{t('Project Links')}</h2>
                   {resources.map(i => (
-                  <a href={i.link}>{i.name}</a>
+                  <a href={i.link} target="_blank">{i.name}</a>
                 ))}
                 </div>
                 <div className="col">
@@ -59,6 +61,8 @@ return (
           <p><Markdown source={qanda.answer3}/></p>
           <h2>{t('Question4')}</h2>
           <p><Markdown source={qanda.answer4}/></p>
+          <h2>{t('Question5')}</h2>
+          <p><Markdown source={qanda.answer5}/></p>
       </div>
     )
   };

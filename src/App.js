@@ -1,8 +1,6 @@
 import "./styles/App.css";
 import { Layout, Row } from "antd";
 import React, { Component }from "react";
-import en from "./data/showcase2019.json";
-import es from "./data/showcase2019-es.json";
 import { openLink } from "./util";
 import Details from "./Details.js"
 //import DisplayGallery from "./DisplayGallery.js"
@@ -49,13 +47,14 @@ export default function App() {
 }
 
 function About(){
+  var Markdown = require('react-markdown');
   const { t, i18n } = useTranslation();
   return(
     <div className="home1">
     <img src="/images/asterisk-01.png" alt="p5.js asterisk"/>
     <div className="home">
     <h1>{t('About')}</h1>
-    <p>Introducing Showcase, created by <a href="ashleykang.dev">Ashley Kang</a> in 2019 and currently curated by <a href="connieliu0.github.io">Connie Liu</a>. We're celebrating how people are using p5.js to make creative work, learning, and open source more interesting and inclusive. Together, we make community. During Summer 2019, we asked a few creators to share more about how they've used p5.js through different projects and pieces.</p>
+    <p><Markdown source = {t('AboutIntro')}/></p>
     </div>
     </div>
   );
