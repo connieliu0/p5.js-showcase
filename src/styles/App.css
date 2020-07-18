@@ -43,6 +43,7 @@ body{
   margin-bottom: 0px;
   font-family: "Montserrat Bold";
   color: white;
+  text-shadow: 2px 2px 4px #DB3B60;
 }
 
 p {
@@ -104,14 +105,14 @@ h1{
   border-radius: 25px;
   border-style:  dotted;
   border-width: thick;
-  border-color: #730522;
+  border-color: #DB3B60;
 }
 
 .bigcard:hover{
-  border-color: #DB3B60;
+  border-color: #FFB6C1;
 }
 .cardimage:hover{
-  background:#DB3B60;
+  background:#FFB6C1;
 }
 .Description{
   margin-top: 20px;
@@ -120,23 +121,37 @@ h1{
   color: darkred;
 }
 .cardimage img{
-  width: 24.5vw;
   border-radius: 25px;
   opacity: .7;
-  height: 280px;
+  width: 420px;
 }
 .cardimage{
-  background:darkred;
+  background:#DB3B60;
   border-radius: 25px;
-  height: 280px;
+  height: 250px;
+  width: 24.4vw;
+  overflow: hidden;
 }
 .bigcard {
   width: 25vw;
+  margin-bottom: 25px;
+  margin-right: 5px;
+  margin-left: 5px;
 }
 .row{
   width: 100%;
   display: flex;
   flex-direction: row;
+}
+.gallery .row{
+  flex-wrap: wrap;
+
+}
+.body.row{
+  flex-wrap: wrap;
+}
+.row a{
+  margin-right: 15px;
 }
 /* Details Page */
 .detailsbody p{

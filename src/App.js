@@ -37,7 +37,6 @@ export default function App() {
           </div>
     <Switch>
     <Route exact path="/" children={<Gallerytwenty />}/>
-    <Route exact path="/es" children={<Gallerytwenty />}/>
     <Route exact path="/gallery2019" children={<Gallerynineteen/>} />
      <Route path="/2019/:id" children={<DetailedPage />}/>
     <Route exact path="/about" children = {<About />}/>
@@ -51,7 +50,7 @@ function About(){
   const { t, i18n } = useTranslation();
   return(
     <div className="home1">
-    <img src="/images/asterisk-01.png" alt="p5.js asterisk"/>
+    <img src="./images/asterisk-01.png" alt="p5.js asterisk"/>
     <div className="home">
     <h1>{t('About')}</h1>
     <p><Markdown source = {t('AboutIntro')}/></p>
@@ -64,6 +63,7 @@ function Gallerynineteen(){
   const { t, i18n } = useTranslation();
 return(      
   <div className="body">
+    <div className="gallery">
     <h1>p5.js 2019 Showcase!</h1>
       <Trans i18nKey="Curated by">
           <p>
@@ -85,6 +85,7 @@ return(
         image={image}/>
         </Link>
       ))}
+      </div>
       </div>
      </div>
   );

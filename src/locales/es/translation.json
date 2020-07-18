@@ -60,9 +60,13 @@
         "resources":
         [ 
             {
-            "name":"",
-            "link": ""
-            }
+                "name":"Sketch de ejemplo en p5.js Web Editor",
+                "link": "https://editor.p5js.org/ronicantor/sketches/eq2bIhmh2"
+                },
+                { 
+                "name":"AxiDraw V3 demo video",
+                "link": "https://drive.google.com/file/d/1UJy6q5cDl6Hg79O9mX1ZN7NFp0NXSYCs/view?usp=sharing"
+                }
         ],
         
         "type": "game",
@@ -70,8 +74,8 @@
         "tools":"lerp()",
 
         "socials":[{
-            "name":"sitio Web",
-            "link":"https://www.yonaymoris.me"
+            "name":"",
+            "link":""
         }
         ],
         "qanda": {
@@ -81,6 +85,48 @@
             "answer4":"¡Era la primera vez que usaba p5.js, Inkscape y un plotter! Realmente me beneficié de las personas a mi alrededor que habían usado p5 antes, así como de guías y foros en línea.",
             "answer5":"[@gandyworks](https://www.instagram.com/gandyworks/) en Instagram: cosas de plotter análogo súper geniales.."
         }
-        }
+        },
+        {
+            "id": "chillin",
+            "title": "Chillin'",
+            "image": "chillin.png",
+            "description": "Un póster tipográfico interactivo que utiliza el sensor de movimiento de un dispositivo móvil con p5.js.",
+            "location":"Baltimore, Maryland",
+            "author": "Dae In Chung",  
+            "pronouns": "el",
+            "resources":
+            [ 
+                {
+                "name":"Vean Chillin’",
+                "link": "https://exp.paperdove.com/chillin/"
+                },
+         {
+                "name":"Código para Chillin’ en GitHub",
+                "link": "https://github.com/cdaein/exp/tree/gh-pages/chillin"
+                },
+         {
+                "name":"Más info en el portafolio de Dae In Chung",
+                "link": "https://paperdove.com/work/2019-chillin/"
+                }
+            ],
+            
+            "type": "visual",
+            
+            "tools":"matter.js,p5 WebGL,p5.camera",
+    
+            "socials":[{
+                "name":"Instagram",
+                "link":"https://www.instagram.com/cdaein/"
+            }
+            ],
+            "qanda": {
+                "answer1":"Soy diseñador gráfico y miembro de la facultad en Maryland Institute College of Art, donde enseño principalmente programación (con p5.js y Processing, por supuesto) y motion graphics.\n\n He estado usando Processing durante algún tiempo, y cuando apareció p5.js, comencé a usarlo sin pensarlo dos veces porque era fácil convertir el código de Processing existente y compartir proyectos en línea.",
+                "answer2":"Este verano, me di el desafío de hacer carteles tipográficos con programación, y este es uno de los carteles que hice. Hasta hace muy poco, no sabía que podía usar los datos del sensor de movimiento con p5.js. También estaba viendo los [video tutoriales de Dan Shiffman matter.js](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6bLh3T_4wtrmVHOrOEM1ig_), así que pensé ¿por qué no combinar los dos y practicar lo que estaba aprendiendo?",
+                "answer3":"THay muchas cosas que me encantan de p5.js, como la comunidad en línea y la amabilidad de los principiantes. Lo que realmente me gusta en este momento es el [online editor](https://editor.p5js.org/), con el que no solo puedo trabajar en línea para mí, sino también compartir el URL rápidamente en el modo actual. Para este proyecto en particular, tuve que hacer muchas pruebas en mi teléfono, y fue mucho más fácil y rápido que comprometerme con GitHub.",
+                "answer4":"Tuve algunos problemas con el manejo de la fuente, el canal alfa y z-depth en el modo [WebGL](https://github.com/processing/p5.js/wiki/Getting-started-with-WebGL-in-p5). Todavía no estoy contento con todas mis decisiones. Pero en general, fue útil buscar en el foro y no olvidar dividir los problemas en otros más pequeños e iterar poco a poco. Además, tuve problemas para renderizar archivos de video directamente desde p5.js. La grabación de pantalla no era una opción debido a caídas de frecuencia de cuadros intermitentes (mi computadora portátil es bastante lenta). Después de investigar un poco, decidí aprender algunos conceptos básicos de [Electron](https://electronjs.org/) crear una herramienta para mí.",
+                "answer5":"Como se mencionó anteriormente, si desea renderizar cuadros y archivos de video a partir de bocetos de p5.js, consulte mi [Canvas Saver boilerplate](https://github.com/cdaein/p5js-electron-canvas-saver-boilerplate) y hazme saber lo que piensas."
+            }
+            }
+    
 ]
 }

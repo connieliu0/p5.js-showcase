@@ -1,5 +1,10 @@
 {
 "p5.play": "https://molleindustria.github.io/p5.play/",
 "ml5.js": "https://ml5js.org/",
-"lerp": "https://p5js.org/reference/#/p5/lerp"
+"lerp": "https://p5js.org/reference/#/p5/lerp",
+"matter.js":"https://brm.io/matter-js/",
+"p5 WebGL":"https://github.com/processing/p5.js/wiki/Getting-started-with-WebGL-in-p5",
+"p5.Camera":"https://p5js.org/reference/#/p5.Camera",
+"rect()":"https://p5js.org/reference/#/p5/rect",
+"translate()":"https://p5js.org/reference/#/p5/translate"
 }

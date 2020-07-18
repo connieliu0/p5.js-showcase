@@ -24,9 +24,9 @@ return (
                 <h1>{title}</h1>
                 <h2>{t('Created By')}</h2>
                 <h3>{author} <span class="small">({pronouns}) from {location}</span></h3>
-                {socials.map(i => (
+                <div class="row">{socials.map(i => (
                   <a href={i.link} target="_blank">{i.name}</a>
-                ))}
+                ))}</div>
             <div className="row">
                 <div className="col">
                   <h2>{t('Project Links')}</h2>
@@ -35,8 +35,8 @@ return (
                 ))}
                 </div>
                 <div className="col">
-                    <h2>{t('Tools')}</h2>
-                    {toolslinks.map((tool, index) => {
+                  <div>{(tools.length!=0)&&<h2>{t('Tools')}</h2>}</div>
+                {toolslinks.map((tool, index) => {
                       const toolsinfo = {
                         link: toolslinks[tool] ? toolslinks[tool]: "https://p5js.org/"
                       };
@@ -44,7 +44,6 @@ return (
                         <a href={toolsinfo} target="_blank">{tool}</a>
                       );
                       })}
-                  
                 </div>
             </div>
           </div>
@@ -53,8 +52,6 @@ return (
           <h2>{t('Question1')}</h2>
           <div id="answer1"></div> 
           <p>{<Markdown source={qanda.answer1}/>}</p>
-          {/* { document.getElementById("answer1").innerHTML =qanda.answer1} */}
-          {/* is innerHTML bad, do I use dangerously set inner html? */}
           <h2>{t('Question2')}</h2>
           <p><Markdown source={qanda.answer2}/></p>
           <h2>{t('Question3')}</h2>
@@ -64,6 +61,8 @@ return (
           <h2>{t('Question5')}</h2>
           <p><Markdown source={qanda.answer5}/></p>
       </div>
-    )
-  };
+    );
+  }
+
+
 export default Details;
