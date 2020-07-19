@@ -36,14 +36,17 @@ body{
 
 .Name{
   position: absolute;
-  bottom: 30%;
+  bottom: 50%;
   left: 20px;
 }
 .Name h2{
   margin-bottom: 0px;
   font-family: "Montserrat Bold";
   color: white;
-  text-shadow: 2px 2px 4px #DB3B60;
+  text-shadow: 2px 2px 4px #AD1349;
+}
+.Name h2 em{
+  font-size: .8em;
 }
 
 p {
@@ -162,6 +165,14 @@ h1{
   margin-top: 40px;
   margin-left: 120px;
   margin-right: 120px;
+  margin-bottom: 120px;
+}
+.detailsbody h3{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.detailsbody h2{
+  margin-top: 20px;
 }
 .col{
   width: 100%;
@@ -178,6 +189,9 @@ h1{
   height: auto;
   margin-right: 40px;
   margin-bottom: 40px;
+  border-radius: 25px;
+  border: dotted  #DB3B60;;
+  padding: 5px;
 }
 .detailsbody h1{
   font-size: 48px;

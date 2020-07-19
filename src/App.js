@@ -9,12 +9,9 @@ import i18next from 'i18next';
 import TestCard from "./TestCard.js";
 
 import {
-  BrowserRouter as Router,
   Switch,
   Route,
   Link,
-  useHistory,
-  useLocation,
   useParams,
   HashRouter
 } from "react-router-dom";
@@ -25,7 +22,7 @@ export default function App() {
       };
     
   return (
-    <Router>
+  <HashRouter basename='/'>
           <div className="navigation">
       <Link to="/" className="item">2020</Link>
        <Link to="/gallery2019" className="item">2019</Link>
@@ -41,7 +38,7 @@ export default function App() {
      <Route path="/2019/:id" children={<DetailedPage />}/>
     <Route exact path="/about" children = {<About />}/>
     </Switch>{" "}
-    </Router>
+    </HashRouter>
   );
 }
 
@@ -50,7 +47,7 @@ function About(){
   const { t, i18n } = useTranslation();
   return(
     <div className="home1">
-    <img src="./images/asterisk-01.png" alt="p5.js asterisk"/>
+    <img src={process.env.PUBLIC_URL +'/images/asterisk-01.png'} alt="p5.js asterisk"/>
     <div className="home">
     <h1>{t('About')}</h1>
     <p><Markdown source = {t('AboutIntro')}/></p>
@@ -60,14 +57,15 @@ function About(){
 }
 
 function Gallerynineteen(){
+  var Markdown = require('react-markdown');
   const { t, i18n } = useTranslation();
 return(      
   <div className="body">
     <div className="gallery">
     <h1>p5.js 2019 Showcase!</h1>
+    <h3><Markdown source={t('2019about')}/></h3>
       <Trans i18nKey="Curated by">
           <p>
-            Curated by{" "}<a target="_blank" rel="noopener noreferrer" href="https://ashleykang.dev/" >Ashley Kang</a>{" "}in the summer of 2019, below is the first ever curated collection of the p5.js showcase! We compiled different ways to use p5.js and learn more about each one by clicking on it.
          </p>
          </Trans>
          <div class="row">

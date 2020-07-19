@@ -6,7 +6,8 @@
  "Question3":"¿Cuál es tu función favorita de p5.js? ",
  "Question4":"¿Enfrentó algún desafío al trabajar en este proyecto? Si es así, ¿cómo los superaste? ",
  "Question5":"¿Qué es algo cool que deberíamos explorar?",
- "About":"What is p5.js showcase?",
+ "2019about":"",
+ "About":"",
  "AboutIntro":"Presentamos Showcase, creada por [Ashley Kang](https://ashleykang.dev) en 2019 y actualmente curada por [Connie Liu](https://connieliu0.github.io). Estamos celebrando cómo las personas usan p5.js para hacer que trabajos creativos, el aprendizaje y fuente abierta sean más interesantes e inclusivos. Juntos, hacemos una comunidad. Durante el verano de 2020, le pedimos a creadores que compartieran cómo usan p5.js en variados proyectos y piezas. Durante el verano 2020, Showcase está abierto a postulaciones, ¡nomina el trabajo con p5.js de alguien o el tuyo para ser incluid aquí!",
  "Welcome":"¡Bienvenido a p5.js 2020 Showcase!",
  "showcase":[
@@ -126,7 +127,154 @@
                 "answer4":"Tuve algunos problemas con el manejo de la fuente, el canal alfa y z-depth en el modo [WebGL](https://github.com/processing/p5.js/wiki/Getting-started-with-WebGL-in-p5). Todavía no estoy contento con todas mis decisiones. Pero en general, fue útil buscar en el foro y no olvidar dividir los problemas en otros más pequeños e iterar poco a poco. Además, tuve problemas para renderizar archivos de video directamente desde p5.js. La grabación de pantalla no era una opción debido a caídas de frecuencia de cuadros intermitentes (mi computadora portátil es bastante lenta). Después de investigar un poco, decidí aprender algunos conceptos básicos de [Electron](https://electronjs.org/) crear una herramienta para mí.",
                 "answer5":"Como se mencionó anteriormente, si desea renderizar cuadros y archivos de video a partir de bocetos de p5.js, consulte mi [Canvas Saver boilerplate](https://github.com/cdaein/p5js-electron-canvas-saver-boilerplate) y hazme saber lo que piensas."
             }
+            },
+            {
+                "id": "qtv",
+                "title": "Qtv",
+                "author": "Qianqian Ye",
+                "image": "qtv.png",
+                "description": "Un canal de video con videos de 1-minuto en Mandarín sobre programación creativa, arte y tecnología, que incluye tutoriales de p5.js para principiantes.",
+                "location":"Los Ángeles, California",
+                "pronouns": "ella",
+                "resources":
+                [ 
+                    {
+                    "name":"Qtv Youtube’",
+                    "link": "https://bit.ly/2XVzPAv"
+                    },
+             {
+                    "name":"Qtv Instagram",
+                    "link": "https://www.instagram.com/q_tv_/"
+                    },
+             {
+                    "name":"Qtv Bilibili",
+                    "link": "https://space.bilibili.com/442343394"
+                    },
+                    {
+                    "name":"@Q_tv TikTok",
+                    "link": "https://v.douyin.com/sopAGk/"
+                    },
+                    {
+                    "name":"Entrevista de Processing Foundation con Qianqian Ye",
+                    "link": "https://medium.com/processing-foundation/interview-with-2019-fellow-qianqian-ye-799c0115c295"
+                    }
+                ],
+                
+                "type": "tutorial",
+                
+                "tools":"",
+        
+                "socials":[{
+                    "name":"Website",
+                    "link":"https://qianqian-ye.com"
+                }
+                ],
+                "qanda": {
+                    "answer1":"Soy una artista y diseñadora china con sede en Los Ángeles. \n\n Mi pareja me presentó p5.js y en el cual aprendí principalmente al ver videos tutoriales gratuitos en línea. Mi primer proyecto de p5.js fue dibujar algunas formas con diferentes colores.",
+                    "answer2":"Este proyecto comenzó con la idea de enseñarle a mi mamá, que vive en China y no habla inglés, a programar con p5.js. Este proyecto fue difícil en diferentes niveles y quería comenzar identificando las razones principales por las que es más difícil para alguien como mi madre aprender a programar, principalmente debido a la falta de recursos educativos gratuitos de programación creativa. La mayoría de los recursos gratuitos para aprender la programación creativa no están disponibles en China. Los tutoriales de p5.js en YouTube, así como las cuentas de p5.js en Twitter e Instagram son inaccesibles en China debido a la censura del internet. \n\n Aprendí mucho de los videos de YouTube, como el [Coding Train](https://thecodingtrain.com/), pero cuanto más miraba los tutoriales de programación en línea, más me daba cuenta de lo difícil que es encontrar otras mujeres y personas de color enseñando programación, especialmente en mandarín. Quería ayudar a otras mujeres chinas a relacionarse con la programación creativa. \n\n Estoy trabajando para abrir los canales de video a otrxs creativxs chinxs que quieran contribuir al recurso educativo juntxs, como entrevistas y tutoriales invitadxs. Si te interesa enseñar/hablar sobre programación creativa en mandarín, ¡Avísame!",
+                    "answer3":"El [p5.js Web Editor](https://editor.p5js.org/) es mi función favorita. Hace que la programación creativa en línea sea perfecta.",
+                    "answer4":"Aprender a programar en un segundo idioma fue difícil y la falta de comunidad hizo que este proceso fuera aún más arduo. Espero hablar desde mi experiencia como principiante y alguien que alguna vez se sintió como un extraño al mundo de la programación creativa y el de los videos tutoriales. \n\n Paso mucho tiempo investigando la tecnología más actual para mis videos. Al final, decidí usar mi teléfono para grabar y iMovie para editar. Espero alentar a otros a que no se necesitan muchas cosas costosas para comenzar a hacer videos instructivos. \n\n Otro problema que encontré fue mi propio miedo a ponerme en línea. Primero tuve que superar mi ansiedad de cometer errores en los videos o recibir comentarios negativos en línea. A menudo, mujeres y personas de color son víctimas de acoso en línea. Espero ayudar a establecer un ejemplo para otras mujeres y personas de color que está bien ponerse en línea y fortalecer sus comunidades compartiendo su conocimiento. Eventualmente, podremos detener el acoso en línea creando comunidades diversas y fuertes.",
+                    "answer5":"Estoy muy entusiasmado por [Tiny Tech Zines](http://tinytechzines.org/) en LA."
+                }
+            },
+            {
+                "id": "moving-responsive-posters",
+                "title": "Moving Responsive Posters",
+                "author": "Moon Jang, Xin Xin, and students",
+                "image": "moving-responsive-posters.png",
+                "description": "Pósters móviles basados en el navegador que utilizan sistemas gráficos, métodos de transformación y p5.js para abordar las connotaciones.",
+                "location":"De Atenas, Georgia",
+                "pronouns": "ella, elle",
+                "resources":
+                [ 
+                    {
+                    "name":"Avery Ray's Poster",
+                    "link": "https://editor.p5js.org/avezray/present/JTjhOdGRB"
+                    },
+             {
+                    "name":"Carlee Wooddell's Poster",
+                    "link": "https://editor.p5js.org/carcarw/present/DyKJHUtCN"
+                    },
+             {
+                    "name":"Mia Hofmann's Poster",
+                    "link": "https://editor.p5js.org/mdh54215/present/h5wp4EYen"
+                    },
+                    {
+                    "name":"Katie Huang's Poster",
+                    "link": "https://editor.p5js.org/katiehuang1998@gmail.com/present/1GhSDw-Og"
+                    },
+                    {
+                    "name":"Lila Mitchell's Poster",
+                    "link": "https://editor.p5js.org/borderrider@gmail.com/present/Lg_pSPRHF"
+                    },
+                    {
+                    "name":"Kathryn Wallace's Poster",
+                    "link": "https://editor.p5js.org/wallacekd/present/GqWZOYUSN"
+                }
+                ],
+                
+                "type": "visual",
+                
+                "tools":"rect(),translate()",
+        
+                "socials":[{
+                    "name":"Website",
+                    "link":"http://www.moonjang.com/"
+                },
+                {
+                    "name":"@borderrider",
+                    "link":"https://www.instagram.com/borderrider/"
+                }
+                ],
+                "qanda": {
+                    "answer1":"Moon: Soy diseñadora gráfica, artista visual y educadora de diseño. Este verano, impartí un curso de diseño gráfico en el programa Cortona de la Universidad de Georgia en Italia, presentando algunos conceptos básicos de p5.js. Este otoño, planeo enseñar y estudiar plataformas digitales en UGA. \n\n Mi ex colega, [Xin Xin](https://xin-xin.info/), , me invitó a [Processing Community Day](https://medium.com/processing-foundation/pcd/home) en [LA en enero de 2019](https://day.processing.org/pcd-la.html). Me ayudaron con las herramientas y la lógica de p5.js. Fue una excelente experiencia de enseñanza y aprendizaje.",
+                    "answer2":"Seguimos tutoriales básicos, [los videos de Daniel en YouTube](https://thecodingtrain.com/), y [Referencia en el sitio web p5.js](https://p5js.org/reference/).",
+                    "answer3":"Mi función favorita está relacionada con [type](https://p5js.org/reference/#group-Typography) y [transformation](https://p5js.org/reference/#group-Transform): [rotate()](https://p5js.org/reference/#/p5/rotate). Pude usar y enseñar esta herramienta para visualizar varias ideas sobre el tiempo en movimiento.",
+                    "answer4":"Para mí, un principiante, fue un desafío comprender la estructura general de p5.js y cómo funciona el código en general. Tuve que repetir los conceptos básicos de p5.js un par de veces, y luego dibujé un cuadro para memorizar y enseñar la forma en que entendí la estructura y el código de p5.js con fuertes restricciones que configuré. Fue una excelente experiencia de enseñanza y aprendizaje.",
+                    "answer5":"Echa un vistazo a [Design Triennale](http://www.brokennature.org/) en Milán, Italia."
+                }
+            },
+            {
+                "id": "p5.js-shaders",
+                "title": "p5.js Shaders",
+                "author": "Casey Conchinha, Louise Lessél",
+                "image": "p5-shaders.png",
+                "description": "Un recurso para aprender el qué, por qué y cómo usar shaders en p5.js.",
+                "location":"De Nueva York, Nueva York",
+                "pronouns": "el, ella",
+                "resources":
+                [ 
+                    {
+                    "name":"Guía de p5.js Shaders",
+                    "link": "https://bit.ly/p5shaders"
+                    },
+               {
+                    "name":"Colección glitch de ejemplos con p5.js shader",
+                    "link": "https://bit.ly/p5shadersexamples"
+                    }                
+                ],
+                
+                "type": "code",
+                
+                "tools":"",
+        
+                "socials":[{
+                    "name":"Casey's Website",
+                    "link":"https://cargocollective.com/kcconch"
+                },
+                {
+                    "name":"Louise's Website",
+                    "link":"http://www.louiselessel.com/"
+                }
+                ],
+                "qanda": {
+                    "answer1":"Casey: Soy un estudiante de NYU ITP que está interesado en gráficos computacionales y espacios interactivos, físicos y digitales. \n\n Louise: Soy una estudiante de NYU ITP que está interesada en gráficos computacionales y espacios interactivos basados en tecnologías de sensores. \n\n Casey: Comencé a aprender p5.js en 2018 en mi primer semestre en ITP, aunque había estado incursionando en Processing desde 2012. Mi amigo Pedro me introdujo a Processing cuando estudiaba diseño gráfico, y me impresionó. La idea de crear mis propias herramientas para crear gráficos y arte interactivo despertó mi interés, pero una vez que lo intenté, me enganché. El primer proyecto que puedo recordar fue un ojo que te seguía por la pantalla, y se ponía triste cuando lo dejabas solo. \n\n Louise: Inicialmente aprendí p5.js para hacer que un sitio web que ya estaba creando para que fuera más divertido. Soy una programadora de C#, así que este fue un buen segway a JavaScript para mí.",
+                    "answer2":"Casey: Estuve posponiendo los sombreadores de aprendizaje durante mucho tiempo, y también tenía curiosidad por saber si podría usarlos en p5.js. Luego escuché acerca de una subvención para proyectos de código abierto, narración de historias y recursos de aprendizaje en ITP llamada [xStory](https://www.itpxstory.com/). Como no encontraba mucho en la documentación de p5.js + shader, decidí descubrir cómo se implementan en p5.js y crear un recurso para que otros aprendan. Cuando le conté a Louise sobre el proyecto, ella estaba inmediatamente entusiasmada por aprender y enseñar sombreadores en p5.js. Ella ha sido excelente al asegurarse de que el proyecto sea un recurso de aprendizaje y no solo una colección de ejemplos.",
+                    "answer3":"Casey: ¿Shiffman cuenta como una función? También me encanta tener la capacidad de compartir mis programas en la web para que las personas no tengan que instalar un software especial o venir a Nueva York para ver mi trabajo. \n\n Louise: Mi función favorita es [push()](https://p5js.org/reference/#/p5/push) y [pop()](https://p5js.org/reference/#/p5/pop) para la transformación del sistema de coordenadas para hacer imágenes generativas.",
+                    "answer4":"Casey: El comienzo del proyecto (descubrir cómo funcionan las cosas) fue que contactamos a personas increíbles, les hicimos preguntas y les pedimos permiso para usar sus ejemplos en nuestro proyecto. [GitHub repo de Adam Ferriss](https://github.com/aferriss/p5jsShaderExamples) realmente nos dio las bases para comprender cómo funcionan los shaders en p5.js y proporcionó un marco de ejemplos accesibles para que podamos crear proyectos. Para algunos problemas específicos relacionados con p5.js que teníamos, nos comunicamos con [Kate Hollenbach](http://www.katehollenbach.com/) y [Stalgia Grigg](https://stalgiagrigg.name/) (quienes trabajaron en la [implementación de WebGL en p5.js](https://github.com/processing/p5.js/issues?q=is%3Aissue+is%3Aopen+webgl+label%3Aarea%3Awebgl)), y fueron muy útiles. \n\n Louise: La curva de aprendizaje fue bastante empinada para implementar shaders en p5. Afortunadamente, hubo algunos ejemplos muy bien documentados en GitHub por Adam Ferriss. Nuestro objetivo era hacerlo de manera que un principiante pueda entender cómo implementarlo, por lo que fue tanto un desafío técnico como un desafío en la enseñanza del código a extraños y principiantes. Aquí nos inspiramos en la forma en que está escrito el [libro de openFrameworks](https://openframeworks.cc/ofBook/chapters/foreword.html). Creemos en un enfoque divertido de \"oye, no es difícil y tú también puedes hacerlo\".",
+                    "answer5":"¡Visiten [xStory GitHub](https://github.com/ITP-xStory) para explorar los increíbles proyectos de subvenciones de nuestros compañeros!"
+                }
             }
-    
+            
 ]
 }

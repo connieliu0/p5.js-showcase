@@ -6,6 +6,7 @@
  "Question3":"What's your favorite p5.js feature?",
  "Question4":"Did you face any challenges working on this project? If so, how did you overcome them?",
  "Question5":"What's a cool thing we should check out?",
+ "2019about": "Curated by [Ashley Kang](https://ashleykang.dev/) in the summer of 2019, below is the first ever curated collection of the p5.js showcase! We compiled different ways to use p5.js and learn more about each one by clicking on it.",
  "About":"What is p5.js showcase?",
  "AboutIntro":"Introducing Showcase, created by [Ashley Kang](https://ashleykang.dev) in 2019 and currently curated by [Connie Liu](https://connieliu0.github.io). We're celebrating how people are using p5.js to make creative work, learning, and open source more interesting and inclusive. Together, we make community. During Summer 2019, we asked a few creators to share more about how they've used p5.js through different projects and pieces.",
  "Welcome":"Welcome to the p5.js 2020 showcase!",
@@ -132,7 +133,7 @@
                 "title": "Qtv",
                 "author": "Qianqian Ye",
                 "image": "qtv.png",
-                "description": "A video channel with 1-minute videos in Mandarin about creative coding, art, and technology, including p5.js tutorials for beginners.",
+                "description": "A channel with 1-min videos in Mandarin about creative coding, art, and technology, including p5.js tutorials for beginners.",
                 "location":"Los Angeles, California",
                 "pronouns": "she/her",
                 "resources":
@@ -173,7 +174,7 @@
                     "answer2":"This project started with an idea of teaching my mom, who lives in China and doesn’t speak English, to code with p5.js. This project was difficult on multiple levels, and I wanted to start by identifying the main reasons why it’s more challenging for someone like my mother to learn to code—primarily due to the lack of free creative coding education resources. Most of the free resources to learn creative coding are unavailable in China. The p5.js tutorials on YouTube as well as the p5.js Twitter and Instagram accounts are inaccessible in China because of internet censorship. \n\n I learned a lot from YouTube videos such as the [Coding Train](https://thecodingtrain.com/), but the more I watched coding tutorials online, the more I realized how difficult it is to find other womxn and people of color teaching coding, especially in Mandarin. I wanted to help other Chinese womxn relate to creative coding. \n\n I am working on opening up the video channels to other Chinese creatives who want to contribute to the educational resource together, like interviews and guest tutorials. If you are interested in teaching/talking about creative coding in Mandarin, HMU!",
                     "answer3":"The [p5.js Web Editor](https://editor.p5js.org/) is my favorite feature. It makes web-based creative coding seamless.",
                     "answer4":"Learning to code in a second language was difficult and the lack of community made this process even harder. I hope to speak from my experience as a beginner and someone who once felt like an outsider to the creative coding and video tutorial world. \n\nI spend a lot of time researching the latest technology for my videos. In the end, I decided on using my phone to record and iMovie to edit. I hope to encourage others that it doesn’t take a lot of expensive gears to get started making instructional videos. \n\n Another issue I came across was my own fear of putting myself online. I first had to get over my anxiety of making mistakes in the videos or receiving negative comments online. Often womxn and people of color are targets for online harassment. I’m hoping to help set an example for other womxn and people of color that it’s ok to put yourselves online and strengthen your communities by sharing your knowledge. Eventually, we will be able to stop online harassment by creating strong diverse communities.",
-                    "answer5":"I am very excited about [Tiny Tech Zines](http://tinytechzines.org/) in LA.."
+                    "answer5":"I am very excited about [Tiny Tech Zines](http://tinytechzines.org/) in LA."
                 }
             },
             {
@@ -181,7 +182,7 @@
                 "title": "Moving Responsive Posters",
                 "author": "Moon Jang, Xin Xin, and students",
                 "image": "moving-responsive-posters.png",
-                "description": "Browser-based moving posters that use p5.js to address the connotations of a word less than 8 letters and designed for a course at University of Georgia.",
+                "description": "Browser-based moving posters that use p5.js to address the connotations of a word.",
                 "location":"Athens, Georgia",
                 "pronouns": "she/her, they/them",
                 "resources":
