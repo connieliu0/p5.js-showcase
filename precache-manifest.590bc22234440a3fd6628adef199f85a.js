@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f10af7a221e1c4abca157768ba1ef00e",
+    "revision": "a8d5109898bf5e64254eedbdf2b8e0c7",
     "url": "/p5.js-showcase/index.html"
   },
   {
-    "revision": "7a112334b7aa0a73e7cb",
+    "revision": "625121a87493f74cbd49",
     "url": "/p5.js-showcase/static/css/2.c27a359e.chunk.css"
   },
   {
-    "revision": "ae969134055856c16d40",
-    "url": "/p5.js-showcase/static/css/main.b98477ba.chunk.css"
+    "revision": "de4ed7ca3215d52d8b0c",
+    "url": "/p5.js-showcase/static/css/main.858d4cfe.chunk.css"
   },
   {
-    "revision": "7a112334b7aa0a73e7cb",
-    "url": "/p5.js-showcase/static/js/2.9999c728.chunk.js"
+    "revision": "625121a87493f74cbd49",
+    "url": "/p5.js-showcase/static/js/2.8b58a596.chunk.js"
   },
   {
     "revision": "40628536bb3bbfc84583eb9c2129a6e4",
-    "url": "/p5.js-showcase/static/js/2.9999c728.chunk.js.LICENSE.txt"
+    "url": "/p5.js-showcase/static/js/2.8b58a596.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ae969134055856c16d40",
-    "url": "/p5.js-showcase/static/js/main.389349cb.chunk.js"
+    "revision": "de4ed7ca3215d52d8b0c",
+    "url": "/p5.js-showcase/static/js/main.5dc4487d.chunk.js"
   },
   {
     "revision": "a9b65fb79d54eb48e6f1",
@@ -48,7 +48,23 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/p5.js-showcase/static/media/asterisk-01-01.b5445064.png"
   },
   {
+    "revision": "b22f96356782d78922ce26dd135a18d0",
+    "url": "/p5.js-showcase/static/media/chillin.b22f9635.png"
+  },
+  {
+    "revision": "f03fedef490e73982772e1948b103437",
+    "url": "/p5.js-showcase/static/media/moving-responsive-posters.f03fedef.png"
+  },
+  {
+    "revision": "c59c4ee955c993b00b8f64e26c9a44b0",
+    "url": "/p5.js-showcase/static/media/p5-shaders.c59c4ee9.png"
+  },
+  {
     "revision": "ecb2d9b8f13b107da124a956018025fd",
     "url": "/p5.js-showcase/static/media/programmed-plotter.ecb2d9b8.png"
+  },
+  {
+    "revision": "12ca14aa44c490342eee7899c169b891",
+    "url": "/p5.js-showcase/static/media/qtv.12ca14aa.png"
   }
 ]);
