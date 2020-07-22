@@ -1,3 +1,5 @@
+View it live here: https://connieliu0.github.io/p5.js-showcase/#/
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
