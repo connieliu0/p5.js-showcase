@@ -1,12 +1,15 @@
 import "./styles/App.css";
-import { Layout, Row } from "antd";
 import React, { Component }from "react";
-import { openLink } from "./util";
 import Details from "./Details.js"
 //import DisplayGallery from "./DisplayGallery.js"
 import {useTranslation, Trans } from "react-i18next";
 import i18next from 'i18next';
 import TestCard from "./TestCard.js";
+import {Bar} from 'react-chartjs-2';
+import P5Wrapper from 'react-p5-wrapper';
+import sketch from './sketch';
+import Simple from './simple';
+
 
 import {
   Switch,
@@ -95,6 +98,8 @@ return(
   <div className="body">
     <h1>{t('Welcome')}</h1>
     <h2>Full version is coming out at the end of August!</h2>
+    <Simple />
+    <P5Wrapper sketch={sketch} rotation="150"/> 
     </div>
   );
 }

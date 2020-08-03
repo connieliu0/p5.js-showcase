@@ -19,7 +19,10 @@ body{
     font-family: "Montserrat";
     margin-bottom: 40px;
   }
-
+  .leaflet-container {
+    height: 400px;
+    width: 100%;
+}
 .App-header {
   background-color: white;
   display: flex;
@@ -132,11 +135,11 @@ h1{
   background:#DB3B60;
   border-radius: 25px;
   height: 250px;
-  width: 24.4vw;
+  width: 350px;
   overflow: hidden;
 }
 .bigcard {
-  width: 25vw;
+  width: 360px;
   margin-bottom: 25px;
   margin-right: 5px;
   margin-left: 5px;
@@ -146,9 +149,11 @@ h1{
   display: flex;
   flex-direction: row;
 }
+
 .gallery .row{
   flex-wrap: wrap;
-
+  justify-content: center;
+  align-items:center;
 }
 .body.row{
   flex-wrap: wrap;
@@ -207,4 +212,38 @@ h1{
 .small{
   font-size: 16px;
   font-style: italic;
+}
+@media (max-width: 900px) {
+  .body{
+    margin-left: 20px;
+    margin-right: 20px;  }
+  .detailsbody{
+    margin-left: 20px;
+  margin-right: 20px;
+  }
+  .details-image img{
+    margin-right: 0px;
+    margin-left: 0px;
+    max-width: 100%;
+  }
+  .detailsbody .row{
+    flex-wrap: wrap;
+  }
+  .detailsbody h1{
+    margin-top: 20px;
+  }
+  .home1{
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .gallery h1{
+    width: 100%;
+  }
+  .home p{
+    width: 100%;
+  }
+  .home1{
+    flex-direction: column;
+  }
+
 }

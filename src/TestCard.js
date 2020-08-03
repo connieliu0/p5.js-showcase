@@ -1,9 +1,6 @@
 import { Card, Col, Row, Tag } from "antd";
 import React from "react";
-import Popup from "reactjs-popup";
 import Details from "./Details.js";
-import { openLink } from "./util";
-import Title from "antd/lib/skeleton/Title";
 
 function TestCard (props){
   return (

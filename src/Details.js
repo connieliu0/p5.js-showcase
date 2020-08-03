@@ -35,7 +35,7 @@ return (
                 ))}
                 </div>
                 <div className="col">
-                  <div>{(tools.length!=0)&&<h2>{t('Tools')}</h2>}</div>
+                  <div>{(tools.length!==0)&&<h2>{t('Tools')}</h2>}</div>
                 {toolslinks.map((tool, index) => {
                       const toolsinfo = {
                         link: toolslinks[tool] ? toolslinks[tool]: "https://p5js.org/"
