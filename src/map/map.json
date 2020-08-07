@@ -1,0 +1,1025 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "author": "Vince Nguyen",
+          "location": "Abu Dhabi, UAE",
+          "title": "Love Maze",
+          "project_link": "https://nguyenvince.github.io/work/love-maze/",
+          "occupation": "student"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            54.3548583984375,
+            24.50714328310284
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "author": "Aisha Jandosova, Kuat Abeshev, Jeffrey Yoo Warren",
+          "location": "Almaty, Kazakhstan; Munich, Germany; Providence, Rhode Island",
+          "title": "ProtestKor.pe",
+          "project_link": "https://protestkor.pe",
+          "occupation": "Student, student, artist"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            76.93588256835938,
+            43.23769967935207
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "author": "Ecem",
+          "location": "Amsterdam",
+          "title": "Animator",
+          "project_link": "animator.qaotech.com",
+          "occupation": ""
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.895782470703125,
+            52.37434160350472
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "author": "Ozgur Cinar - Ecem Karaca",
+          "location": "Amsterdam, Netherlands",
+          "title": "Composer",
+          "project_link": "https://composer.qaotech.com",
+          "occupation": "creative-technologist"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.8676300048828125,
+            52.3755991766591
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "author": "Aditya De",
+          "location": "Bangalore, India",
+          "title": "Plastic Sweeper",
+          "project_link": "https://kind-lovelace-0bae83.netlify.app/",
+          "occupation": "Student"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.60055541992186,
+            12.973780249064331
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "author": "Sanjana Padmanabhan",
+          "location": "Bangalore, India",
+          "title": "Album Motion Art ",
+          "project_link": "https://sanjana1599.github.io/Album-Motion-Art/",
+          "occupation": "student"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            77.64999389648438,
+            12.980471333463804
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "author": "Christina Dacanay",
+          "location": "Brooklyn, USA",
+          "title": "Fireflies",
+          "project_link": "https://editor.p5js.org/cdacanay/present/rrRFuvb2",
+          "occupation": "student"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -73.96064758300781,
+            40.65199222800328
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "author": "Stephanie Chen, Alex Krantz, Sashrika Pandey",
+          "location": "California, United States.",
+          "title": "Memori",
+          "project_link": "https://memori-3b9ff.web.app/",
+          "occupation": "student"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -119.99267578124999,
+            37.081475648860525
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "author": "Ryan Joseph",
+          "location": "California, USA",
+          "title": "Fauna",
+          "project_link": "https://fauna.rpjios.com",
+          "occupation": "software engineer"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -119.58618164062499,
+            37.142803443716836
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "author": "Gary-Martin",
+          "location": "Cardiff, South Wales",
+          "title": "reptilian parametric: snake music",
+          "project_link": "https://jackofthesuburbs.github.io/sketches/snakemusic/",
+          "occupation": "student/teacher"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            151.65647506713867,
+            -32.94342859314644
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "author": "Hannah",
+          "location": "Carrabassett Valley, Maine",
+          "title": "mouseText",
+          "project_link": "https://editor.p5js.org/hannahtardie/full/jLRmt2khh",
+          "occupation": "artist"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -70.21156311035156,
+            45.079339209738094
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "author": "Cynthia Cheng",
+          "location": "China",
+          "title": "Farm Beats",
+          "project_link": "https://editor.p5js.org/CynthiaDesign/present/wD2oY6iNg",
+          "occupation": "designer"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            100.72265625,
+            36.31512514748051
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "author": "Casey Labrack",
+          "location": "College Park, Maryland",
+          "title": "lissajous-animated",
+          "project_link": "https://caseylabrack.com/sketches/lissajous-animated/",
+          "occupation": "Graphics Editor"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.93880081176758,
+            38.98022899416542
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "author": "Chris Orban (@STEMcoding)",
+          "location": "Columbus, Ohio",
+          "title": "Black hole merger with gravity waves",
+          "project_link": "https://editor.p5js.org/ChrisOrban/sketches/68kQh_q2",
+          "occupation": "university faculty member"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -83.00994873046875,
+            39.961332959837826
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "author": "Miss Identify",
+          "location": "Eugene, Oregon, United States of America",
+          "title": "Gaming Therapy Pt. 6",
+          "project_link": "https://editor.p5js.org/Social.Sin/present/2GVFlEwP",
+          "occupation": "artist"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -123.10729980468749,
+            44.05403780323783
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "author": "Shirling, Sriya, & Syalomee",
+          "location": "Georgia, USA",
+          "title": "COVID-19 Sim",
+          "project_link": "https://covid-19-simulator.glitch.me/",
+          "occupation": "student"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -83.232421875,
+            32.37996146435729
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "author": "Maxime Dherbécourt (as MecanicaScience)",
+          "location": "Grand-Est, France",
+          "title": "Electrostatic Field",
+          "project_link": "https://simulations.mecanicascience.fr/2020/ElectrostaticField/",
+          "occupation": "student"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            6.1878,
+            48.6998
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "author": "Toust",
+          "location": "Guadalajara, Mexico",
+          "title": "Yes No bot",
+          "project_link": "http://latostadorano.com/yesNoBot.html",
+          "occupation": "Graphic designer"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -103.34564208984375,
+            20.679044609010408
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "author": "Kosuke Murakami",
+          "location": "Japan",
+          "title": "Justice in COVID-19",
+          "project_link": "https://editor.p5js.org/kyami/sketches/Y8x66NWMx",
+          "occupation": "student"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            138.4716796875,
+            36.70365959719456
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "author": "Malay Vasa",
+          "location": "Kolkata, India",
+          "title": "Generative Identity",
+          "project_link": "malayvasa.github.io/GenIden",
+          "occupation": "student"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            88.34552764892578,
+            22.568682879468113
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "author": "Jerson La Torre",
+          "location": "Lima, Perú",
+          "title": "2020 Game",
+          "project_link": "https://twentytwenty.surge.sh/",
+          "occupation": "creative-technologist"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -77.04711914062499,
+            -12.0473789469445
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "author": "Abe Clark",
+          "location": "London, UK",
+          "title": "simpson colouring book",
+          "project_link": "https://abe.snoot.club/hidden%20simpson/",
+          "occupation": "student"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -0.1023101806640625,
+            51.5185707907351
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "author": "Gian Italiano",
+          "location": "London, UK",
+          "title": "36 Days of Type x p5.js",
+          "project_link": "https://36xp5.site",
+          "occupation": ""
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -0.0720977783203125,
+            51.52156160130253
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "author": "Max",
+          "location": "London, United Kingdom.",
+          "title": "Common Denominator",
+          "project_link": "https://common-denominator.glitch.me/",
+          "occupation": "designer"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -0.0844573974609375,
+            51.50831509192025
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "author": "Siddhartha",
+          "location": "Lucknow,India",
+          "title": "Go Corona ",
+          "project_link": "https://sidd293.github.io/corona_go/",
+          "occupation": "student"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            80.93696594238281,
+            26.838776064165863
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "author": "Samyak Bambole",
+          "location": "Maharashjtra, India",
+          "title": "Blackboard",
+          "project_link": "https://samyakbambole.github.io/p5.js-Blackboard/public/index.html",
+          "occupation": "student"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            76.2451171875,
+            19.735683578629445
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "author": "Aniket Raj",
+          "location": "Maharashtra, India",
+          "title": "Code Red: Astro",
+          "project_link": "https://www.youtube.com/watch?v=b8Yy3o1iQQ0&t=10s",
+          "occupation": "student"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            76.61865234374999,
+            19.80805412808859
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "author": "Summer Rizzo",
+          "location": "New York City, United States",
+          "title": "The Fractal Zone",
+          "project_link": "https://thefractal.zone",
+          "occupation": "software engineer"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -73.9764404296875,
+            40.753499070431374
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "author": "Dan Ran",
+          "location": "New York City, USA",
+          "title": "Let the music play!",
+          "project_link": "https://shuvitran.github.io/LetTheMusicPlay/",
+          "occupation": "creative-technologist"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -73.97918701171875,
+            40.74101426921151
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "author": "Nick Grant, Monni Qian, Zachariah Kobrinsky, Name Jattuporn, Sid Chou",
+          "location": "New York",
+          "title": "Swirling Fluid",
+          "project_link": "https://fluidy.wixsite.com/swirling-fluid",
+          "occupation": "student"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -75.443115234375,
+            42.76314586689492
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "author": "Lisha P. , Prince S.A.",
+          "location": "New York, New York",
+          "title": "Singing Buddy",
+          "project_link": "https://editor.p5js.org/lishap/present/JebXEXumC",
+          "occupation": "student"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -74.00390625,
+            40.733730386116875
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "author": "Grace P.",
+          "location": "New York, New York",
+          "title": "2020 Vibes Stickers",
+          "project_link": "https://gracep-2020vibes-lab1-3.glitch.me/",
+          "occupation": "student"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -73.98605346679688,
+            40.73164913017892
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "author": "Yiting Liu",
+          "location": "New York, NY",
+          "title": "Music Within",
+          "project_link": "https://www.openprocessing.org/sketch/922482",
+          "occupation": "creative-technologist"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -73.99566650390625,
+            40.73555143165809
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "author": "Caroline",
+          "location": "New York, United States",
+          "title": "Virus Simulator",
+          "project_link": "https://virus-simulation.glitch.me",
+          "occupation": "student"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -75.245361328125,
+            42.78733853171998
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "author": "Ariana ",
+          "location": "New York, United States",
+          "title": "Covid 19 The Game",
+          "project_link": "https://glitch.com/edit/#!/nothing-covid19?path=sketch.js%3A70%3A0",
+          "occupation": "student"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -75.673828125,
+            42.80346172417078
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "author": "JPL",
+          "location": "New York, US",
+          "title": "Cyberflowers",
+          "project_link": "https://blog.jpl.design/posts/pixel-by-pixel/cyberflowers/",
+          "occupation": "Student"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -75.882568359375,
+            42.755079545072135
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "author": "Joe McKay",
+          "location": "New York, USA",
+          "title": "Soundspin",
+          "project_link": "https://www.joemckaystudio.com/soundspin.php",
+          "occupation": "teacher creative-technologist"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.124267578125,
+            42.76314586689492
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "author": "Kat Zhang",
+          "location": "New York, USA",
+          "title": "Room/Me",
+          "project_link": "https://kikikikikat-room-me.glitch.me/",
+          "occupation": "software engineer"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -74.970703125,
+            42.83569550641452
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "author": "tabreturn",
+          "location": "New Zealand",
+          "title": "Digital Aquatics",
+          "project_link": "https://editor.p5js.org/tabreturn/sketches/ADMLg2Afv",
+          "occupation": "creative-technologist"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            172.2216796875,
+            -42.163403424224
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "author": "Jenny Kowalski",
+          "location": "Philadelphia, USA",
+          "title": "squiggle pattern generator",
+          "project_link": "https://editor.p5js.org/Jennybkowalski/present/pPoDYxefS",
+          "occupation": "teacher"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -75.16777038574219,
+            39.953964380766394
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "author": "Jenny Kowalski",
+          "location": "Philadelphia, USA",
+          "title": "UN____ A look at Spring 2020",
+          "project_link": "http://tylercreativecoding.com/",
+          "occupation": "teacher"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -75.18218994140625,
+            39.95554342883535
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "author": "Aren Davey",
+          "location": "Pittsburgh, USA",
+          "title": "Cozy Coding",
+          "project_link": "twitch.tv/cozycoding",
+          "occupation": "student"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -79.99763488769531,
+            40.44328916582583
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "author": "Neha Malepati",
+          "location": "Plainsboro, New Jersey",
+          "title": "The Seasons Change",
+          "project_link": "https://the-seasons-change.glitch.me/",
+          "occupation": "student"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -74.60180282592773,
+            40.334768352186266
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "author": "David Schnitman (@cyberia_2020)",
+          "location": "San Francisco, USA",
+          "title": "suburbia.life",
+          "project_link": "http://suburbia.life/",
+          "occupation": "designer"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -122.43644714355469,
+            37.78156937014928
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "author": "Baltazar Pérez",
+          "location": "Santiago, Chile",
+          "title": "ModalFlow",
+          "project_link": "http://modalflow.baltazarperez.com",
+          "occupation": "visualization researcher"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -70.6640625,
+            -33.43144133557529
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "author": "Baltazar Pérez",
+          "location": "Santiago, Chile",
+          "title": "The Goals of Paredes",
+          "project_link": "https://interactivo.latercera.com/esteban-paredes-goleador-historico/paredes-goleador-historico/",
+          "occupation": "Visualization researcher"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -70.59539794921875,
+            -33.42227225886602
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "author": "Baltazar Pérez",
+          "location": "Santiago, Chile",
+          "title": "Trees of Translation",
+          "project_link": "http://trees-of-translation.baltazarperez.com",
+          "occupation": "visualization researcher"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -70.72723388671875,
+            -33.42456461884057
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "author": "Olga Khvan, Rene Goldfarb-Ilyashov, Rachel DeNoble, Rui Song",
+          "location": "Seattle, WA, USA",
+          "title": "What's Up In The Gut?",
+          "project_link": "https://s3.us-east-2.amazonaws.com/olgakhvan.art/cosess2.mp4",
+          "occupation": "student"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -122.33551025390625,
+            47.60616304386874
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "author": "Jungsue Park",
+          "location": "Seoul, Korea",
+          "title": "youtube.nextnextnext.video",
+          "project_link": "youTube.nextnextnext.video",
+          "occupation": "designer"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            126.978,
+            37.5665
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "author": "sosunny",
+          "location": "Seoul, Korea",
+          "title": "Bezier Lion Mask",
+          "project_link": "https://editor.p5js.org/sosunnyproject/present/LIOvMfYco",
+          "occupation": "software engineer"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            126.9916534423828,
+            37.568528265476075
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "author": "turtlefingers",
+          "location": "Seoul, Korea.",
+          "title": "Ghosts on the Flow Field",
+          "project_link": "https://editor.p5js.org/turtlefingers00@gmail.com/present/TnvQ4TJ-r",
+          "occupation": "creative-technologist"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            126.96762084960938,
+            37.57070524233116
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "author": "Hanif",
+          "location": "Shiraz, Iran",
+          "title": "var DigitalMirror",
+          "project_link": "https://www.openprocessing.org/user/108498#sketches",
+          "occupation": "designer"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            52.5201416015625,
+            29.614057949691468
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "author": "Adrian",
+          "location": "South Florida, USA",
+          "title": "codeguppy.com",
+          "project_link": "https://codeguppy.com",
+          "occupation": "Software engineer"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -81.474609375,
+            26.588527147308614
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "author": "Kira, Anna, and Victoria",
+          "location": "Based around the United States",
+          "title": "Music Vizualizer",
+          "project_link": "https://cssi-music-visual.glitch.me",
+          "occupation": "Student"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -98.7890625,
+            39.70718665682654
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "author": "Naoki Kanazawa",
+          "location": "Tokyo, Japan",
+          "title": "Graphic Beats",
+          "project_link": "https://graphicbeats.net/",
+          "occupation": "Learning Experience Designer"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            139.769,
+            35.6804
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "author": "nasana",
+          "location": "Tokyo, Japan",
+          "title": "En to Oto.",
+          "project_link": "https://en2oto.netlify.com/",
+          "occupation": "Curriculum Planner"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            139.6973419189453,
+            35.680167363485566
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "author": "Nick Fox-Gieg",
+          "location": "Toronto, Canada",
+          "title": "TelidonP5 Project",
+          "project_link": "https://n1ckfg.github.io/Telidon/",
+          "occupation": "animator"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -79.38995361328125,
+            43.65495633091365
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "author": "Oran Collins (wisehackermonkey)",
+          "location": "USA",
+          "title": "Magic Eye Sketch Render",
+          "project_link": "https://p5-tetris-game-magic-eye.surge.sh/",
+          "occupation": "software engineer"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -101.42578124999999,
+            39.639537564366684
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "author": "Emily Cerequas",
+          "location": "Philadelphia, PA",
+          "title": "Chicken Alfredo Recipe",
+          "project_link": "https://editor.p5js.org/cereqej/present/ueUE2Couq",
+          "occupation": "student"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -75.19729614257812,
+            39.95817509460007
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties":  {
+          "author": "Samantha Ruiz",
+          "location": "New Jersey, USA",
+          "title": "Audio Visualizers",
+          "project_link": "https://samantharuizdesign.com/audio-visualizer/",
+          "occupation": "designer"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -74.3719482421875,
+            40.153686857794035
+          ]
+        }
+    }
+    ]
+  }

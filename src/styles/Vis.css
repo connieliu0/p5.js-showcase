@@ -1,0 +1,36 @@
+
+@font-face{
+    font-family: "Montserrat Bold";
+    src: url("fonts/Montserrat-Bold.ttf");
+  }
+@font-face{
+    font-family: "Montserrat";
+    src: url("fonts/Montserrat-Regular.ttf");
+  }
+  @font-face{
+    font-family: "Montserrat Medium";
+    src: url("fonts/Montserrat-Medium.ttf");
+  }
+.map h1{
+    font-size: 1em;
+  font-family: "Montserrat Bold";
+  color: #DB3B60;
+}
+.map h2{
+  font-family: "Montserrat Bold";
+  color: #DB3B60;
+}
+.map p{
+    font-size: 1em;
+    line-height: 5px;
+}
+.marker-cluster-custom {
+  background: #d76378;
+  border: 3px solid #ededed;
+  border-radius: 50%;
+  color: #ededed;
+  height: 20px;
+  line-height: 37px;
+  text-align: center;
+  width: 20px;
+}

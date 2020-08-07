@@ -8,7 +8,7 @@ import TestCard from "./TestCard.js";
 import {Bar} from 'react-chartjs-2';
 import P5Wrapper from 'react-p5-wrapper';
 import sketch from './sketch';
-import Simple from './simple';
+import Simple from './map/simple';
 
 
 import {
@@ -99,7 +99,7 @@ return(
     <h1>{t('Welcome')}</h1>
     <h2>Full version is coming out at the end of August!</h2>
     <Simple />
-    <P5Wrapper sketch={sketch} rotation="150"/> 
+    {/* <P5Wrapper sketch={sketch} rotation="150"/>  */}
     </div>
   );
 }
