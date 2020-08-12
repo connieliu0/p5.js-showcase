@@ -1020,6 +1020,23 @@
             40.153686857794035
           ]
         }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "author": "Deborah Sim",
+        "location": "Philadelphia, Pennsylvania",
+        "title": "HI!",
+        "project_link": "https://deborahsim.com/?project=creative-codes",
+        "occupation": "designer"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.15609741210938,
+          39.95554342883535
+        ]
+      }
     }
     ]
   }

@@ -10,7 +10,7 @@
  "About":"What is p5.js showcase?",
  "AboutIntro":"Introducing Showcase, created by [Ashley Kang](https://ashleykang.dev) in 2019 and currently curated by [Connie Liu](https://connieliu0.github.io). We're celebrating how people are using p5.js to make creative work, learning, and open source more interesting and inclusive. Together, we make community. During Summer 2019, we asked a few creators to share more about how they've used p5.js through different projects and pieces.",
  "Welcome":"Welcome to the p5.js 2020 showcase!",
- "showcase":[
+ "showcase2019":[
     {
     "id": "airi-flies",
     "title": "Airi Flies",
@@ -276,5 +276,43 @@
                 }
             }
             
+],
+"showcase2020":[
+    {
+        "author": "Vince Nguyen",
+        "pronouns": "he/him",
+        "title": "Love Maze",
+        "description": "Two people, a computer, a maze that requires teamwork to solve, a couple of questions that challenge mutual honesty and mutual understanding, Love Maze is a fun and engaging game for any couple that wants to take their relationship to the next level.",
+        "live": "https://nguyenvince.github.io/work/love-maze/",
+        "code": "https://github.com/nguyenvince/nguyenvince.github.io/tree/master/work/love-maze",
+        "type": "Game",
+        "tools": "map(),dist(),floor(),bezierVertex()",
+        "social": "https://nguyenvince.github.io/",
+        "id": "1"
+      },
+      {
+        "author": "Vince Nguyen",
+        "pronouns": "he/him",
+        "title": "Love Maze",
+        "description": "Two people, a computer, a maze that requires teamwork to solve, a couple of questions that challenge mutual honesty and mutual understanding, Love Maze is a fun and engaging game for any couple that wants to take their relationship to the next level.",
+        "live": "https://nguyenvince.github.io/work/love-maze/",
+        "code": "https://github.com/nguyenvince/nguyenvince.github.io/tree/master/work/love-maze",
+        "type": "Visual",
+        "tools": "map(),dist(),floor(),bezierVertex()",
+        "social": "https://nguyenvince.github.io/",
+        "id": "1"
+      },
+      {
+        "author": "Vince Nguyen",
+        "pronouns": "he/him",
+        "title": "Love Maze",
+        "description": "Two people, a computer, a maze that requires teamwork to solve, a couple of questions that challenge mutual honesty and mutual understanding, Love Maze is a fun and engaging game for any couple that wants to take their relationship to the next level.",
+        "live": "https://nguyenvince.github.io/work/love-maze/",
+        "code": "https://github.com/nguyenvince/nguyenvince.github.io/tree/master/work/love-maze",
+        "type": "Visual",
+        "tools": "map(),dist(),floor(),bezierVertex()",
+        "social": "https://nguyenvince.github.io/",
+        "id": "1"
+      }
 ]
 }
