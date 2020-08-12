@@ -1,4 +1,3 @@
-@import "~antd/dist/antd.css";
 
 @font-face{
     font-family: "Montserrat Bold";
@@ -12,14 +11,29 @@
     font-family: "Montserrat Medium";
     src: url("fonts/Montserrat-Medium.ttf");
   }
+  @font-face{
+    font-family: "Montserrat ExtraBold";
+    src: url("fonts/Montserrat-ExtraBold.ttf");
+  }
 .right{
-  text-align: right;
+  float: right;
 }
 body{
     font-family: "Montserrat";
     margin-bottom: 40px;
   }
+.leaflet-container {
+    height: 400px;
+    width: 100%;
+}
+.column h2, h3{
+  font-family: "Montserrat";
+  font-weight: normal;
+}
 
+.column h1{
+  margin-bottom:0px;
+}
 .App-header {
   background-color: white;
   display: flex;
@@ -44,6 +58,7 @@ body{
   font-family: "Montserrat Bold";
   color: white;
   text-shadow: 2px 2px 4px #AD1349;
+  margin-top: 10px;
 }
 .Name h2 em{
   font-size: .8em;
@@ -55,6 +70,7 @@ p {
 .navigation .item{
   margin-right: 20px;
   color: #DB3B60;
+  text-decoration: none;
 }
 .navigation .item:hover{
   color: lightskyblue;
@@ -71,7 +87,34 @@ h1{
   font-family: "Montserrat Bold";
   color: #DB3B60;
   line-height:1em;
-  width: 70%;
+  width: 90%;
+}
+
+a{
+  text-decoration: none;
+  color: #DB3B60;
+}
+.home a:hover{
+  background-image: -webkit-linear-gradient(left, white 50%, #FFB6C1 50%);
+  background-image: linear-gradient(to right,white 50%, #FFB6C1 50%);
+  background-position: -100%;
+  background-size: 200%;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+button{
+   margin-left: 10px;
+    background-color: #FFB6C1; /* Green */
+    border: none;
+    color: white;
+    padding: 8px 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+button:hover{
+  color: #DB3B60;
 }
 .home p{
   font-size: 1.5em;
@@ -124,19 +167,19 @@ h1{
   color: darkred;
 }
 .cardimage img{
-  border-radius: 25px;
+  border-radius: 25px 25px 0px 0px;
   opacity: .7;
-  width: 420px;
+  width: 500px;
 }
 .cardimage{
   background:#DB3B60;
-  border-radius: 25px;
+  border-radius: 25px 25px 0px 0px;
   height: 250px;
-  width: 24.4vw;
+  margin-bottom: 5px;
   overflow: hidden;
 }
 .bigcard {
-  width: 25vw;
+  width: 360px;
   margin-bottom: 25px;
   margin-right: 5px;
   margin-left: 5px;
@@ -146,9 +189,11 @@ h1{
   display: flex;
   flex-direction: row;
 }
+
 .gallery .row{
   flex-wrap: wrap;
-
+  justify-content: center;
+  align-items:center;
 }
 .body.row{
   flex-wrap: wrap;
@@ -156,10 +201,100 @@ h1{
 .row a{
   margin-right: 15px;
 }
+/* 2020 Page */
+h1.special{
+  font-family: "Montserrat ExtraBold";
+  font-weight: bolder;
+  font-size:72px;
+	letter-spacing:0.1em;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 4px;
+  -webkit-text-stroke-color: pink;
+  color: white;
+  text-shadow: 
+						6px 6px #ff1f8f;
+}
+.column{
+  flex: 50%;
+}
+.flex{
+  display: flex;
+}
+.twentyviz h1{
+  font-family: "Montserrat";
+  font-size: 54px;
+}
+.links{
+  border: darkred;
+  text-align: center;
+}
+.links a{
+  border:#FFB6C1;
+  border-bottom-style: solid;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 70px;
+  padding-right: 70px;
+  margin:0px;
+  margin-top: 0px;
+}
+.links a:first-child{
+  border-right-style: solid;
+}
+.links a:hover{
+  background-color: #FFB6C1;
+}
+.tags {
+  margin: 0px;
+  margin-top: 10px;
+  display:inline-block;
+  padding: 0px;
+  overflow: auto;
+  white-space: nowrap;
+  width: 350px;
+}
+.tags ul{
+  list-style:none;
+  display: inline-block;
+  margin:0px;
+  padding:0px;
+}
+.tags li{
+  padding: 0px;
+  margin-top: 20px;
+  margin-left: 10px;
+  max-height: 50px;
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.tags a:hover{
+  background-color:#FFB6C1;
+}
+.tags a{
+  padding: 6px 14px;
+  overflow: wrap;
+  background-color: #ffe8e8;
+  border-radius: 26px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.scrolls{
+  overflow-x: scroll;
+  overflow-y: hidden;
+  height: 80px;
+white-space:nowrap
+}
 /* Details Page */
 .detailsbody p{
   font-size: 16px;
   white-space: pre-line;
+  line-height: 1.6;
+
 }
 .detailsbody{
   margin-top: 40px;
@@ -170,9 +305,6 @@ h1{
 .detailsbody h3{
   margin-top: 0px;
   margin-bottom: 0px;
-}
-.detailsbody h2{
-  margin-top: 20px;
 }
 .col{
   width: 100%;
@@ -196,10 +328,15 @@ h1{
 .detailsbody h1{
   font-size: 48px;
   font-family: "Montserrat Medium";
+  margin-bottom: 10px;
 }
 .detailsbody h2{
+  margin-top: 10px;
   font-size: 24px;
-  font-family: "Montserrat Medium";
+  font-family: "Montserrat";
+}
+.QnA h2{
+  margin-top: 40px;
 }
 .detailsbody{
   font-size: 18px;
@@ -207,4 +344,38 @@ h1{
 .small{
   font-size: 16px;
   font-style: italic;
+}
+@media (max-width: 900px) {
+  .body{
+    margin-left: 20px;
+    margin-right: 20px;  }
+  .detailsbody{
+    margin-left: 20px;
+  margin-right: 20px;
+  }
+  .details-image img{
+    margin-right: 0px;
+    margin-left: 0px;
+    max-width: 100%;
+  }
+  .detailsbody .row{
+    flex-wrap: wrap;
+  }
+  .detailsbody h1{
+    margin-top: 20px;
+  }
+  .home1{
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .gallery h1{
+    width: 100%;
+  }
+  .home p{
+    width: 100%;
+  }
+  .home1{
+    flex-direction: column;
+  }
+
 }

@@ -1,13 +1,15 @@
 import "./styles/App.css";
-import { Layout, Row } from "antd";
 import React, { Component }from "react";
-import { openLink } from "./util";
 import Details from "./Details.js"
-//import DisplayGallery from "./DisplayGallery.js"
 import {useTranslation, Trans } from "react-i18next";
 import i18next from 'i18next';
 import TestCard from "./TestCard.js";
-
+import {Bar} from 'react-chartjs-2';
+import P5Wrapper from 'react-p5-wrapper';
+import Simple from './map/simple';
+import TestCard2020 from './TestCard2020.js';
+import GalleryTwenty from './GalleryTwenty.js';
+import { HashLink } from 'react-router-hash-link';
 import {
   Switch,
   Route,
@@ -27,7 +29,8 @@ export default function App() {
       <Link to="/" className="item">2020</Link>
        <Link to="/gallery2019" className="item">2019</Link>
        <Link to="/about" className="item">about</Link>
-       <a href="https://p5js.org">p5.js</a>            <div className="right">
+       <a href="https://p5js.org">p5.js</a>           
+        <div className="right">
             <button onClick={() => changeLanguage('es')}>es</button>
             <button onClick={() => changeLanguage('en')}>en</button>
             </div>
@@ -36,6 +39,7 @@ export default function App() {
     <Route exact path="/" children={<Gallerytwenty />}/>
     <Route exact path="/gallery2019" children={<Gallerynineteen/>} />
      <Route path="/2019/:id" children={<DetailedPage />}/>
+     <Route exact path="/gallery2020" children = {<GalleryTwenty />}/>
     <Route exact path="/about" children = {<About />}/>
     </Switch>{" "}
     </HashRouter>
@@ -69,7 +73,7 @@ return(
          </p>
          </Trans>
          <div class="row">
-      {t('showcase', {returnObjects: true}).map(({id, title, author, description, image})=>(
+      {t('showcase2019', {returnObjects: true}).map(({id, title, author, description, image})=>(
          <Link
          key={id}
          to={{
@@ -93,15 +97,54 @@ function Gallerytwenty() {
   const { t, i18n } = useTranslation();
 return(
   <div className="body">
-    <h1>{t('Welcome')}</h1>
-    <h2>Full version is coming out at the end of August!</h2>
+    <div className="flex">
+    <div className="column">
+      <h1>{t('Welcome')}</h1>
+      <p>Curated by Connie Liu</p>
+    </div>
+    <div className="column">
+      <h3>For Summer 2020 we asked the p5.js community around the world to submit their pieces for a new and expanded edition of the showcase. </h3>
+        <h2>Learn more about the p5.js community below!</h2>
+        <h2>Jump to:</h2>
+      <h2><HashLink to="#twentyviz">Foreword</HashLink> | <Link to="/gallery2020">Projects</Link></h2>
+    </div>
+    </div>
+    <div id="twentyviz"className="twentyviz">
+    <h1>this year we got submissions from...</h1>
+    <Simple />
+    <h1>Our submitters are...</h1>
+    <div class="row">
+      {t('showcase2020', {returnObjects: true}).map(({author, pronouns,title, description, live, code, type, tools, social, id})=>(
+         <Link
+         key={id}
+         to={{
+           pathname: `/2020/${id}/`,
+         }}
+       >
+        <TestCard2020 key={`card-${id}`} 
+        title={title} 
+        author={author} 
+        pronouns={pronouns}
+        description={description} 
+        live={live}
+        code={code}
+        type={type}
+        tools={tools}
+        social={social}
+        id={id}
+        />
+        </Link>
+      ))}
+      </div>
+    <h1>to them p5.js is...</h1>
+    </div>
     </div>
   );
 }
 
 function DetailedPage() {
   let { id } = useParams();
-  let entries= i18next.t('showcase', { returnObjects: true });
+  let entries= i18next.t('showcase2019', { returnObjects: true });
   let piece = entries.find(x=> x.id === id);
 
   if (!piece) return <div>Image not found</div>;
