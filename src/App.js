@@ -26,10 +26,10 @@ export default function App() {
   return (
   <HashRouter basename='/'>
           <div className="navigation">
-      <Link to="/" className="item">Visualizations</Link>
+      <Link to="/" className="item">Foreword</Link>
       <Link to="/gallery2020" className="item">Gallery</Link>
        <Link to="/gallery2019" className="item">2019</Link>
-       <Link to="/about" className="item">about</Link>
+       <Link to="/about" className="item">About</Link>
        <a href="https://p5js.org">p5.js</a>           
         <div className="right">
             <button onClick={() => changeLanguage('en')}>English</button>
@@ -55,12 +55,12 @@ function About(){
     <div className="home">
     <h1><img src={process.env.PUBLIC_URL +'/images/asterisk-01-01.png'} alt="p5.js asterisk"/>
     {t('About1')}</h1>
-    <p><Markdown source = {t('Answer1')}/></p>
+    <h3><Markdown source = {t('Answer1')}/></h3>
     <h1><img src={process.env.PUBLIC_URL +'/images/asterisk-01-01.png'} alt="p5.js asterisk"/>
     {t('About2')}</h1>
-    <p><Markdown source = {t('Answer2')}/></p>
+    <h3><Markdown source = {t('Answer2')}/></h3>
     <h1><img src={process.env.PUBLIC_URL +'/images/asterisk-01-01.png'} alt="p5.js asterisk"/>{t('About3')}</h1>
-    <p><Markdown source = {t('Answer3')}/></p>
+    <h3><Markdown source = {t('Answer3')}/></h3>
     </div>    
   );
 }
@@ -95,49 +95,28 @@ return(
 }
 
 function Gallerytwenty() {
+  var Markdown = require('react-markdown');
   const { t, i18n } = useTranslation();
 return(
   <div className="body">
     <div className="flex">
     <div className="column">
       <h1>{t('Welcome')}</h1>
-      <p>Curated by Connie Liu</p>
+      <p>{t('Created By')} Connie Liu</p>
+      <h2>{t('Jump to')}<HashLink to="#twentyviz"> {t('Visualizations')}</HashLink> | <Link to="/gallery2020">{t('Projects')}</Link></h2>
     </div>
     <div className="column">
-      <h3>For Summer 2020 we asked the p5.js community around the world to submit their pieces for a new and expanded edition of the showcase. </h3>
-        <h2>Learn more about the p5.js community below!</h2>
-        <h2>Jump to:</h2>
-      <h2><HashLink to="#twentyviz">Foreword</HashLink> | <Link to="/gallery2020">Projects</Link></h2>
-    </div>
+      <h3>{t('2020_intro1')}</h3>
+      <h3><Markdown source={t('2020_intro1.5')}/></h3>
+        <h2>{t('2020_intro2')}</h2>
+          </div>
     </div>
     <div id="twentyviz"className="twentyviz">
-    <h1>this year we got submissions from...</h1>
+    <h1>{t('Viz1')}</h1>
     <Simple />
-    <h1>Our submitters are...</h1>
-    <div class="row">
-      {t('showcase2020', {returnObjects: true}).map(({author, pronouns,title, description, live, code, type, tools, social, id})=>(
-         <Link
-         key={id}
-         to={{
-           pathname: `/2020/${id}/`,
-         }}
-       >
-        <TestCard2020 key={`card-${id}`} 
-        title={title} 
-        author={author} 
-        pronouns={pronouns}
-        description={description} 
-        live={live}
-        code={code}
-        type={type}
-        tools={tools}
-        social={social}
-        id={id}
-        />
-        </Link>
-      ))}
-      </div>
-    <h1>to them p5.js is...</h1>
+    <h1>{t('Viz2')}</h1>
+    <h1>{t('Viz3')}</h1>
+    <h1>{t('Viz4')}</h1>
     </div>
     </div>
   );

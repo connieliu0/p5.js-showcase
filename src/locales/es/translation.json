@@ -1,5 +1,7 @@
 {"Created By":"Creado Por",
  "Project Links":"Enlaces de proyectos",
+ "Visualizations":"Visualizations",
+ "Projects":"Projects",
  "Tools":"Útiles",
  "Live":"Live",
  "Code":"Coda",
@@ -15,6 +17,20 @@
  "About":"",
  "AboutIntro":"Presentamos Showcase, creada por [Ashley Kang](https://ashleykang.dev) en 2019 y actualmente curada por [Connie Liu](https://connieliu0.github.io). Estamos celebrando cómo las personas usan p5.js para hacer que trabajos creativos, el aprendizaje y fuente abierta sean más interesantes e inclusivos. Juntos, hacemos una comunidad. Durante el verano de 2020, le pedimos a creadores que compartieran cómo usan p5.js en variados proyectos y piezas. Durante el verano 2020, Showcase está abierto a postulaciones, ¡nomina el trabajo con p5.js de alguien o el tuyo para ser incluid aquí!",
  "Welcome":"¡Bienvenido a p5.js 2020 Showcase!",
+ "filters":[
+    {"name": "All"},
+    {"name": "Visual"},
+    {"name": "Data Visualization"},
+    {"name": "Game"},
+    {"name": "World"},
+    {"name": "Text"},
+    {"name": "Sound"},
+    {"name": "Educational"},
+    {"name": "Teaching"},
+    {"name": "Simulation"},
+    {"name": "Tool"},
+    {"name": "Camera"}
+ ],
  "showcase2019":[
     {
     "id": "airi-flies",

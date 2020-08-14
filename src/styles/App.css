@@ -64,9 +64,7 @@ body{
   font-size: .8em;
 }
 
-p {
-  font-size: 24px;
-}
+
 .navigation .item{
   margin-right: 20px;
   color: #DB3B60;
@@ -103,6 +101,7 @@ a{
   transition: all 0.4s;
 }
 button{
+  outline: none;
   border-radius: 25px;
    margin-left: 10px;
     background-color: #FFB6C1; /* Green */
