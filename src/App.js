@@ -26,13 +26,15 @@ export default function App() {
   return (
   <HashRouter basename='/'>
           <div className="navigation">
-      <Link to="/" className="item">2020</Link>
+      <Link to="/" className="item">Visualizations</Link>
+      <Link to="/gallery2020" className="item">Gallery</Link>
        <Link to="/gallery2019" className="item">2019</Link>
        <Link to="/about" className="item">about</Link>
        <a href="https://p5js.org">p5.js</a>           
         <div className="right">
-            <button onClick={() => changeLanguage('es')}>es</button>
-            <button onClick={() => changeLanguage('en')}>en</button>
+            <button onClick={() => changeLanguage('en')}>English</button>
+            <button onClick={() => changeLanguage('es')}>Español</button>
+            <button onClick={() => changeLanguage('zh')}>简体中文</button>
             </div>
           </div>
     <Switch>
@@ -50,13 +52,16 @@ function About(){
   var Markdown = require('react-markdown');
   const { t, i18n } = useTranslation();
   return(
-    <div className="home1">
-    <img src={process.env.PUBLIC_URL +'/images/asterisk-01.png'} alt="p5.js asterisk"/>
     <div className="home">
-    <h1>{t('About')}</h1>
-    <p><Markdown source = {t('AboutIntro')}/></p>
-    </div>
-    </div>
+    <h1><img src={process.env.PUBLIC_URL +'/images/asterisk-01-01.png'} alt="p5.js asterisk"/>
+    {t('About1')}</h1>
+    <p><Markdown source = {t('Answer1')}/></p>
+    <h1><img src={process.env.PUBLIC_URL +'/images/asterisk-01-01.png'} alt="p5.js asterisk"/>
+    {t('About2')}</h1>
+    <p><Markdown source = {t('Answer2')}/></p>
+    <h1><img src={process.env.PUBLIC_URL +'/images/asterisk-01-01.png'} alt="p5.js asterisk"/>{t('About3')}</h1>
+    <p><Markdown source = {t('Answer3')}/></p>
+    </div>    
   );
 }
 

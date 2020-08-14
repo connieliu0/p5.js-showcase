@@ -6,6 +6,8 @@ import { initReactI18next } from "react-i18next";
 // for passing in lng and translations on init
 import en from './locales/en/translation.json'
 import es from './locales/es/translation.json'
+import zh from './locales/zh/translation.json'
+
 i18n
   // load translation using http -> see /public/locales (i.e. https://github.com/i18next/react-i18next/tree/master/example/react/public/locales)
   // learn more: https://github.com/i18next/i18next-http-backend
@@ -18,7 +20,7 @@ i18n
   // for all options read: https://www.i18next.com/overview/configuration-options
 
   .init({
-    whitelist: ['es', 'en'],
+    whitelist: ['es', 'en', 'zh'],
     nonExplicitWhitelist: true,
     load: 'languageOnly',
     resources: {
@@ -27,6 +29,9 @@ i18n
         },
         es: {
           translations: es
+        },
+        zh: {
+          translations: zh
         }
       },
       ns: ["translations"],

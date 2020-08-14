@@ -1,14 +1,21 @@
 {"Created By":"Created By",
  "Project Links": "Project Links",
  "Tools":"Tools",
+ "Live":"Live",
+ "Code":"Code",
+ "About1":"What is the p5.js showcase?",
+ "About2":"How is it organized?",
+ "About3":"What else should I check out?",
+ "Answer1": "The p5.js showcase is an online gallery of work created with [p5.js](https://p5js.org/), an open source creative computing library. It was created by [Ashley Kang](https://ashleykang.dev) in 2019 ([view the 2019 showcase here](https://p5js.org/showcase/)) and currently curated by [Connie Liu](https://connieliu0.github.io). \n \n The purpose of the showcase is to celebrate how people are using and learning p5.js to make creative work with the aim of conveying our core values of inclusivity.",
+ "Answer2":"Usually the p5.js will open up a call for submissions via [Twitter](https://twitter.com/p5xjs) or [Instagram](https://www.instagram.com/p5xjs/)! For the last two years, the showcase has been run as a [GSoC project](https://summerofcode.withgoogle.com/).",
+ "Answer3":"Make some sketches of your own with the [p5.js editor](https://editor.p5js.org/), discover more with [OpenProcessing](https://www.openprocessing.org/), and learn more with the [Coding Train](https://www.youtube.com/user/shiffman) and [Cozy Coding](https://www.twitch.tv/cozycoding/)!",
  "Question1":"What are you up to? How did you get started with p5.js?",
  "Question2":"How did you use p5.js in this project?",
  "Question3":"What's your favorite p5.js feature?",
  "Question4":"Did you face any challenges working on this project? If so, how did you overcome them?",
  "Question5":"What's a cool thing we should check out?",
  "2019about": "Curated by [Ashley Kang](https://ashleykang.dev/) in the summer of 2019, below is the first ever curated collection of the p5.js showcase! We compiled different ways to use p5.js and learn more about each one by clicking on it.",
- "About":"What is p5.js showcase?",
- "AboutIntro":"Introducing Showcase, created by [Ashley Kang](https://ashleykang.dev) in 2019 and currently curated by [Connie Liu](https://connieliu0.github.io). We're celebrating how people are using p5.js to make creative work, learning, and open source more interesting and inclusive. Together, we make community. During Summer 2019, we asked a few creators to share more about how they've used p5.js through different projects and pieces.",
+ "About":"About the p5.js Showcase",
  "Welcome":"Welcome to the p5.js 2020 showcase!",
  "showcase2019":[
     {
@@ -72,7 +79,7 @@
     
         "type": "game",
         
-        "tools":"lerp()",
+        "tools":"lerp",
         "socials":[{
             "name":" ",
             "link":" "
@@ -113,7 +120,7 @@
             
             "type": "visual",
             
-            "tools":"matter.js,p5 WebGL,p5.camera",
+            "tools":"matter.js,WEBGL,p5.Camera",
     
             "socials":[{
                 "name":"Instagram",
@@ -215,7 +222,7 @@
                 
                 "type": "visual",
                 
-                "tools":"rect(),translate()",
+                "tools":"rect,translate",
         
                 "socials":[{
                     "name":"Website",
@@ -286,7 +293,7 @@
         "live": "https://nguyenvince.github.io/work/love-maze/",
         "code": "https://github.com/nguyenvince/nguyenvince.github.io/tree/master/work/love-maze",
         "type": "Game",
-        "tools": "map(),dist(),floor(),bezierVertex()",
+        "tools": "map,dist,floor,bezierVertex",
         "social": "https://nguyenvince.github.io/",
         "id": "1"
       },
@@ -298,9 +305,9 @@
         "live": "https://nguyenvince.github.io/work/love-maze/",
         "code": "https://github.com/nguyenvince/nguyenvince.github.io/tree/master/work/love-maze",
         "type": "Visual",
-        "tools": "map(),dist(),floor(),bezierVertex()",
+        "tools": "map,dist,floor,bezierVertex",
         "social": "https://nguyenvince.github.io/",
-        "id": "1"
+        "id": "2"
       },
       {
         "author": "Vince Nguyen",
@@ -310,9 +317,9 @@
         "live": "https://nguyenvince.github.io/work/love-maze/",
         "code": "https://github.com/nguyenvince/nguyenvince.github.io/tree/master/work/love-maze",
         "type": "Visual",
-        "tools": "map(),dist(),floor(),bezierVertex()",
+        "tools": "map,dist,floor,bezierVertex",
         "social": "https://nguyenvince.github.io/",
-        "id": "1"
+        "id": "3"
       }
 ]
 }

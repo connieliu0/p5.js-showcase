@@ -50,7 +50,7 @@ body{
 
 .Name{
   position: absolute;
-  bottom: 50%;
+  bottom: 55%;
   left: 20px;
 }
 .Name h2{
@@ -83,7 +83,7 @@ p {
   display: flex;
 }
 h1{
-  font-size: 4.5em;
+  font-size: 4em;
   font-family: "Montserrat Bold";
   color: #DB3B60;
   line-height:1em;
@@ -103,6 +103,7 @@ a{
   transition: all 0.4s;
 }
 button{
+  border-radius: 25px;
    margin-left: 10px;
     background-color: #FFB6C1; /* Green */
     border: none;
@@ -116,25 +117,11 @@ button{
 button:hover{
   color: #DB3B60;
 }
-.home p{
-  font-size: 1.5em;
-  width: 75%;
-}
+
 .enter{
   font-size: 2em;
 }
-.home1{
-  display: flex;
-  flex-direction: row;
-  margin-top: 80px;
-  margin-left: 130px;
-}
-.home1 img{
-  height: 100%;
-  max-height: 150px;
-  width: 100%;
-  max-width: 150px;
-}
+
 .body{
   margin-top: 40px;
   margin-left: 120px;
@@ -165,7 +152,39 @@ button:hover{
   padding-left:10px;
   padding-right:10px;
   color: darkred;
+  overflow: hidden;
 }
+
+.Description p{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 16px;
+  width: 350px;
+}
+/* clamp styles */
+.clamp-lines {
+  border-radius: .25em;
+  font-family: sans-serif;
+  margin: 1em;
+}
+
+.clamp-lines > span {
+  display: block;
+}
+
+/* clamp custom styles */
+
+
+.clamp-lines.custom-class .clamp-lines__button {
+  border: 1px solid transparent;
+    display: block;
+  margin: .75em auto 0;
+  padding: .5em;
+  text-align: center;
+  transition: all .2s linear;
+  width: 100%;
+}
+
 .cardimage img{
   border-radius: 25px 25px 0px 0px;
   opacity: .7;
@@ -202,6 +221,45 @@ button:hover{
   margin-right: 15px;
 }
 /* 2020 Page */
+.modal-wrapper {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+.filterlist{
+  font-family: "Montserrat ExtraBold";
+  margin-bottom: 20px;
+}
+.filterlist button{
+  display: inline-block;
+  background-color: transparent;
+  color: #DB3B60;
+  border: dotted pink;
+  border-radius: 25px;
+  padding-top:5px;
+  padding-bottom:5px;
+}
+.filterlist button:hover{
+  display: inline-block;
+  background-color: pink;
+  color: #DB3B60;
+  border: dotted pink;
+  padding-top:5px;
+  padding-bottom:5px;
+}
+.filterlist h2{
+  font-size:40px;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: pink;
+  display: inline-block;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
 h1.special{
   font-family: "Montserrat ExtraBold";
   font-weight: bolder;
@@ -212,7 +270,8 @@ h1.special{
   -webkit-text-stroke-color: pink;
   color: white;
   text-shadow: 
-						6px 6px #ff1f8f;
+            6px 6px #ff1f8f;
+  margin-bottom: 20px;
 }
 .column{
   flex: 50%;
@@ -261,11 +320,11 @@ h1.special{
 }
 .tags li{
   padding: 0px;
-  margin-top: 20px;
+  margin-top: 0px;
   margin-left: 10px;
-  max-height: 50px;
+  max-height: 30px;
   display: inline-block;
-  color: white;
+  color: transparent;
   text-align: center;
   padding: 14px;
   text-decoration: none;
@@ -288,6 +347,30 @@ h1.special{
   overflow-y: hidden;
   height: 80px;
 white-space:nowrap
+}
+/* About Page */
+.home p{
+  width: 85%;
+  margin-left: 70px;
+  line-height: 1.5em;
+  display: inline-block;
+  margin-top: 15px;
+}
+.home h1{
+  display: inline-block;
+  margin-bottom: 0px;
+  margin-top: 10px;
+}
+.home{
+  margin-top: 80px;
+  margin-left: 130px;
+}
+.home img{
+  height: 100%;
+  max-height: 80px;
+  width: 100%;
+  max-width: 80px;
+  margin-right: 10px;
 }
 /* Details Page */
 .detailsbody p{
@@ -364,9 +447,9 @@ white-space:nowrap
   .detailsbody h1{
     margin-top: 20px;
   }
-  .home1{
+  .home{
+    margin-top: 30px;
     margin-left: 20px;
-    margin-right: 20px;
   }
   .gallery h1{
     width: 100%;
@@ -374,8 +457,10 @@ white-space:nowrap
   .home p{
     width: 100%;
   }
-  .home1{
-    flex-direction: column;
+  .home p{
+    margin-left: 0px;
   }
-
+  .right{
+    float: left;
+  }
 }
