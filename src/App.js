@@ -73,10 +73,6 @@ return(
     <div className="gallery">
     <h1>p5.js 2019 Showcase!</h1>
     <h3><Markdown source={t('2019about')}/></h3>
-      <Trans i18nKey="Curated by">
-          <p>
-         </p>
-         </Trans>
          <div class="row">
       {t('showcase2019', {returnObjects: true}).map(({id, title, author, description, image})=>(
          <Link

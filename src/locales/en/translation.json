@@ -14,7 +14,7 @@
  "Question3":"What's your favorite p5.js feature?",
  "Question4":"Did you face any challenges working on this project? If so, how did you overcome them?",
  "Question5":"What's a cool thing we should check out?",
- "2019about": "Curated by [Ashley Kang](https://ashleykang.dev/) in the summer of 2019, below is the first ever curated collection of the p5.js showcase! We compiled different ways to use p5.js and learn more about each one by clicking on it.",
+ "2019about": "Curated by [Ashley Kang](https://ashleykang.dev/) in the summer of 2019, below is the first ever curated collection of the p5.js showcase! Learn more about each one by clicking on the preview. \n \n[View the original implementation here!](https://p5js.org/showcase/)",
  "About":"About the p5.js Showcase",
  "Welcome":"Welcome to the p5.js 2020 showcase!",
  "showcase2019":[
