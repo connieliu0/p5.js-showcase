@@ -13,6 +13,7 @@ import {
 
 
 function GalleryTwenty (props){
+  var Markdown = require('react-markdown');
   const { t, i18n } = useTranslation(); 
   const [filtered, setFilter] = useState('All');
   const filtermap=(t('filters', {returnObjects: true}));
@@ -28,6 +29,7 @@ function GalleryTwenty (props){
   return (
     <div className="body">
     <h1 className="special">2020 p5.js Showcase</h1>
+    <h3>{<Markdown source={t('2020Gallery_Intro')}/>}</h3>
     <div className="filterlist">
       <h2>filter by:</h2>
       {filterList}</div>
