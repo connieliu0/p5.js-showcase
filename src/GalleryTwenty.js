@@ -35,11 +35,11 @@ function GalleryTwenty (props){
       {filterList}</div>
     <div className="gallery">
 <div class="row">
-  {showcase2020.map(({author, pronouns,title, description, live, code, type, tools, social, id})=>(
+  {showcase2020.map(({author, pronouns,title, description, live, code, type, tools, social, id,picid})=>(
          <Link
          key={id}
          to={{
-           pathname: `/2020/${id}/`,
+           pathname: `/2020/${id}/`
          }}
        >
         <TestCard2020 key={`card-${id}`} 
@@ -53,6 +53,7 @@ function GalleryTwenty (props){
         tools={tools}
         social={social}
         id={id}
+        picid={picid}
         />
         </Link>
       ))}

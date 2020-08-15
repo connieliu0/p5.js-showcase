@@ -1,13 +1,13 @@
 import "./styles/App.css";
 import React, { Component }from "react";
 import Details from "./Details.js"
+import Details2020 from "./Details2020.js"
 import {useTranslation, Trans } from "react-i18next";
 import i18next from 'i18next';
 import TestCard from "./TestCard.js";
 import {Bar} from 'react-chartjs-2';
 import P5Wrapper from 'react-p5-wrapper';
 import Simple from './map/simple';
-import TestCard2020 from './TestCard2020.js';
 import GalleryTwenty from './GalleryTwenty.js';
 import { HashLink } from 'react-router-hash-link';
 import {
@@ -15,7 +15,8 @@ import {
   Route,
   Link,
   useParams,
-  HashRouter
+  HashRouter,
+  BrowserRouter
 } from "react-router-dom";
 export default function App() {
     const { t, i18n } = useTranslation();
@@ -24,8 +25,7 @@ export default function App() {
       };
     
   return (
-  <HashRouter basename='/'>
-          <div className="navigation">
+    <HashRouter basename='/'>          <div className="navigation">
       <Link to="/" className="item">Foreword</Link>
       <Link to="/gallery2020" className="item">Gallery</Link>
        <Link to="/gallery2019" className="item">2019</Link>
@@ -34,14 +34,15 @@ export default function App() {
         <div className="right">
             <button onClick={() => changeLanguage('en')}>English</button>
             <button onClick={() => changeLanguage('es')}>Español</button>
-            <button onClick={() => changeLanguage('zh')}>简体中文</button>
+            <button onClick={() => changeLanguage('zh_Hans')}>简体中文</button>
             </div>
           </div>
     <Switch>
     <Route exact path="/" children={<Gallerytwenty />}/>
     <Route exact path="/gallery2019" children={<Gallerynineteen/>} />
-     <Route path="/2019/:id" children={<DetailedPage />}/>
+     <Route exact path="/2019/:id" children={<DetailedPage />}/>
      <Route exact path="/gallery2020" children = {<GalleryTwenty />}/>
+     <Route exact path="/2020/:id" children={<Detailed2020Page/>}/>
     <Route exact path="/about" children = {<About />}/>
     </Switch>{" "}
     </HashRouter>
@@ -131,6 +132,20 @@ function DetailedPage() {
 
   return (
     <Details
+    piece={piece}
+    />
+  );
+}
+
+function Detailed2020Page() {
+  let { id } = useParams();
+  let entries= i18next.t('showcase2020', { returnObjects: true });
+  let piece = entries.find(x=> x.id === id);
+
+  if (!piece) return <div>Image not found</div>;
+
+  return (
+    <Details2020
     piece={piece}
     />
   );

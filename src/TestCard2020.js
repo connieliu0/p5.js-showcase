@@ -12,7 +12,7 @@ function TestCard2020 (props){
       <div className="cardimage">
             <img
               src={
-                require(`../public/2020images/${props.id}.jpg`)
+                require(`../public/2020images/${props.picid}.png`)
               }
               alt={props.title}
               className="Card-image"

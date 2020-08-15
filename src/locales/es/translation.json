@@ -3,6 +3,7 @@
  "Project Links":"Enlaces de proyectos",
  "Visualizations":"Visualizations",
  "Projects":"Projects",
+ "Social Media":"Social Media",
  "Tools":"Útiles",
  "Live":"Live",
  "Code":"Coda",
@@ -308,5 +309,27 @@
                 }
             }
             
+],
+"showcase2020":[
+    { "author": "Vince Nguyen",
+        "pronouns": "he/him",
+        "location": "Abu Dhabi, UAE",
+        "title": "Love Maze",
+        "description": "Two people, a computer, a maze that requires teamwork to solve, a couple of questions that challenge mutual honesty and mutual understanding, Love Maze is a fun and engaging game for any couple that wants to take their relationship to the next level.",
+        "extradesc": "",
+        "live": "https://nguyenvince.github.io/work/love-maze/",
+        "code": "https://github.com/nguyenvince/nguyenvince.github.io/tree/master/work/love-maze",
+        "type": "Game",
+        "tools": "map,dist,floor,bezierVertex",
+        "answer1": "I am a senior at NYU Abu Dhabi majoring in Interactive Media with a minor in Computer Science. I am interested in incorporating storytelling elements into creative projects that can transform traditionally analog spaces (museums, classrooms...)",
+        "answer2": "To start with, my previous experience with Processing back when I was taking Intro to Interactive Media paved the way I used p5.js in my projects. As both are extremely similar framework, the transition from Processing to p5.js was quick and enjoyable. After Professor Craig Protzel walked me through the basic of p5.js, I realized that I could develop creative coding projects and share them to everyone on the web. Love Maze is probably my first serious p5.js project!",
+        "answer3": "I was inspired by (the one and only) Daniel Shiffman's tutorial on how to create a maze in p5.js (https://www.youtube.com/watch?v=HyK_Q5rrcr4). Being in New York for the first time at the time, I was surrounded by the vibrant dating scene the city had to offer. Thus, I wanted to create a love game that allows people to open up, to dig deeper than the usual Tinder date questions, and to test each other's compatibility while performing teamwork.\n\np5.js proved tremendously useful in allowing me to visualize the maze from an array of objects to a 2D maze filled with different tiles, each of which can be individualized with regards to its color and whether or not it contains a \"roadblock\". By using p5.js' Bezier curves, I was also able to draw a heart in the middle of the maze that visualizes the distance between the two player. As the heart is updated every frame, it looks like it is actually beating, getting bigger as the two players inching closer to one another. Also, p5.js provided an easier way to limit the frame rate (compared to plain JavaScript), which I set to 24 to ensure that the game runs equally well across different devices.\n\nAfter creating the maze, I had to randomly put \"roadblocks\" along the maze; however, to prevent the random algorithm from putting them near the maze's dead-ends, I had to solve the randomly-generated maze and spread them over the paths that leads one player to the other. Thankfully, my first lesson in recursion came in and saved the day! A maze solver based on recursive method ensures the two players have to answer all the questions before reaching one another.",
+        "answer4": "My favorite feature of p5.js is its ease of reading sensor information from smartphones (for example, accelerometer and gyroscope). This, coupled with the map functions, has allowed me to create new interface for making arts with mobile devices that extends beyond touching and swiping.",
+        "answer5": "Integrating a p5.js canvas a HTML page with other DOM elements proved to be quite cumbersome and error-prone. I had to pay close attention to setting the right z-index, position (absolute), elements' widths and heights to ensure a seamless integration of p5.js with other DOMs into a one-page web game.",
+        "answer6": "I mostly use p5.js for 2D projects; however, when it comes to 3D and WebXR, I find A-Frame.js framework extremely easy to learn and versatile to use. A-Frame.js really reminds me of p5.js as both are accessible to creative artists who do not necessarily have technical background on computer graphic.",
+        "social": "https://nguyenvince.github.io/",
+        "id": "project-1",
+        "picid":1
+      }
 ]
 }

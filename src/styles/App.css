@@ -64,7 +64,6 @@ body{
   font-size: .8em;
 }
 
-
 .navigation .item{
   margin-right: 20px;
   color: #DB3B60;
@@ -413,7 +412,8 @@ white-space:nowrap
   margin-bottom: 10px;
 }
 .detailsbody h2{
-  margin-top: 10px;
+  margin-top: 20px;
+  margin-bottom: 10px;
   font-size: 24px;
   font-family: "Montserrat";
 }
@@ -427,6 +427,11 @@ white-space:nowrap
   font-size: 16px;
   font-style: italic;
 }
+.center{
+  text-align: center;
+  margin-top: 20px;
+}
+
 @media (max-width: 900px) {
   .body{
     margin-left: 20px;

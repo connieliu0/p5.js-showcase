@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/p5.js-showcase/static/css/main.075995e6.chunk.css",
-    "main.js": "/p5.js-showcase/static/js/main.e8e2e82a.chunk.js",
-    "main.js.map": "/p5.js-showcase/static/js/main.e8e2e82a.chunk.js.map",
+    "main.css": "/p5.js-showcase/static/css/main.ad78af47.chunk.css",
+    "main.js": "/p5.js-showcase/static/js/main.b7014beb.chunk.js",
+    "main.js.map": "/p5.js-showcase/static/js/main.b7014beb.chunk.js.map",
     "runtime-main.js": "/p5.js-showcase/static/js/runtime-main.b3f5858e.js",
     "runtime-main.js.map": "/p5.js-showcase/static/js/runtime-main.b3f5858e.js.map",
-    "static/js/2.f2a4c7e5.chunk.js": "/p5.js-showcase/static/js/2.f2a4c7e5.chunk.js",
-    "static/js/2.f2a4c7e5.chunk.js.map": "/p5.js-showcase/static/js/2.f2a4c7e5.chunk.js.map",
+    "static/js/2.9c769cbc.chunk.js": "/p5.js-showcase/static/js/2.9c769cbc.chunk.js",
+    "static/js/2.9c769cbc.chunk.js.map": "/p5.js-showcase/static/js/2.9c769cbc.chunk.js.map",
     "index.html": "/p5.js-showcase/index.html",
-    "precache-manifest.0ee390f5bfae26bd548ca2553e141a86.js": "/p5.js-showcase/precache-manifest.0ee390f5bfae26bd548ca2553e141a86.js",
+    "precache-manifest.e33f1b5b4710459b38b4f95bc48a4ddd.js": "/p5.js-showcase/precache-manifest.e33f1b5b4710459b38b4f95bc48a4ddd.js",
     "service-worker.js": "/p5.js-showcase/service-worker.js",
-    "static/css/main.075995e6.chunk.css.map": "/p5.js-showcase/static/css/main.075995e6.chunk.css.map",
-    "static/js/2.f2a4c7e5.chunk.js.LICENSE.txt": "/p5.js-showcase/static/js/2.f2a4c7e5.chunk.js.LICENSE.txt",
+    "static/css/main.ad78af47.chunk.css.map": "/p5.js-showcase/static/css/main.ad78af47.chunk.css.map",
+    "static/js/2.9c769cbc.chunk.js.LICENSE.txt": "/p5.js-showcase/static/js/2.9c769cbc.chunk.js.LICENSE.txt",
     "static/media/1.jpg": "/p5.js-showcase/static/media/1.d393e537.jpg",
     "static/media/2 - Vince Nguyen.jpg": "/p5.js-showcase/static/media/2 - Vince Nguyen.a2473185.jpg",
     "static/media/2.jpg": "/p5.js-showcase/static/media/2.e601fb1f.jpg",
@@ -40,8 +40,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.b3f5858e.js",
-    "static/js/2.f2a4c7e5.chunk.js",
-    "static/css/main.075995e6.chunk.css",
-    "static/js/main.e8e2e82a.chunk.js"
+    "static/js/2.9c769cbc.chunk.js",
+    "static/css/main.ad78af47.chunk.css",
+    "static/js/main.b7014beb.chunk.js"
   ]
 }
