@@ -6,7 +6,7 @@ import { initReactI18next } from "react-i18next";
 // for passing in lng and translations on init
 import en from './locales/en/translation.json'
 import es from './locales/es/translation.json'
-import zh_Hans from './locales/zh-Hans/translation.json'
+import zh_Hans from './locales/zh_Hans/translation.json'
 
 i18n
   // load translation using http -> see /public/locales (i.e. https://github.com/i18next/react-i18next/tree/master/example/react/public/locales)

@@ -14,6 +14,10 @@
   @font-face{
     font-family: "Montserrat ExtraBold";
     src: url("fonts/Montserrat-ExtraBold.ttf");
+  } 
+  @font-face{
+    font-family: "Montserrat SemiBold";
+    src: url("fonts/Montserrat-SemiBold.ttf");
   }
 .right{
   float: right;
@@ -91,7 +95,9 @@ a{
   text-decoration: none;
   color: #DB3B60;
 }
-
+p{
+  letter-spacing: .001em;
+}
 .home a:hover{
   background-image: -webkit-linear-gradient(left, white 50%, rgb(255, 228, 233) 50%);
   background-image: linear-gradient(to right,white 50%, rgb(255, 228, 233) 50%);
@@ -379,10 +385,29 @@ h3 a:hover{
   margin-bottom: 20px;
   margin-right:0px;
 }
+h1.intro2020{
+  font-family: "Montserrat ExtraBold";
+  font-weight: bolder;
+  font-size:4em;
+	letter-spacing:0.1em;
+  -webkit-text-fill-color: #FFF2F2;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #FF2457;
+  color: white;
+  margin-top:0px;
+  text-shadow: 
+    2px 2px #fec3e0,
+    4px 4px #ff77b9,
+    6px 6px #ff1f8f;
+}
 .intro2020 p{
   margin: 0px;
   color:#ff8ba6;
   text-align: center;
+}
+.flex p em{
+  margin-top: 20px;
+  color:#ff8ba6;
 }
 .column{
   flex: 50%;
@@ -393,6 +418,17 @@ h3 a:hover{
 .twentyviz h1{
   font-family: "Montserrat";
   font-size: 54px;
+}
+.twentyviz h1 a{
+float:right;
+}
+.twentyviz h1 a:hover{
+  background-image: -webkit-linear-gradient(left, white 50%, rgb(255, 228, 233) 50%);
+  background-image: linear-gradient(to right,white 50%, rgb(255, 228, 233) 50%);
+  background-position: -100%;
+  background-size: 200%;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
 }
 /* card 2020 */
 .Name2020{
@@ -493,6 +529,7 @@ border: #FF2457;
   display: inline-block;
   margin-bottom: 0px;
   margin-top: 10px;
+  font-size: 3.5em;
 }
 .home{
   margin-top: 80px;
@@ -500,9 +537,9 @@ border: #FF2457;
 }
 .home img{
   height: 100%;
-  max-height: 80px;
+  max-height: 70px;
   width: 100%;
-  max-width: 80px;
+  max-width: 70px;
   margin-right: 10px;
 }
 /* Details Page */

@@ -62,6 +62,8 @@ function About(){
     <h3><Markdown source = {t('Answer2')}/></h3>
     <h1><img src={process.env.PUBLIC_URL +'/images/asterisk-01-01.png'} alt="p5.js asterisk"/>{t('About3')}</h1>
     <h3><Markdown source = {t('Answer3')}/></h3>
+    <h1><img src={process.env.PUBLIC_URL +'/images/asterisk-01-01.png'} alt="p5.js asterisk"/>{t('Acknowledgements')}</h1>
+    <h3><Markdown source = "I'd like to thank [GSoC](https://summerofcode.withgoogle.com/) and the [Processing Foundation](https://processingfoundation.org/) for funding this project. I'd also like to thank my wonderful mentors Yining Shi and Joey Lee for helping me. Finally I'd like to thank Lauren McCarthy, Saber Khan, Inhwa Yeom, Aarón Montoya-Moraga and the p5 maintainers and contributors for helping me out on my open source journey and this project."/></h3>
     </div>    
   );
 }
@@ -102,8 +104,8 @@ return(
   <div className="body">
     <div className="flex">
     <div className="column">
-      <h1>{t('Welcome')}</h1>
-      <p>{t('Created By')} Connie Liu</p>
+      <h1 className="intro2020">{t('Welcome')}</h1>
+      <p><em>{t('Created By')} Connie Liu</em></p>
       <h2>{t('Jump to')}<HashLink to="#twentyviz"> {t('Visualizations')}</HashLink> | <Link to="/gallery2020">{t('Projects')}</Link></h2>
     </div>
     <div className="column">
@@ -112,12 +114,12 @@ return(
         <h2>{t('2020_intro2')}</h2>
           </div>
     </div>
-    <div id="twentyviz"className="twentyviz">
+    <div className="twentyviz">
     <h1>{t('Viz1')}</h1>
     <Simple />
     <h1>{t('Viz2')}</h1>
     <h1>{t('Viz3')}</h1>
-    <h1>{t('Viz4')}</h1>
+    <h1><a href="https://connieliu0.github.io/p5.js-showcase/#/gallery2020">{t('Viz4')}</a></h1>
     </div>
     </div>
   );
