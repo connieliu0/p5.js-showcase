@@ -2,7 +2,7 @@ import React from 'react';
 import './styles/App.css';
 import toolslist from './data/tools.json';
 import { useTranslation } from 'react-i18next';
-
+import ScrollToTop from './ScrollToTop.js'
 const Details2020= ({piece}) => {
 const {title, description, extradesc, id, picid, author, pronouns, resources, type, tools, qanda, location, social, live, code, answer1, answer2, answer3, answer4, answer5}=piece;
 const toolslinks = tools.split(",");
@@ -11,11 +11,12 @@ const { t } = useTranslation();
 const toolslisted=toolslist;
 return (
       <div className="detailsbody">
+          <ScrollToTop/>
         <div className="row">
           <div className="details-image">
           <img
               src={
-                require(`../public/2020images/${picid}.png`)
+                require(`../public/2020images/${picid}`)
               }
               alt={title}
               className="Card-image"

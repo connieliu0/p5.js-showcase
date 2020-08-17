@@ -70,7 +70,7 @@ body{
   text-decoration: none;
 }
 .navigation .item:hover{
-  color: lightskyblue;
+color: #FFB6C1;
 }
 .navigation{
   background-color: #FFF2F2;
@@ -91,9 +91,10 @@ a{
   text-decoration: none;
   color: #DB3B60;
 }
+
 .home a:hover{
-  background-image: -webkit-linear-gradient(left, white 50%, #FFB6C1 50%);
-  background-image: linear-gradient(to right,white 50%, #FFB6C1 50%);
+  background-image: -webkit-linear-gradient(left, white 50%, rgb(255, 228, 233) 50%);
+  background-image: linear-gradient(to right,white 50%, rgb(255, 228, 233) 50%);
   background-position: -100%;
   background-size: 200%;
   -webkit-transition: all 0.4s;
@@ -103,19 +104,45 @@ button{
   outline: none;
   border-radius: 25px;
    margin-left: 10px;
-    background-color: #FFB6C1; /* Green */
+    background-color: transparent; /* Green */
     border: none;
-    color: white;
-    padding: 8px 18px;
+    color: #DB3B60;
+    padding: 8px 14px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
 }
+/* hover styles */
 button:hover{
-  color: #DB3B60;
+  color: #FFB6C1;
 }
 
+p a:hover{
+    background-image: -webkit-linear-gradient(left, white 50%, rgb(255, 228, 233) 50%);
+    background-image: linear-gradient(to right,white 50%, rgb(255, 228, 233) 50%);
+    background-position: -100%;
+    background-size: 200%;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+  
+}
+h2 a:hover{
+  background-image: -webkit-linear-gradient(left, white 50%, rgb(255, 228, 233) 50%);
+  background-image: linear-gradient(to right,white 50%, rgb(255, 228, 233) 50%);
+  background-position: -100%;
+  background-size: 200%;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+h3 a:hover{
+  background-image: -webkit-linear-gradient(left, white 50%, rgb(255, 228, 233) 50%);
+  background-image: linear-gradient(to right,white 50%, rgb(255, 228, 233) 50%);
+  background-position: -100%;
+  background-size: 200%;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
 .enter{
   font-size: 2em;
 }
@@ -126,25 +153,33 @@ button:hover{
   margin-right: 120px;
   margin-bottom: 120px;
 }
-/* TestCard Page */
+/* TestCard 2019 Page */
+.card2019 .Description{
+  margin-bottom: 25px;
+} 
+.card2019 .bigcard{
+  border-style: dashed;
+  border-width: 3px;
+}
+/* TestCard 2020 Page */
 
 .bigcard{
+  border-width: 3px;
+  border-radius: 15px;
+  border-style:  solid;
   width: 450px;
   margin-right: 40px;
-  padding-bottom: 20px;
+  padding-bottom: 0px;
   position: relative;
-  border-radius: 25px;
-  border-style:  dotted;
-  border-width: thick;
-  border-color: #DB3B60;
+  border-color: #FF2457;
+  margin-bottom:0px;
 }
 
 .bigcard:hover{
   border-color: #FFB6C1;
+  color: #FFB6C1;
 }
-.cardimage:hover{
-  background:#FFB6C1;
-}
+
 .Description{
   margin-top: 20px;
   padding-left:10px;
@@ -184,13 +219,13 @@ button:hover{
 }
 
 .cardimage img{
-  border-radius: 25px 25px 0px 0px;
-  opacity: .7;
+  border-radius: 12px 12px 0px 0px;
+  opacity: .9;
   width: 500px;
 }
 .cardimage{
   background:#DB3B60;
-  border-radius: 25px 25px 0px 0px;
+  border-radius: 12px 12px 0px 0px;
   height: 250px;
   margin-bottom: 5px;
   overflow: hidden;
@@ -219,57 +254,135 @@ button:hover{
   margin-right: 15px;
 }
 /* 2020 Page */
-.modal-wrapper {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100vh;
-  overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;
+.Description2020{
+  margin-top:20px;
 }
 .filterlist{
   font-family: "Montserrat ExtraBold";
   margin-bottom: 20px;
+  letter-spacing: 1.5px;
+
 }
 .filterlist button{
+  letter-spacing: 1.5px;
+  font-family: "Montserrat ExtraBold";
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #DB3B60;
   display: inline-block;
   background-color: transparent;
   color: #DB3B60;
-  border: dotted pink;
   border-radius: 25px;
   padding-top:5px;
   padding-bottom:5px;
+  padding-right: 0px;
+  font-size: 32px;
+}
+#Visual.active {
+  -webkit-text-fill-color: pink;
+  text-shadow: 
+  2px 2px #ff1f8f;
+}
+#Game.active{
+  -webkit-text-fill-color: pink;
+  text-shadow: 
+  2px 2px #ff1f8f;
+}#Data.active{
+  -webkit-text-fill-color: pink;
+  text-shadow: 
+  2px 2px #ff1f8f;
+}#World.active{
+  -webkit-text-fill-color: pink;
+  text-shadow: 
+  2px 2px #ff1f8f;
+}#All.active{
+  -webkit-text-fill-color: pink;
+  text-shadow: 
+  2px 2px #ff1f8f;
+}
+#Text.active{
+  -webkit-text-fill-color: pink;
+  text-shadow: 
+  2px 2px #ff1f8f;
+}
+#Sound.active{
+  -webkit-text-fill-color: pink;
+  text-shadow: 
+  2px 2px #ff1f8f;
+}
+#Educational.active{
+  -webkit-text-fill-color: pink;
+  text-shadow: 
+  2px 2px #ff1f8f;
+}
+#Teaching.active{
+  -webkit-text-fill-color: pink;
+  text-shadow: 
+  2px 2px #ff1f8f;
+}
+#Simulation.active{
+  -webkit-text-fill-color: pink;
+  text-shadow: 
+  2px 2px #ff1f8f;
+}
+#Tool.active{
+  -webkit-text-fill-color: pink;
+  text-shadow: 
+  2px 2px #ff1f8f;
+}
+#Camera.active{
+  -webkit-text-fill-color: pink;
+  text-shadow: 
+  2px 2px #ff1f8f;
 }
 .filterlist button:hover{
+  -webkit-text-fill-color: pink;
   display: inline-block;
-  background-color: pink;
   color: #DB3B60;
-  border: dotted pink;
+  text-shadow: 
+  2px 2px #ff1f8f;
   padding-top:5px;
   padding-bottom:5px;
+  transition: all .3s;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+
 }
+
 .filterlist h2{
-  font-size:40px;
-  -webkit-text-fill-color: white;
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: pink;
+  -webkit-text-fill-color: #FFF2F2;
+  font-size:32px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #FF2457;
+  text-shadow: 
+  2px 2px #ff1f8f;
   display: inline-block;
   margin-bottom: 10px;
   margin-top: 10px;
 }
-h1.special{
+.intro2020 h1{
+  text-align: center;
   font-family: "Montserrat ExtraBold";
   font-weight: bolder;
   font-size:72px;
 	letter-spacing:0.1em;
-  -webkit-text-fill-color: white;
-  -webkit-text-stroke-width: 4px;
-  -webkit-text-stroke-color: pink;
+  -webkit-text-fill-color: #FFF2F2;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #FF2457;
   color: white;
   text-shadow: 
-            6px 6px #ff1f8f;
+    2px 2px #fec3e0,
+    4px 4px #ff77b9,
+    6px 6px #ff1f8f;
   margin-bottom: 20px;
+  margin-right:0px;
+}
+.intro2020 p{
+  margin: 0px;
+  color:#ff8ba6;
+  text-align: center;
 }
 .column{
   flex: 50%;
@@ -281,12 +394,35 @@ h1.special{
   font-family: "Montserrat";
   font-size: 54px;
 }
+/* card 2020 */
+.Name2020{
+  position: absolute;
+  top: 5%;
+  left: 10px;
+}
+.Name2020 h2{
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #DB3B60;
+  font-size: 1.45em;
+  margin-bottom: 0px;
+  font-family: "Montserrat ExtraBold";
+  margin-top: 10px;
+  -webkit-text-fill-color: white;
+  text-shadow: 
+  2px 2px #ff1f8f;
+}
+.Name2020 a:hover{
+  -webkit-text-fill-color: pink;
+}
+.Name2020 h2 em{
+  font-size: .8em;
+}
+
 .links{
-  border: darkred;
   text-align: center;
 }
 .links a{
-  border:#FFB6C1;
+border: #FF2457;
   border-bottom-style: solid;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -297,13 +433,14 @@ h1.special{
 }
 .links a:first-child{
   border-right-style: solid;
+  padding-left: 75px;
 }
 .links a:hover{
+  color:white;
   background-color: #FFB6C1;
 }
 .tags {
   margin: 0px;
-  margin-top: 10px;
   display:inline-block;
   padding: 0px;
   overflow: auto;
@@ -319,6 +456,7 @@ h1.special{
 .tags li{
   padding: 0px;
   margin-top: 0px;
+  margin-bottom:10px;
   margin-left: 10px;
   max-height: 30px;
   display: inline-block;
@@ -331,8 +469,10 @@ h1.special{
 }
 .tags a:hover{
   background-color:#FFB6C1;
+  color:white;
 }
 .tags a{
+  font-size: 14px;
   padding: 6px 14px;
   overflow: wrap;
   background-color: #ffe8e8;
@@ -340,12 +480,7 @@ h1.special{
   margin-left: 0px;
   margin-right: 0px;
 }
-.scrolls{
-  overflow-x: scroll;
-  overflow-y: hidden;
-  height: 80px;
-white-space:nowrap
-}
+
 /* About Page */
 .home p{
   width: 85%;
