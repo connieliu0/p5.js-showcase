@@ -259,6 +259,47 @@ h3 a:hover{
 .row a{
   margin-right: 15px;
 }
+/* 2020 Page Borderbox */
+
+#box {
+  align-items: center;
+  justify-content: center;
+  padding: 20px 20px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+.gradient-border {
+  --borderWidth: 4px;
+  background: #FFF2F2;
+  position: relative;
+  border-radius: var(--borderWidth);
+}
+.gradient-border:after {
+  content: '';
+  position: absolute;
+  top: calc(-1 * var(--borderWidth));
+  left: calc(-1 * var(--borderWidth));
+  height: calc(100% + var(--borderWidth) * 2);
+  width: calc(100% + var(--borderWidth) * 2);
+  background: linear-gradient(60deg, #fec3e0,#ff77b9, #ff1f8f, #ff4ef9, #ff07f7);
+  border-radius: calc(2 * var(--borderWidth));
+  z-index: -1;
+  animation: animatedgradient 3s ease alternate infinite;
+  background-size: 300% 300%;
+}
+
+
+@keyframes animatedgradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 /* 2020 Page */
 .Description2020{
   margin-top:20px;
@@ -385,7 +426,11 @@ h3 a:hover{
   margin-bottom: 20px;
   margin-right:0px;
 }
-h1.intro2020{
+.cover2020{
+  margin-top: 80px;
+  margin-bottom: 140px;
+}
+.cover2020 h1{
   font-family: "Montserrat ExtraBold";
   font-weight: bolder;
   font-size:4em;
@@ -415,6 +460,7 @@ h1.intro2020{
 .flex{
   display: flex;
 }
+/* 2020 visualization */
 .twentyviz h1{
   font-family: "Montserrat";
   font-size: 54px;
@@ -422,13 +468,27 @@ h1.intro2020{
 .twentyviz h1 a{
 float:right;
 }
-.twentyviz h1 a:hover{
+.twentyviz a:hover{
   background-image: -webkit-linear-gradient(left, white 50%, rgb(255, 228, 233) 50%);
   background-image: linear-gradient(to right,white 50%, rgb(255, 228, 233) 50%);
   background-position: -100%;
   background-size: 200%;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
+}
+.twentyviz button{
+  font-size:1.5em;
+  font-family: Montserrat;
+}
+.twentyviz button:hover{
+  background-image: -webkit-linear-gradient(left, white 50%, rgb(255, 228, 233) 50%);
+  background-image: linear-gradient(to right,white 50%, rgb(255, 228, 233) 50%);
+  background-position: -100%;
+  background-size: 200%;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  color: #DB3B60;
+
 }
 /* card 2020 */
 .Name2020{

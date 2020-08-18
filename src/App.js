@@ -1,5 +1,5 @@
 import "./styles/App.css";
-import React, { Component }from "react";
+import React, { useState }from "react";
 import Details from "./Details.js"
 import Details2020 from "./Details2020.js"
 import {useTranslation, Trans } from "react-i18next";
@@ -7,7 +7,8 @@ import i18next from 'i18next';
 import TestCard from "./TestCard.js";
 import {Bar} from 'react-chartjs-2';
 import P5Wrapper from 'react-p5-wrapper';
-import Simple from './map/simple';
+import Simple from './simple';
+import GraphButton from './GraphButton';
 import GalleryTwenty from './GalleryTwenty.js';
 import { HashLink } from 'react-router-hash-link';
 import {
@@ -100,24 +101,112 @@ return(
 function Gallerytwenty() {
   var Markdown = require('react-markdown');
   const { t, i18n } = useTranslation();
+  const options = {
+    maintainAspectRatio:false,
+    scales: {
+      yAxes: [
+          {
+              ticks: {
+                  callback: function(label, index, labels) {
+                      return label+'%';
+                  }
+              },
+              scaleLabel: {
+                  display: true,
+                  labelString: 'Percentage'
+              }
+          }
+      ]
+  }
+  };
+  const data1 = {
+    labels: ['Independently', 'Taught in Formal Degree'],
+    datasets: [
+      {
+        label: 'Experience Learning p5.js',
+        backgroundColor: 'rgba(255,99,132,0.2)',
+        borderColor: 'rgba(255,99,132,1)',
+        borderWidth: 1,
+        hoverBackgroundColor: 'rgba(255,99,132,0.4)',
+        hoverBorderColor: 'rgba(255,99,132,1)',
+        data: [83.6,16.4],
+      }
+    ]
+  };
+  const data2 = {
+    labels: ['0-2 yrs', '2-5 yrs', '5+ yrs'],
+    datasets: [
+      {
+        label: 'Years Spent Coding',
+        backgroundColor: 'rgba(255,99,132,0.2)',
+        borderColor: 'rgba(255,99,132,1)',
+        borderWidth: 1,
+        hoverBackgroundColor: 'rgba(255,99,132,0.4)',
+        hoverBorderColor: 'rgba(255,99,132,1)',
+        data: [41, 29.5, 29.5]
+      }
+    ]
+  };
+  const [graph1Displayed, showGraph1] = useState(false);
+  const [graph2Displayed, showGraph2] = useState(false);
 return(
   <div className="body">
+        <div className="cover2020">
     <div className="flex">
     <div className="column">
-      <h1 className="intro2020">{t('Welcome')}</h1>
+      <h1>{t('Welcome')}</h1>
       <p><em>{t('Created By')} Connie Liu</em></p>
-      <h2>{t('Jump to')}<HashLink to="#twentyviz"> {t('Visualizations')}</HashLink> | <Link to="/gallery2020">{t('Projects')}</Link></h2>
+      <h2>{t('Jump to')} <HashLink to="#twentyviz">{t('Visualizations')}</HashLink> | <Link to="/gallery2020">{t('Projects')}</Link></h2>
     </div>
     <div className="column">
+    <div class="gradient-border" id="box">
       <h3>{t('2020_intro1')}</h3>
       <h3><Markdown source={t('2020_intro1.5')}/></h3>
-        <h2>{t('2020_intro2')}</h2>
+        <h2><HashLink to="#twentyviz"><Markdown source={t('2020_intro2')}/></HashLink></h2>
+        </div>
           </div>
+    </div>
     </div>
     <div className="twentyviz">
     <h1>{t('Viz1')}</h1>
     <Simple />
     <h1>{t('Viz2')}</h1>
+    <div className="flex">
+      <div className="column">
+      <GraphButton 
+      id="graph1"
+      buttonname="self-learners"
+      showGraph={showGraph1}
+      otherGraph={showGraph2}
+      />
+      <h2>animators, artists, game makers, creative-technologists, curriculum planners, designers, graphic designers, graphics editors, learning experience designers, project managers, software engineer, student
+, teachers, university faculty members, visualization researchers</h2>
+      <GraphButton 
+      id="graph2"
+      buttonname="w/ all kinds of experiences"
+      showGraph={showGraph2}
+      otherGraph={showGraph1}
+      />
+            <p><em>Click to reveal graphs!</em></p>
+      </div>
+      <div className="column">
+      {graph1Displayed&&
+      <Bar
+      data={data1}
+      width={100}
+      height={50}
+      options={options}
+      />}
+      {graph2Displayed&&
+      <Bar
+      data={data2}
+      width={100}
+      height={50}
+      options={options}
+    />
+      }
+      </div>
+  </div>
     <h1>{t('Viz3')}</h1>
     <h1><a href="https://connieliu0.github.io/p5.js-showcase/#/gallery2020">{t('Viz4')}</a></h1>
     </div>

@@ -1,14 +1,14 @@
 import React from "react";
 import { Map, Marker, Popup, TileLayer } from "react-leaflet";
-import * as showcaseData from "./map.json";
+import * as showcaseData from "./Visualizations_2020/map.json";
 import MarkerClusterGroup from "react-leaflet-markercluster";
 import L from 'leaflet';
-import starMarker from './asterisk-01.svg';
-import '../styles/App.css';
-import '../styles/Vis.css';
+import starMarker from './Visualizations_2020/asterisk-01.svg';
+import './styles/App.css';
+import './styles/Vis.css';
 
 export default function Simple() {
-  const [activePark, setActivePark] = React.useState(null);
+  const [activeProject, setactiveProject] = React.useState(null);
   const createClusterCustomIcon = function (cluster) {
     return L.divIcon({
       html: `<span>${cluster.getChildCount()}</span>`,
@@ -23,7 +23,7 @@ export default function Simple() {
   });
   return (
     
-    <Map center={[0, 0]} zoom={2}>
+    <Map center={[0, 0]} zoom={2} scrollWheelZoom	={false}>
        <TileLayer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
@@ -39,28 +39,28 @@ export default function Simple() {
             piece.geometry.coordinates[0]
           ]}
           onClick={() => {
-            setActivePark(piece);
+            setactiveProject(piece);
           }}
           icon={star} 
         />
       ))}
       </MarkerClusterGroup>
-    {activePark && (
+    {activeProject && (
       <Popup
         position={[
-          activePark.geometry.coordinates[1],
-          activePark.geometry.coordinates[0]
+          activeProject.geometry.coordinates[1],
+          activeProject.geometry.coordinates[0]
         ]}
         onClose={() => {
-          setActivePark(null);
+          setactiveProject(null);
         }}
       >
         <div className="map">
-        <h1>{activePark.properties.location}</h1>
-          <h2>{activePark.properties.title}</h2>
-          <p>{activePark.properties.author}</p>
-          <p><em>{activePark.properties.occupation}</em></p>
-          <a href={activePark.properties.project_link}>View Project</a>
+        <h1>{activeProject.properties.location}</h1>
+          <h2>{activeProject.properties.title}</h2>
+          <p>{activeProject.properties.author}</p>
+          <p><em>{activeProject.properties.occupation}</em></p>
+          <a href={activeProject.properties.project_link}>View Project</a>
         </div>
       </Popup>
     )}

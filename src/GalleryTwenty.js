@@ -1,5 +1,5 @@
 import TestCard2020 from './TestCard2020.js';
-import React, { Component,useState }from "react";
+import React, {useState }from "react";
 import {useTranslation} from "react-i18next";
 import "./styles/App.css";
 import FilterButton from "./FilterButton.js";
