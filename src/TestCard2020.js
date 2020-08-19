@@ -2,7 +2,9 @@ import React from "react";
 import toolslist from './data/tools.json';
 import ClampLines from 'react-clamp-lines';
 import { useTranslation } from 'react-i18next';
-
+import {
+  Link,
+} from "react-router-dom";
 function TestCard2020 (props){
   const { t, i18n } = useTranslation();
   const toolslisted=toolslist;
@@ -11,21 +13,28 @@ function TestCard2020 (props){
     <div className="card2020">
     <div className="bigcard">
       <div className="cardimage">
+      <Link
+         key={props.id}
+         to={{
+           pathname: `/2020/${props.id}/`
+         }}>
             <img
               src={
                 require(`../public/2020images/${props.picid}`)
               }
               alt={props.title}
               className="Card-image"
-            />
+            />      </Link>
+
       </div>
+
       <div className="Name2020">
         <h2>{props.title}</h2>
         <a href={props.social}><h2><em>{props.author}</em></h2></a>
       </div>
       <div className="links">
-      <a href={props.live}>{t('Live')}</a>
-      <a href={props.code}>{t('Code')}</a>
+      <a href={props.live} target="_blank">{t('Live')}</a>
+      <a href={props.code} target="_blank">{t('Code')}</a>
       </div>
         <div className="Description2020">
         <ClampLines

@@ -89,6 +89,7 @@ h1{
   color: #DB3B60;
   line-height:1em;
   width: 90%;
+  margin-right: 0px;
 }
 
 a{
@@ -239,8 +240,8 @@ h3 a:hover{
 .bigcard {
   width: 360px;
   margin-bottom: 25px;
-  margin-right: 5px;
-  margin-left: 5px;
+  margin-right: 8px;
+  margin-left: 8px;
 }
 .row{
   width: 100%;
@@ -611,8 +612,8 @@ border: #FF2457;
 }
 .detailsbody{
   margin-top: 40px;
-  margin-left: 120px;
-  margin-right: 120px;
+  margin-left:90px;
+  margin-right: 90px;
   margin-bottom: 120px;
 }
 .detailsbody h3{

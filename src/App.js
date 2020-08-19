@@ -86,6 +86,7 @@ return(
          }}
        >
         <TestCard key={`card-${id}`} 
+        id={id}
         title={title} 
         author={author} 
         description={description} 
@@ -167,7 +168,7 @@ return(
           </div>
     </div>
     </div>
-    <div className="twentyviz">
+    <div className="twentyviz" id="twentyviz">
     <h1>{t('Viz1')}</h1>
     <Simple />
     <h1>{t('Viz2')}</h1>

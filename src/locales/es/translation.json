@@ -329,7 +329,7 @@
         "answer6": "I mostly use p5.js for 2D projects; however, when it comes to 3D and WebXR, I find A-Frame.js framework extremely easy to learn and versatile to use. A-Frame.js really reminds me of p5.js as both are accessible to creative artists who do not necessarily have technical background on computer graphic.",
         "social": "https://nguyenvince.github.io/",
         "id": "project-1",
-        "picid":1
+        "picid":"1.png"
       }
 ]
 }

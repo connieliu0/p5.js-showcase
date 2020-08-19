@@ -48,11 +48,6 @@ function GalleryTwenty (props){
     <div className="gallery">
 <div class="row">
   {showcase2020.map(({author,title, description, live, code, type, tools, social, id,picid})=>(
-         <Link
-         key={id}
-         to={{
-           pathname: `/2020/${id}/`
-         }}>
         <TestCard2020 key={`card-${id}`} 
         title={title} 
         author={author} 
@@ -65,7 +60,6 @@ function GalleryTwenty (props){
         id={id}
         picid={picid}
         />
-        </Link>
       ))}
       </div>
       </div></div>
