@@ -30,11 +30,11 @@ function TestCard2020 (props){
 
       <div className="Name2020">
         <h2>{props.title}</h2>
-        <a href={props.social}><h2><em>{props.author}</em></h2></a>
+        <h2><em>{props.author}</em></h2>
       </div>
       <div className="links">
-      <a href={props.live} target="_blank">{t('Live')}</a>
-      <a href={props.code} target="_blank">{t('Code')}</a>
+      {(props.code.length!==0)?<a href={props.live} target="_blank"><div className="box">{t('Live')}</div></a>:<a href={props.live} target="_blank"><div className="box full">{t('Live')}</div></a>}
+      {(props.code.length!==0)&&<a href={props.code} target="_blank"><div className="box">{t('Code')}</div></a>}
       </div>
         <div className="Description2020">
         <ClampLines

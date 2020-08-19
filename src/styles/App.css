@@ -234,7 +234,6 @@ h3 a:hover{
   background:#DB3B60;
   border-radius: 12px 12px 0px 0px;
   height: 250px;
-  margin-bottom: 5px;
   overflow: hidden;
 }
 .bigcard {
@@ -286,19 +285,6 @@ h3 a:hover{
   z-index: -1;
   animation: animatedgradient 3s ease alternate infinite;
   background-size: 300% 300%;
-}
-
-
-@keyframes animatedgradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
 }
 
 /* 2020 Page */
@@ -460,6 +446,7 @@ h3 a:hover{
 }
 .flex{
   display: flex;
+  flex-wrap:wrap;
 }
 /* 2020 visualization */
 .twentyviz h1{
@@ -468,6 +455,11 @@ h3 a:hover{
 }
 .twentyviz h1 a{
 float:right;
+}
+.twentyviz h2{
+  line-height: 30px;
+  display: inline;
+  color: gray;
 }
 .twentyviz a:hover{
   background-image: -webkit-linear-gradient(left, white 50%, rgb(255, 228, 233) 50%);
@@ -478,8 +470,11 @@ float:right;
   transition: all 0.4s;
 }
 .twentyviz button{
+  padding: 0px 0px 0px 10px;
+  margin-right: 10px;
   font-size:1.5em;
   font-family: Montserrat;
+  margin-left: 0px;
 }
 .twentyviz button:hover{
   background-image: -webkit-linear-gradient(left, white 50%, rgb(255, 228, 233) 50%);
@@ -492,6 +487,12 @@ float:right;
 
 }
 /* card 2020 */
+h1.tenpx{
+  margin-bottom:0px;
+}
+.box.full{
+  width:360px;
+}
 .Name2020{
   position: absolute;
   top: 5%;
@@ -517,22 +518,24 @@ float:right;
 
 .links{
   text-align: center;
+  display: flex;
 }
 .links a{
-border: #FF2457;
+  margin-right: 0px;
+  text-align: center;
+}
+.box{
+  padding:5px 0px 0px 0px;
+  height: 25px;
+  border: #FF2457;
   border-bottom-style: solid;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 70px;
-  padding-right: 70px;
-  margin:0px;
-  margin-top: 0px;
+  width: 180px;
 }
 .links a:first-child{
+  border: #FF2457;
   border-right-style: solid;
-  padding-left: 75px;
 }
-.links a:hover{
+.box:hover{
   color:white;
   background-color: #FFB6C1;
 }
@@ -666,6 +669,10 @@ border: #FF2457;
 }
 
 @media (max-width: 900px) {
+  .column{
+    flex: 100%;
+  }
+
   .body{
     margin-left: 20px;
     margin-right: 20px;  }

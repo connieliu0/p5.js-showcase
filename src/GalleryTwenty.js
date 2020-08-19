@@ -44,7 +44,7 @@ function GalleryTwenty (props){
     <h3><em>{<Markdown source={t('2020Gallery_Intro')}/>}</em></h3>
     </div>
     <div className="filterlist">
-      <h2>filter by:</h2>{filterList}</div>
+      <h2>{t("filter by")}:</h2>{filterList}</div>
     <div className="gallery">
 <div class="row">
   {showcase2020.map(({author,title, description, live, code, type, tools, social, id,picid})=>(

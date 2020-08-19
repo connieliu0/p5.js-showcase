@@ -26,7 +26,8 @@ export default function App() {
       };
     
   return (
-    <HashRouter basename='/'>          <div className="navigation">
+    <HashRouter basename='/'>          
+    <div className="navigation">
       <Link to="/" className="item">Foreword</Link>
       <Link to="/gallery2020" className="item">Gallery</Link>
        <Link to="/gallery2019" className="item">2019</Link>
@@ -152,7 +153,7 @@ function Gallerytwenty() {
   const [graph2Displayed, showGraph2] = useState(false);
 return(
   <div className="body">
-        <div className="cover2020">
+  <div className="cover2020">
     <div className="flex">
     <div className="column">
       <h1>{t('Welcome')}</h1>
@@ -171,38 +172,37 @@ return(
     <div className="twentyviz" id="twentyviz">
     <h1>{t('Viz1')}</h1>
     <Simple />
-    <h1>{t('Viz2')}</h1>
+    <h1 className="tenpx">{t('Viz2')}</h1>
     <div className="flex">
       <div className="column">
+      <p><em>{t('Directions')}</em></p>
       <GraphButton 
       id="graph1"
-      buttonname="self-learners"
+      buttonname={t("viz2.1")}
       showGraph={showGraph1}
       otherGraph={showGraph2}
       />
-      <h2>animators, artists, game makers, creative-technologists, curriculum planners, designers, graphic designers, graphics editors, learning experience designers, project managers, software engineer, student
-, teachers, university faculty members, visualization researchers</h2>
+      <h2><em>...{t("viz2.2")}</em></h2>
       <GraphButton 
       id="graph2"
-      buttonname="w/ all kinds of experiences"
+      buttonname={t("viz2.3")}
       showGraph={showGraph2}
       otherGraph={showGraph1}
       />
-            <p><em>Click to reveal graphs!</em></p>
       </div>
       <div className="column">
       {graph1Displayed&&
       <Bar
       data={data1}
       width={100}
-      height={50}
+      height={280}
       options={options}
       />}
       {graph2Displayed&&
       <Bar
       data={data2}
       width={100}
-      height={50}
+      height={280}
       options={options}
     />
       }
