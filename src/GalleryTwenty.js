@@ -26,7 +26,12 @@ function GalleryTwenty (props){
   null)
   );
   const filterList = filtermap.map(({name}) => (
-    <FilterButton
+    <Link
+    key={name}
+    to={{
+      pathname: `/gallery2020/${name}/`
+    }}>
+      <FilterButton
       key={name}
       name={name}
       isPressed={name === filtered}
@@ -34,6 +39,7 @@ function GalleryTwenty (props){
       id={name==="Data Visualization"?"Data":name}
       className={name===filtered?'active':''}
     />
+    </Link>
   ));
 
 
