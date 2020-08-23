@@ -158,7 +158,7 @@ return(
     <div className="column">
       <h1>{t('Welcome')}</h1>
       <p><em>{t('Created By')} Connie Liu</em></p>
-      <h2>{t('Jump to')} <HashLink to="#twentyviz">{t('Visualizations')}</HashLink> | <Link to="/gallery2020">{t('Projects')}</Link></h2>
+      <h2>{t('Jump to')} <HashLink to="#twentyviz">{t('Visualizations')}</HashLink> | <Link to="/gallery2020-All">{t('Projects')}</Link></h2>
     </div>
     <div className="column">
     <div class="gradient-border" id="box">
@@ -209,7 +209,7 @@ return(
       </div>
   </div>
     <h1>{t('Viz3')}</h1>
-    <h1><a href="https://connieliu0.github.io/p5.js-showcase/#/gallery2020">{t('Viz4')}</a></h1>
+    <h1><a href="https://connieliu0.github.io/p5.js-showcase/#/gallery2020-All">{t('Viz4')}</a></h1>
     </div>
     </div>
   );
