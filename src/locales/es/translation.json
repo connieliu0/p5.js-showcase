@@ -1,5 +1,6 @@
 {
     "Acknowledgements":"Acknowledgements",
+    "Acknowledgements_Description": "I'd like to thank [GSoC](https://summerofcode.withgoogle.com/) and the [Processing Foundation](https://processingfoundation.org/) for funding this project. I'd also like to thank my wonderful mentors Yining Shi and Joey Lee for helping me. Finally I'd like to thank Lauren McCarthy, Saber Khan, Inhwa Yeom, Aarón Montoya-Moraga and the p5 maintainers and contributors for helping me out on my open source journey and this project.",
     "viz2.1":"autodidactas",
     "viz2.2":"y animadores, artistas, creadores de juegos, tecnologistas creatives, educadores, diseñadores, diseñadores gráficos, editores gráficos, diseñadores de experiencias educativas, gerentes de proyectos, ingenieres de software, estudiantes, profesores escolares, profesores universitarios, investigadores de visuales",
     "viz2.3":"con todo nivel de experiencias",
