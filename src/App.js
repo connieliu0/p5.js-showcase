@@ -29,7 +29,7 @@ export default function App() {
     <HashRouter basename='/'>          
     <div className="navigation">
       <Link to="/" className="item">Foreword</Link>
-      <Link to="/gallery2020/All" className="item">Gallery</Link>
+      <Link to="/gallery2020-All" className="item">Gallery</Link>
        <Link to="/gallery2019" className="item">2019</Link>
        <Link to="/about" className="item">About</Link>
        <a href="https://p5js.org">p5.js</a>           
@@ -43,7 +43,7 @@ export default function App() {
     <Route exact path="/" children={<Gallerytwenty />}/>
     <Route exact path="/gallery2019" children={<Gallerynineteen/>} />
      <Route exact path="/2019/:id" children={<DetailedPage />}/>
-     <Route exact path="/gallery2020-:filter" children = {<GalleryTwenty />}/>
+     <Route exact path="/gallery2020-:filter/" children = {<GalleryTwenty />}/>
      <Route exact path="/2020/:id" children={<Detailed2020Page/>}/>
     <Route exact path="/about" children = {<About />}/>
     </Switch>{" "}

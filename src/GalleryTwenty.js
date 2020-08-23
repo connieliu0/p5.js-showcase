@@ -29,7 +29,7 @@ function GalleryTwenty (props){
     <Link
     key={name}
     to={{
-      pathname: `/gallery2020/${name}/`
+      pathname: `/gallery2020-${name}/`
     }}>
       <FilterButton
       key={name}
