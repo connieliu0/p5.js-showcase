@@ -434,15 +434,16 @@ h3 a:hover{
 }
 img.downarrow{
   -webkit-text-stroke-color: #FFF2F2;
-  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-width: 8px;
   -webkit-text-stroke-color:  #ff8ba6;
   text-shadow: 
   -2px -2px #ff77b9;
   margin-left: 0px;
   margin: 0 auto;
   display: block;
-  width: 25px;
-  height: 25px;
+  width: 40px;
+  height: 30px;
+  margin-top: 65px;
 }
 img.downarrow{
   -webkit-animation: mover 1s infinite  alternate;
@@ -454,11 +455,11 @@ img.downarrow{
 }
 @-webkit-keyframes mover {
   0% { transform: translateY(0); }
-  100% { transform: translateY(-10px); }
+  100% { transform: translateY(-8px); }
 }
 @keyframes mover {
   0% { transform: translateY(0); }
-  100% { transform: translateY(-10px); }
+  100% { transform: translateY(-8px); }
 }
 
 .intro2020 p{
@@ -469,6 +470,7 @@ img.downarrow{
 .flex p em{
   margin-top: 20px;
   color:#ff8ba6;
+  font-size: 20px;
 }
 .column{
   flex: 50%;
@@ -514,6 +516,20 @@ float:right;
   transition: all 0.4s;
   color: #DB3B60;
 
+}
+#graph1.active{
+  background-image: -webkit-linear-gradient(left, white 50%, rgb(255, 228, 233) 50%);
+  background-image: linear-gradient(to right,white 50%, rgb(255, 228, 233) 50%);
+  background-position: -100%;
+  background-size: 200%;
+  color: #DB3B60;
+}
+#graph2.active{
+  background-image: -webkit-linear-gradient(left, white 50%, rgb(255, 228, 233) 50%);
+  background-image: linear-gradient(to right,white 50%, rgb(255, 228, 233) 50%);
+  background-position: -100%;
+  background-size: 200%;
+  color: #DB3B60;
 }
 /* card 2020 */
 h1.tenpx{

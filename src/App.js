@@ -149,7 +149,7 @@ function Gallerytwenty() {
       }
     ]
   };
-  const [graph1Displayed, showGraph1] = useState(false);
+  const [graph1Displayed, showGraph1] = useState(true);
   const [graph2Displayed, showGraph2] = useState(false);
 return(
   <div className="body">
@@ -180,6 +180,7 @@ return(
       <p><em>{t('Directions')}</em></p>
       <GraphButton 
       id="graph1"
+      className={graph2Displayed===false ? 'active':''}
       buttonname={t("viz2.1")}
       showGraph={showGraph1}
       otherGraph={showGraph2}
@@ -188,6 +189,7 @@ return(
       <GraphButton 
       id="graph2"
       buttonname={t("viz2.3")}
+      className={graph1Displayed===false ?'active':''}
       showGraph={showGraph2}
       otherGraph={showGraph1}
       />
