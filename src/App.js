@@ -158,13 +158,15 @@ return(
     <div className="column">
       <h1>{t('Welcome')}</h1>
       <p><em>{t('Created By')} Connie Liu</em></p>
-      <h2>{t('Jump to')} <HashLink to="#twentyviz">{t('Visualizations')}</HashLink> | <Link to="/gallery2020-All">{t('Projects')}</Link></h2>
+      <h2>{t('Jump to')} <HashLink smooth to="#twentyviz">{t('Visualizations')}</HashLink> | <Link to="/gallery2020-All">{t('Projects')}</Link></h2>
+      <HashLink smooth to="#twentyviz"><img className="downarrow" src={process.env.PUBLIC_URL +'/down.svg'} alt="p5.js down arrow"/></HashLink>
+     
     </div>
     <div className="column">
     <div class="gradient-border" id="box">
       <h3>{t('2020_intro1')}</h3>
       <h3><Markdown source={t('2020_intro1.5')}/></h3>
-        <h2><HashLink to="#twentyviz"><Markdown source={t('2020_intro2')}/></HashLink></h2>
+        <h2><HashLink smooth to="#twentyviz"><Markdown source={t('2020_intro2')}/></HashLink></h2>
         </div>
           </div>
     </div>
