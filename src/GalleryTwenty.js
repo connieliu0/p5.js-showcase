@@ -3,6 +3,7 @@ import React, {useState }from "react";
 import {useTranslation} from "react-i18next";
 import "./styles/App.css";
 import FilterButton from "./FilterButton.js";
+import ScrollToTop from "./ScrollToTop.js"
 import {
   Switch,
   Route,
@@ -11,8 +12,23 @@ import {
   HashRouter
 } from "react-router-dom";
 
+const filterPathnames = [
+  'All',
+  'Visual',
+  'Data Visualization',
+  'Game',
+  'World',
+  'Text',
+  'Sound',
+  'Educational',
+  'Teaching',
+  'Simulation',
+  'Tool',
+  'Camera',
+];
 
 function GalleryTwenty (props){
+  ScrollToTop();
   var Markdown = require('react-markdown');
   const { t, i18n } = useTranslation(); 
   const [filtered, setFilter] = useState('All');
@@ -25,19 +41,22 @@ function GalleryTwenty (props){
   :a.type[2]===filtered?a.type[2]:
   null)
   );
-  const filterList = filtermap.map(({name}) => (
+
+  const filterList = filtermap.map(({name}, index) => (
     <Link
-    key={name}
+    key={filterPathnames[index]}
     to={{
-      pathname: `/gallery2020-${name}/`
+      // Use english filter name in the url pathname
+      pathname: `/gallery2020-${filterPathnames[index]}/`
     }}>
       <FilterButton
-      key={name}
-      name={name}
-      isPressed={name === filtered}
+      key={filterPathnames[index]}
+      name={filterPathnames[index]}
+      displayName={name}
+      isPressed={filterPathnames[index] === filtered}
       setFilter={setFilter}
-      id={name==="Data Visualization"?"Data":name}
-      className={name===filtered?'active':''}
+      id={filterPathnames[index]==="Data Visualization"?"Data":filterPathnames[index]}
+      className={filterPathnames[index]===filtered?'active':''}
     />
     </Link>
   ));
