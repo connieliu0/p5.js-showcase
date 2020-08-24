@@ -74,7 +74,7 @@ return (
           <p><Markdown source={answer6}/></p>
           </div>
           <div className="center">
-          <Link to="/gallery2020">← Back to Gallery</Link>
+          <Link to="/gallery2020-All">← Back to Gallery</Link>
           </div>
       </div>
     );

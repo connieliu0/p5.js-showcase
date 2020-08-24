@@ -10,6 +10,7 @@ import P5Wrapper from 'react-p5-wrapper';
 import Simple from './simple';
 import GraphButton from './GraphButton';
 import GalleryTwenty from './GalleryTwenty.js';
+import ScrollToTop from './ScrollToTop.js'
 import { HashLink } from 'react-router-hash-link';
 import {
   Switch,
@@ -65,7 +66,7 @@ function About(){
     <h1><img src={process.env.PUBLIC_URL +'/images/asterisk-01-01.png'} alt="p5.js asterisk"/>{t('About3')}</h1>
     <h3><Markdown source = {t('Answer3')}/></h3>
     <h1><img src={process.env.PUBLIC_URL +'/images/asterisk-01-01.png'} alt="p5.js asterisk"/>{t('Acknowledgements')}</h1>
-    <h3><Markdown source = "I'd like to thank [GSoC](https://summerofcode.withgoogle.com/) and the [Processing Foundation](https://processingfoundation.org/) for funding this project. I'd also like to thank my wonderful mentors Yining Shi and Joey Lee for helping me. Finally I'd like to thank Lauren McCarthy, Saber Khan, Inhwa Yeom, Aarón Montoya-Moraga and the p5 maintainers and contributors for helping me out on my open source journey and this project."/></h3>
+    <h3><Markdown source = {t('Acknowledgements_Description')} /></h3>
     </div>    
   );
 }
@@ -73,6 +74,7 @@ function About(){
 function Gallerynineteen(){
   var Markdown = require('react-markdown');
   const { t, i18n } = useTranslation();
+  ScrollToTop();
 return(      
   <div className="body">
     <div className="gallery">
@@ -211,7 +213,9 @@ return(
       </div>
   </div>
     <h1>{t('Viz3')}</h1>
-    <h1><a href="https://connieliu0.github.io/p5.js-showcase/#/gallery2020">{t('Viz4')}</a></h1>
+    <h1>
+      <Link to="/gallery2020-All">{t('Viz4')}</Link>
+    </h1>
     </div>
     </div>
   );

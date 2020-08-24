@@ -10,7 +10,7 @@ export default function FilterButton(props) {
         className={props.className}
         onClick={() => props.setFilter(props.name)}
       >
-        <span>{props.name}</span>
+        <span>{props.displayName}</span>
       </button>
     );
   }
