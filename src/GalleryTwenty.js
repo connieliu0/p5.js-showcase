@@ -3,6 +3,7 @@ import React, {useState }from "react";
 import {useTranslation} from "react-i18next";
 import "./styles/App.css";
 import FilterButton from "./FilterButton.js";
+import ScrollToTop from "./ScrollToTop.js"
 import {
   Switch,
   Route,
@@ -27,6 +28,7 @@ const filterPathnames = [
 ];
 
 function GalleryTwenty (props){
+  ScrollToTop();
   var Markdown = require('react-markdown');
   const { t, i18n } = useTranslation(); 
   const [filtered, setFilter] = useState('All');

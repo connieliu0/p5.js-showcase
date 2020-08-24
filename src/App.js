@@ -10,6 +10,7 @@ import P5Wrapper from 'react-p5-wrapper';
 import Simple from './simple';
 import GraphButton from './GraphButton';
 import GalleryTwenty from './GalleryTwenty.js';
+import ScrollToTop from './ScrollToTop.js'
 import { HashLink } from 'react-router-hash-link';
 import {
   Switch,
@@ -73,6 +74,7 @@ function About(){
 function Gallerynineteen(){
   var Markdown = require('react-markdown');
   const { t, i18n } = useTranslation();
+  ScrollToTop();
 return(      
   <div className="body">
     <div className="gallery">
@@ -211,7 +213,9 @@ return(
       </div>
   </div>
     <h1>{t('Viz3')}</h1>
-    <h1><a href="https://connieliu0.github.io/p5.js-showcase/#/gallery2020-All">{t('Viz4')}</a></h1>
+    <h1>
+      <Link to="/gallery2020-All">{t('Viz4')}</Link>
+    </h1>
     </div>
     </div>
   );
