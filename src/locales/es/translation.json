@@ -1,6 +1,6 @@
 {
-    "Acknowledgements":"Acknowledgements",
-    "Acknowledgements_Description": "I'd like to thank [GSoC](https://summerofcode.withgoogle.com/) and the [Processing Foundation](https://processingfoundation.org/) for funding this project. I'd also like to thank my wonderful mentors Yining Shi and Joey Lee for helping me. Finally I'd like to thank Lauren McCarthy, Saber Khan, Inhwa Yeom, Aarón Montoya-Moraga and the p5 maintainers and contributors for helping me out on my open source journey and this project.",
+    "Acknowledgements":"Agradecimientos",
+    "Acknowledgements_Description": "Me gustaría agradecer a [GSoC](https://summerofcode.withgoogle.com/) y a [Processing Foundation](https://processingfoundation.org/) por el financiamiento de este proyecto. También me gustaría agradecer a mis maravilloses mentores Yining Shi y Joey Lee por ayudarme. Finalmente,me gustaría agraedecer a Lauren McCarthy, Saber Khan, Inhwa Yeom, Aarón Montoya-Moraga y a les mantenedores y contribuyentes a p5 por ayudarme en mi camino de fuente abierta y este proyecto.",
     "viz2.1":"autodidactas",
     "viz2.2":"y animadores, artistas, creadores de juegos, tecnologistas creatives, educadores, diseñadores, diseñadores gráficos, editores gráficos, diseñadores de experiencias educativas, gerentes de proyectos, ingenieres de software, estudiantes, profesores escolares, profesores universitarios, investigadores de visuales",
     "viz2.3":"con todo nivel de experiencias",
@@ -322,10 +322,10 @@
 [
     {
       "author": "Aisha Jandosova, Kuat Abeshev, Jeffrey Yoo Warren",
-      "pronouns": "Aisha: she/her/hers, Kuat: he/him/his, Jeff: he/him/his",
-      "location": "Almaty, Kazakhstan; Munich, Germany; Providence, Rhode Island",
+      "pronouns": "Aisha: ella, Kuat: él, Jeff: él",
+      "location": "Almaty, Kazakhstan; Munich, Alemania; Providence, Rhode Island",
       "title": "ProtestKor.pe",
-      "description": "PROTEST KORPE is inspired by quraq körpe, a type of Kazakh quilt; like a quraq körpe, civic activism and protection of our rights depend on the voices and contributions of each of us. In this work, each square on our \"collective quilt\" is important to sew a new Kazakh reality.\n\nThe website enables protestors to create a körpe square with a slogan, including solidarity with Asya, speaking against police violence, and supporting free expression, which can then be [uploaded to Instagram to form a part of the unfolding collective körpe](https://www.instagram.com/explore/tags/СправедливостьДляАси).",
+      "description": "PROTEST KORPE es inspirado por quraq körpe, un tipo de quilt Kazakh; como una quraq körpe, activismo cívico y la protección de nuestros derechos dependiendo de las voces y las contribuciones de todes. En este trabajo, cada cuadrado de nuestra \"quilt colectiva\" es importante para hilar una nueva realidad Kazakh.\n\nEl sitio web le permite a les protestantes crear un cuadrado körpe con un slogan, incluyendo solidaridad con Asya, denunciando la violencia policial, y apoyando la libre expresión, que puede luego ser [subida a Instagram para formar parte de una körpe colectiva en desarrollo](https://www.instagram.com/explore/tags/СправедливостьДляАси).",
       "extradesc": "",
       "live": "https://protestkor.pe",
       "code": "https://github.com/jywarren/protest-banners/",
@@ -343,7 +343,7 @@
     },
     {
       "author": "Aditya De",
-      "pronouns": "he/him",
+      "pronouns": "él",
       "location": "Bangalore, India",
       "title": "Plastic Sweeper",
       "description": "Plastic sweeper is a data visualization that helps the user imagine the true magnitude of plastic waste in our oceans. This is important because most people cannot understand the actual scale of large numbers and I feel this is one of the reasons why people are apathetic towards climate change and pollution.",
