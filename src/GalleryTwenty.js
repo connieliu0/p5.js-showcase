@@ -28,7 +28,6 @@ const filterPathnames = [
 ];
 
 function GalleryTwenty (props){
-  ScrollToTop();
   var Markdown = require('react-markdown');
   const { t, i18n } = useTranslation(); 
   const [filtered, setFilter] = useState('All');

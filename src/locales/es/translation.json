@@ -38,18 +38,18 @@
  "Jump to":"Salta a",
  "filter by":"filtra según",
  "filters":[
-    {"name": "All"},
+    {"name": "Todo"},
     {"name": "Visual"},
-    {"name": "Data Visualization"},
-    {"name": "Game"},
-    {"name": "World"},
-    {"name": "Text"},
-    {"name": "Sound"},
-    {"name": "Educational"},
-    {"name": "Teaching"},
-    {"name": "Simulation"},
-    {"name": "Tool"},
-    {"name": "Camera"}
+    {"name": "Visualización de datos"},
+    {"name": "Juego"},
+    {"name": "Mundo"},
+    {"name": "Texto"},
+    {"name": "Audio"},
+    {"name": "Educacional"},
+    {"name": "Enseñando"},
+    {"name": "Simulación"},
+    {"name": "Herrmienta"},
+    {"name": "Cámara"}
  ],
  "showcase2019":[
     {
