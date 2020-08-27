@@ -7,6 +7,7 @@ import i18next from 'i18next';
 import TestCard from "./TestCard.js";
 import {Bar} from 'react-chartjs-2';
 import P5Wrapper from 'react-p5-wrapper';
+import sketch from './sketch.js'
 import Simple from './simple';
 import GraphButton from './GraphButton';
 import GalleryTwenty from './GalleryTwenty.js';
@@ -215,6 +216,7 @@ return(
       </div>
   </div>
     <h1>{t('Viz3')}</h1>
+    <P5Wrapper sketch={sketch}/>
     <h1>
       <Link to="/gallery2020-All">{t('Viz4')}</Link>
     </h1>

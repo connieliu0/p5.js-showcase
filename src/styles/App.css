@@ -515,7 +515,10 @@ float:right;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
   color: #DB3B60;
+}
 
+canvas {
+  display: block;
 }
 #graph1.active{
   background-image: -webkit-linear-gradient(left, white 50%, rgb(255, 228, 233) 50%);
