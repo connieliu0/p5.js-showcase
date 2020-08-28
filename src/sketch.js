@@ -17,8 +17,9 @@ p.preload = function() {
   }
   
 p.setup= function() {
+    p.noCanvas();
     x_position=p.windowWidth/2;
-    y_position=200;
+    y_position=40;
     p.createCanvas(p.windowWidth,200);
     p.drawFlower();
   }
@@ -47,6 +48,7 @@ p.drawFlower=function(){
       transforms.push("rotateZ("+rotDeg+"deg)");
       elem.style("transform", transforms.join(" "));
       elem.child(span);
+      elem.parent('#P5Wrapper')
       }
    }
 p.mousePressed=function(){
