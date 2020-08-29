@@ -11,6 +11,7 @@ export default function sketch (p) {
   var g=50;
   var b=96;
   var transform="-15px 15px";
+  var cnv;
 p.preload = function() {
     lines = p.loadStrings(wordcloud);
     p.angleMode(p.DEGREES);
@@ -20,8 +21,9 @@ p.setup= function() {
     p.noCanvas();
     x_position=p.windowWidth/2;
     y_position=40;
-    p.createCanvas(p.windowWidth,200);
+    var cnv = p.createCanvas(p.windowWidth,200);
     p.drawFlower();
+    cnv.mousePressed(p.resultPressed());
   }
 p.draw=function(){
     rotDeg+=1;
@@ -51,9 +53,12 @@ p.drawFlower=function(){
       elem.parent('#P5Wrapper')
       }
    }
-p.mousePressed=function(){
-        size=15;
-      starter=p.random(0,100);
+  p.mousePressed=function(){
+    
+  }
+p.resultPressed=function(){
+    size=15;
+    starter=p.random(0,100);
     transform="-10px 10px";
        if (counter%5==0){
           x_position=p.mouseX;
