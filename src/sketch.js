@@ -23,7 +23,8 @@ p.setup= function() {
     y_position=40;
     var cnv = p.createCanvas(p.windowWidth,200);
     p.drawFlower();
-    cnv.mousePressed(p.resultPressed());
+    // cnv.mousePressed(p.makeFlower());
+
   }
 p.draw=function(){
     rotDeg+=1;
@@ -54,9 +55,6 @@ p.drawFlower=function(){
       }
    }
   p.mousePressed=function(){
-    
-  }
-p.resultPressed=function(){
     size=15;
     starter=p.random(0,100);
     transform="-10px 10px";

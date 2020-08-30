@@ -215,6 +215,7 @@ return(
       }
       </div>
   </div>
+  <div id ="viz3">
     <h1>{t('Viz3')}</h1>
     <div id="P5Wrapper" style={{ position: 'relative'}}>
       <P5Wrapper sketch={sketch}/>
@@ -222,6 +223,7 @@ return(
     <h1>
       <Link to="/gallery2020-All">{t('Viz4')}</Link>
     </h1>
+    </div>
     </div>
     </div>
   );
