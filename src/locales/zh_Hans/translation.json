@@ -16,7 +16,7 @@
   "About2": "这个展示区是怎么组织起来的?",
   "About3": "还有什么内容可以查看?",
   "Acknowledgements": "致谢",
-  "Acknowledgements_Description": "我想要感谢[GSoC](https://summerofcode.withgoogle.com/)和[Processing Foundation](https://processingfoundation.org/)为该项目提供的支持。我还要感谢我的出色导师Yining Shi和Joey Lee的帮助. 最后，我要感谢Lauren McCarthy, Saber Khan, Inhwa Yeom, Aarón Montoya-Moraga，和p5的维护者和贡献者为我的开源之旅和这个项目提供了帮助。",
+  "Acknowledgements_Description": "我想要感谢[GSoC](https://summerofcode.withgoogle.com/)和[Processing Foundation](https://processingfoundation.org/)为该项目提供的支持。我还要感谢我的出色导师Yining Shi和Joey Lee的帮助. 最后，我要感谢Lauren McCarthy, Saber Khan, Inhwa Yeom, Aarón Montoya-Moraga，Ashley Kang和p5的维护者和贡献者为我的开源之旅和这个项目提供了帮助。",
   "Answer1": "p5.js展示区是一个在线作品库， 所有作品都使用了[p5.js](https://p5js.org/)。p5.js是一个开放源代码创意计算库。p5.js展示区由[Ashley Kang](https://ashleykang.dev)在2019年创建,([点击此处查看2019年展示区](https://p5js.org/showcase/)), 目前由[Connie Liu](https://connieliu0.github.io)运作. \n \n展示区的目的是展示人们如何使用和学习p5.js进行创造性工作，以传达我们的包容性核心价值观。",
   "Answer2": "通常，p5.js会通过[Twitter](https://twitter.com/p5xjs)或[Instagram](https://www.instagram.com/p5xjs/)公开征集！在过去的两年中，p5.js展示区作为[GSoC project](https://summerofcode.withgoogle.com/)运行。",
   "Answer3": "你可以使用[p5.js editor](https://editor.p5js.org/)制作一些自己的作品，通过[OpenProcessing](https://www.openProcessing.org/)发现更多内容，通过[Coding Train](https://www.youtube.com/user/shiffman)和[Cozy Coding](https://www.twitch.tv/cozycoding/)了解更多！",
