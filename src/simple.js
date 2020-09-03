@@ -18,7 +18,7 @@ export default function Simple() {
   }
   const star = L.icon({
     iconUrl: starMarker,
-    iconSize: [40, 40],
+    iconSize: [32, 32],
     iconAnchor: [20, 40],
   });
   return (
@@ -47,6 +47,7 @@ export default function Simple() {
       </MarkerClusterGroup>
     {activeProject && (
       <Popup
+        closeButton={false}
         position={[
           activeProject.geometry.coordinates[1],
           activeProject.geometry.coordinates[0]

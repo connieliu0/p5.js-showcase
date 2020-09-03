@@ -6,13 +6,14 @@ import ScrollToTop from './ScrollToTop.js';
 import {
   Link
 } from "react-router-dom";
-const Details2020= ({piece}) => {
+const Details2020= ({piece, filter}) => {
 const {title, description, extradesc, id, picid, author, pronouns, type, tools, qanda, location, social, live, code, answer1, answer2, answer3, answer4, answer5, answer6}=piece;
 const toolslinks = tools.split(",");
 const sociallinks = social.split(",");
 var Markdown = require('react-markdown');
 const { t } = useTranslation();
 const toolslisted=toolslist;
+const filterid="/2020-"+filter+"/";
 return (
       <div className="detailsbody">
           <ScrollToTop/>
@@ -74,7 +75,7 @@ return (
           <p><Markdown source={answer6}/></p>
           </div>
           <div className="center">
-          <Link to="/gallery2020-All">← Back to Gallery</Link>
+          <Link to={filterid}>← Back to Gallery</Link>
           </div>
       </div>
     );

@@ -28,16 +28,18 @@ const filterPathnames = [
 ];
 
 function GalleryTwenty (props){
+  let { id, filter } = useParams();
+  ScrollToTop();
   var Markdown = require('react-markdown');
   const { t, i18n } = useTranslation(); 
   const [filtered, setFilter] = useState('All');
   const filtermap=(t('filters', {returnObjects: true}));
 
-  var showcase2020 = (filtered==='All')?t('showcase2020', {returnObjects: true}): t('showcase2020', {returnObjects: true}).filter((a)=>
- (a.type===filtered?a.type
-  :a.type[0]===filtered?a.type[0]
-  :a.type[1]===filtered?a.type[1]
-  :a.type[2]===filtered?a.type[2]:
+  var showcase2020 = (filter==='All')?t('showcase2020', {returnObjects: true}): t('showcase2020', {returnObjects: true}).filter((a)=>
+ (a.type===filter?a.type
+  :a.type[0]===filter?a.type[0]
+  :a.type[1]===filter?a.type[1]
+  :a.type[2]===filter?a.type[2]:
   null)
   );
 
@@ -46,7 +48,7 @@ function GalleryTwenty (props){
     key={filterPathnames[index]}
     to={{
       // Use english filter name in the url pathname
-      pathname: `/gallery2020-${filterPathnames[index]}/`
+      pathname: `/2020-${filterPathnames[index]}/`
     }}>
       <FilterButton
       key={filterPathnames[index]}
@@ -55,7 +57,7 @@ function GalleryTwenty (props){
       isPressed={filterPathnames[index] === filtered}
       setFilter={setFilter}
       id={filterPathnames[index]==="Data Visualization"?"Data":filterPathnames[index]}
-      className={filterPathnames[index]===filtered?'active':''}
+      className={filterPathnames[index]===filter?'active':''}
     />
     </Link>
   ));
@@ -83,6 +85,7 @@ function GalleryTwenty (props){
         social={social}
         id={id}
         picid={picid}
+        filter={filtered}
         />
       ))}
       </div>

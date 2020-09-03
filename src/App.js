@@ -21,6 +21,7 @@ import {
   HashRouter,
   BrowserRouter
 } from "react-router-dom";
+import FilterButton from "./FilterButton";
 export default function App() {
     const { t, i18n } = useTranslation();
     const changeLanguage = lng => {
@@ -31,8 +32,8 @@ export default function App() {
     <HashRouter basename='/'>          
     <div className="navigation">
       <Link to="/" className="item">Foreword</Link>
-      <Link to="/gallery2020-All" className="item">Gallery</Link>
-       <Link to="/gallery2019" className="item">2019</Link>
+      <Link to="/2020-All" className="item">Gallery</Link>
+       <Link to="/2019" className="item">2019</Link>
        <Link to="/about" className="item">About</Link>
        <a href="https://p5js.org">p5.js</a>           
         <div className="right">
@@ -43,10 +44,10 @@ export default function App() {
           </div>
     <Switch>
     <Route exact path="/" children={<Gallerytwenty />}/>
-    <Route exact path="/gallery2019" children={<Gallerynineteen/>} />
+    <Route exact path="/2019" children={<Gallerynineteen/>} />
      <Route exact path="/2019/:id" children={<DetailedPage />}/>
-     <Route exact path="/gallery2020-:filter/" children = {<GalleryTwenty />}/>
-     <Route exact path="/2020/:id" children={<Detailed2020Page/>}/>
+     <Route exact path="/2020-:filter/" children = {<GalleryTwenty />}/>
+     <Route exact path="/2020-:filter/:id" children={<Detailed2020Page/>}/>
     <Route exact path="/about" children = {<About />}/>
     </Switch>{" "}
     </HashRouter>
@@ -244,7 +245,7 @@ function DetailedPage() {
 }
 
 function Detailed2020Page() {
-  let { id } = useParams();
+  let { id, filter } = useParams();
   let entries= i18next.t('showcase2020', { returnObjects: true });
   let piece = entries.find(x=> x.id === id);
 
@@ -252,6 +253,7 @@ function Detailed2020Page() {
 
   return (
     <Details2020
+    filter={filter}
     piece={piece}
     />
   );

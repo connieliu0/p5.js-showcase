@@ -1,19 +1,20 @@
 import wordcloud from './wordcloud.csv';
 
 export default function sketch(p) {
+  var increment;
   let lines;
   let rotDeg;
-  let currentNumber = 1;
+  let currentNumber = 0;
   let y_position = 80;
   const starter = 0;
-  const size = 25;
+  const size = 18;
   let g = 50;
   let b = 96;
   let transform = "-15px 15px";
   let p5WrapperElement;
   let flowerRotatingStarter = 0;
   let flowers = []; // An array that holds all the flowers
-
+  let changeFlower=false;
   p.preload = function () {
     lines = p.loadStrings(wordcloud);
     p.angleMode(p.DEGREES);
@@ -21,18 +22,25 @@ export default function sketch(p) {
 
   p.setup = function () {
     p5WrapperElement = p.select('#P5Wrapper');
-    p.noCanvas();
-    var cnv = p.createCanvas(p.windowWidth, 200);
-    // Draw 4 flowers
-    for (let i = 0; i < 4; i++) {
-      p.drawFlower(300 + i * 300, y_position, i);
-    }
+    var cnv = p.createCanvas((p.windowWidth-400), 200);
+    p.drawFour();
   }
   p.draw = function () {
-    flowerRotatingStarter += 1;
+    flowerRotatingStarter += .9;
     if (flowerRotatingStarter >= 360) flowerRotatingStarter = 0;
     // Make flowers to rotate
     p.updateFlowers();
+    if (changeFlower==true){
+      flowers=[];
+      p.drawFour();
+    }
+  }
+  p.drawFour= () =>{
+    // Draw 4 flowers
+    for (let i = 0; i < 4; i++) {
+      p.drawFlower(100 + i * 300, y_position, i);
+    }
+    changeFlower=false;
   }
   p.drawFlower = (x, y, index) => {
     let flower = p.createDiv("");
@@ -46,7 +54,7 @@ export default function sketch(p) {
       let span = p.createDiv(lines[linesIndex].charAt(0).toUpperCase() + lines[linesIndex].slice(1));
       elem.style("font-size", size + "px");
       elem.position(x, y);
-      elem.style("width", "300px");
+      elem.style("width", "250px");
       elem.style("font-family", "sans-serif");
       elem.style("color", "rgb(255," + g + "," + b + ")");
       elem.style("transform-origin", transform);
@@ -57,6 +65,10 @@ export default function sketch(p) {
       elem.child(span);
       elem.parent(flower);
       flowerPetals.push(elem);
+      if (i==4){
+        b=p.random(90,236);	
+        g=p.random(50,200);
+      }
     }
     // Push the flower and flowerPetels into flowers
     flowers.push({flower, flowerPetals});
@@ -73,4 +85,15 @@ export default function sketch(p) {
       }
     }
   }
+  p.keyPressed=()=>{
+    if (p.key==' ') {
+      changeFlower=true;
+      if (currentNumber<40){
+        currentNumber+=20;
+      }
+      else{
+        currentNumber=0
+      }
+  }
+}
 };
