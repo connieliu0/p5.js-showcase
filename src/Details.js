@@ -3,6 +3,7 @@ import './styles/App.css';
 import toolslist from './data/tools.json';
 import { useTranslation } from 'react-i18next';
 import { Link } from "react-router-dom";
+import ScrollToTop from './ScrollToTop.js';
 
 const Details= ({piece}) => {
 const {title, image, author, pronouns, resources, type, tools, qanda, location, socials}=piece;
@@ -12,6 +13,7 @@ const { t } = useTranslation();
 const toolslisted=toolslist;
 return (
       <div className="detailsbody">
+          <ScrollToTop/>
         <div className="row">
           <div className="details-image">
             <img
@@ -61,7 +63,7 @@ return (
           <p><Markdown source={qanda.answer5}/></p>
           </div>
           <div className="center">
-            <Link to="/gallery2019">← Back to Gallery</Link>
+            <Link to="/2019">← Back to Gallery</Link>
           </div>
       </div>
     );

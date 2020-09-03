@@ -19,7 +19,6 @@ import {
   Link,
   useParams,
   HashRouter,
-  BrowserRouter
 } from "react-router-dom";
 import FilterButton from "./FilterButton";
 export default function App() {
@@ -162,7 +161,7 @@ return(
     <div className="column">
       <h1>{t('Welcome')}</h1>
       <p><em>{t('Created By')} Connie Liu</em></p>
-      <h2>{t('Jump to')} <HashLink smooth to="#twentyviz">{t('Visualizations')}</HashLink> | <Link to="/gallery2020-All">{t('Projects')}</Link></h2>
+      <h2>{t('Jump to')} <HashLink smooth to="#twentyviz">{t('Visualizations')}</HashLink> | <Link to="/2020-All">{t('Projects')}</Link></h2>
       <HashLink smooth to="#twentyviz"><img className="downarrow" src={process.env.PUBLIC_URL +'/down.svg'} alt="p5.js down arrow"/></HashLink>
      
     </div>
@@ -216,13 +215,14 @@ return(
       }
       </div>
   </div>
-  <div id ="viz3">
+  <div id ="viz3" className="flex column"> 
     <h1>{t('Viz3')}</h1>
+    <p><em>{t('Directions2')}</em></p>
     <div id="P5Wrapper" style={{ position: 'relative'}}>
       <P5Wrapper sketch={sketch}/>
     </div>
     <h1>
-      <Link to="/gallery2020-All">{t('Viz4')}</Link>
+      <Link to="/2020-All">{t('Viz4')}</Link>
     </h1>
     </div>
     </div>

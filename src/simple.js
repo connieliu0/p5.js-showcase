@@ -61,7 +61,7 @@ export default function Simple() {
           <h2>{activeProject.properties.title}</h2>
           <p>{activeProject.properties.author}</p>
           <p><em>{activeProject.properties.occupation}</em></p>
-          <a href={activeProject.properties.project_link}>View Project</a>
+          <a href={activeProject.properties.project_link} target="_blank">View Project</a>
         </div>
       </Popup>
     )}

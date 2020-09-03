@@ -5,11 +5,8 @@ import "./styles/App.css";
 import FilterButton from "./FilterButton.js";
 import ScrollToTop from "./ScrollToTop.js"
 import {
-  Switch,
-  Route,
   Link,
   useParams,
-  HashRouter
 } from "react-router-dom";
 
 const filterPathnames = [

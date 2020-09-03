@@ -26,21 +26,23 @@ export default function sketch(p) {
     p.drawFour();
   }
   p.draw = function () {
+    if (changeFlower==true){
+      for (let i = 0; i < 4; i++) {
+        flowers.pop();
+      }
+      p.drawFour();
+      changeFlower=false;
+    }
     flowerRotatingStarter += .9;
     if (flowerRotatingStarter >= 360) flowerRotatingStarter = 0;
     // Make flowers to rotate
     p.updateFlowers();
-    if (changeFlower==true){
-      flowers=[];
-      p.drawFour();
-    }
   }
   p.drawFour= () =>{
     // Draw 4 flowers
     for (let i = 0; i < 4; i++) {
       p.drawFlower(100 + i * 300, y_position, i);
     }
-    changeFlower=false;
   }
   p.drawFlower = (x, y, index) => {
     let flower = p.createDiv("");
