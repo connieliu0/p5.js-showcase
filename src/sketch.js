@@ -14,7 +14,6 @@ export default function sketch(p) {
   let p5WrapperElement;
   let flowerRotatingStarter = 0;
   let flowers = []; // An array that holds all the flowers
-  let changeFlower=false;
   p.preload = function () {
     lines = p.loadStrings(wordcloud);
     p.angleMode(p.DEGREES);
@@ -30,17 +29,12 @@ export default function sketch(p) {
     if (flowerRotatingStarter >= 360) flowerRotatingStarter = 0;
     // Make flowers to rotate
     p.updateFlowers();
-    if (changeFlower==true){
-      flowers=[];
-      p.drawFour();
-    }
   }
   p.drawFour= () =>{
     // Draw 4 flowers
     for (let i = 0; i < 4; i++) {
       p.drawFlower(100 + i * 300, y_position, i);
     }
-    changeFlower=false;
   }
   p.drawFlower = (x, y, index) => {
     let flower = p.createDiv("");
@@ -82,12 +76,14 @@ export default function sketch(p) {
       for (let i = 0; i < flowerPetals.length; i++) {
         let flowerRotatingDeg = flowerRotatingStarter + (i % 5) * 72;
         flowerPetals[i].style("transform", "rotateZ(" + flowerRotatingDeg + "deg)");
+        const linesIndex = currentNumber + i + j * 5;
+        // Update text
+        flowerPetals[i].elt.firstChild.innerHTML = lines[linesIndex].charAt(0).toUpperCase() + lines[linesIndex].slice(1)
       }
     }
   }
   p.keyPressed=()=>{
     if (p.key==' ') {
-      changeFlower=true;
       if (currentNumber<40){
         currentNumber+=20;
       }
