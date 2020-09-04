@@ -1,5 +1,5 @@
 import "./styles/App.css";
-import React, { useState }from "react";
+import React, { useState, useEffect }from "react";
 import Details from "./Details.js"
 import Details2020 from "./Details2020.js"
 import {useTranslation, Trans } from "react-i18next";
@@ -20,13 +20,19 @@ import {
   useParams,
   HashRouter,
 } from "react-router-dom";
+import Analytics from 'react-router-ga';
+
+import ReactGa from 'react-ga';
 import FilterButton from "./FilterButton";
 export default function App() {
     const { t, i18n } = useTranslation();
     const changeLanguage = lng => {
         i18n.changeLanguage(lng);
       };
-    
+    // useEffect(()=>{
+    //   ReactGa.initialize('UA-175461618-2');
+    //   ReactGa.pageview(window.location.pathname+window.location.search)
+    // }, [])
   return (
     <HashRouter basename='/'>          
     <div className="navigation">
@@ -42,12 +48,14 @@ export default function App() {
             </div>
           </div>
     <Switch>
+    <Analytics id="UA-175461618-2" debug>   
     <Route exact path="/" children={<Gallerytwenty />}/>
     <Route exact path="/2019" children={<Gallerynineteen/>} />
      <Route exact path="/2019/:id" children={<DetailedPage />}/>
      <Route exact path="/2020-:filter/" children = {<GalleryTwenty />}/>
      <Route exact path="/2020-:filter/:id" children={<Detailed2020Page/>}/>
     <Route exact path="/about" children = {<About />}/>
+    </Analytics>
     </Switch>{" "}
     </HashRouter>
   );

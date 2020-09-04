@@ -1,7 +1,7 @@
 import wordcloud from './wordcloud.csv';
 
 export default function sketch(p) {
-  var increment;
+  var updateColor=false;
   let lines;
   let rotDeg;
   let currentNumber = 0;
@@ -25,14 +25,7 @@ export default function sketch(p) {
     p.drawFour();
   }
   p.draw = function () {
-    if (changeFlower==true){
-      for (let i = 0; i < 4; i++) {
-        flowers.pop();
-      }
-      p.drawFour();
-      changeFlower=false;
-    }
-    flowerRotatingStarter += .9;
+    flowerRotatingStarter += .75;
     if (flowerRotatingStarter >= 360) flowerRotatingStarter = 0;
     // Make flowers to rotate
     p.updateFlowers();
@@ -83,14 +76,23 @@ export default function sketch(p) {
       for (let i = 0; i < flowerPetals.length; i++) {
         let flowerRotatingDeg = flowerRotatingStarter + (i % 5) * 72;
         flowerPetals[i].style("transform", "rotateZ(" + flowerRotatingDeg + "deg)");
+        if (updateColor){
+          b=p.random(90,236);	
+          g=p.random(50,200);
+        }
+        flowerPetals[i].style("color", "rgb(255," + (g+j*15) + "," + (b-j*15) + ")");
+        // flowerPetals[i].style("color", "rgb(255," + g + "," + b + ")");
         const linesIndex = currentNumber + i + j * 5;
         // Update text
         flowerPetals[i].elt.firstChild.innerHTML = lines[linesIndex].charAt(0).toUpperCase() + lines[linesIndex].slice(1)
       }
     }
+    updateColor=false;
   }
+
   p.keyPressed=()=>{
     if (p.key==' ') {
+      updateColor=true;
       if (currentNumber<40){
         currentNumber+=20;
       }
