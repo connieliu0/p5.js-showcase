@@ -24,13 +24,18 @@ function TestCard2020 (props){
               }
               alt={props.title}
               className="Card-image"
-            />      </Link>
-
+            />      
+          </Link>
       </div>
-
       <div className="Name2020">
+      <Link
+         key={props.id}
+         to={{
+           pathname: `/2020-${props.filter}/${props.id}/`
+         }}>
         <h2>{props.title}</h2>
         <h2><em>{props.author}</em></h2>
+        </Link>
       </div>
       <div className="links">
       {(props.code.length!==0)?<a href={props.live} target="_blank"><div className="box">{t('Live')}</div></a>:<a href={props.live} target="_blank"><div className="box full">{t('Live')}</div></a>}

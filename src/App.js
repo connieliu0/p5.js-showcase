@@ -21,18 +21,12 @@ import {
   HashRouter,
 } from "react-router-dom";
 import Analytics from 'react-router-ga';
-
-import ReactGa from 'react-ga';
 import FilterButton from "./FilterButton";
 export default function App() {
     const { t, i18n } = useTranslation();
     const changeLanguage = lng => {
         i18n.changeLanguage(lng);
       };
-    // useEffect(()=>{
-    //   ReactGa.initialize('UA-175461618-2');
-    //   ReactGa.pageview(window.location.pathname+window.location.search)
-    // }, [])
   return (
     <HashRouter basename='/'>          
     <div className="navigation">
@@ -183,7 +177,10 @@ return(
     </div>
     </div>
     <div className="twentyviz" id="twentyviz">
+    <div className="flex column">
     <h1>{t('Viz1')}</h1>
+    <p><em>{t('Directionsmap')}</em></p>
+    </div>
     <Simple />
     <h1 className="tenpx">{t('Viz2')}</h1>
     <div className="flex">

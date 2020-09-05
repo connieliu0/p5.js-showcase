@@ -2,6 +2,7 @@
   "viz2.1":"self-learners",
   "viz2.2":"and animators, artists, game makers, creative-technologists, curriculum planners, designers, graphic designers, graphics editors, learning experience designers, project managers, software engineer, student, teachers, university faculty members, visualization researchers",
   "viz2.3":"w/ all kinds of experiences",
+  "Directionsmap":"Click on the stars to learn more!",
   "Directions":"Click on the pink text to change graphs!",
   "Directions2":"Press space to interact with this visualization!",
   "Created By":"Created By",
@@ -336,7 +337,7 @@
       "answer3": "p5.js is used to composite the text over the background image, and to allow uploading one's own imagery to produce a körpe from.",
       "answer4": "The web editor!",
       "answer5": "I wasn't able to find a color halftone feature, and am interested in contributing one, perhaps to the p5.riso library.",
-      "answer6": "Some of our inspirations: https://www.instagram.com/dotface_official/, https://www.instagram.com/explore/tags/protestbannerlendinglibrary/ (by https://www.instagram.com/aramhansifuentes/)",
+      "answer6": "Some of our inspirations: [@dotface_official](https://www.instagram.com/dotface_official/), the instagram tag [protestbannerlendinglibrary](https://www.instagram.com/explore/tags/protestbannerlendinglibrary/) by ([@aramhansifuentes](https://www.instagram.com/aramhansifuentes/))",
       "social": "http://towardsanidealplace.com/,https://www.instagram.com/columnine/,https://unterbahn.com/",
       "id": "project-1",
       "picid": "1.png"
@@ -693,7 +694,7 @@
       "answer3": "p5.js was the core for our interactions and animations of the game. All the game mechanics is working based on p5.play library (animation, collision, etc.)",
       "answer4": "I love animation, so I loved animation function from p5.play library, that creates a frame-by-frame animation.",
       "answer5": "We were right in the middle of making the game and physical controllers when coronavirus trapped us all at home, so we needed to finish it remotely. We did daily calls and checkins with my team and were able to finish this game (though it took longer than expected).",
-      "answer6": "https://www.instagram.com/agentpekka/ this studio is super fun!",
+      "answer6": "[The Agent Pekka studio](https://www.instagram.com/agentpekka/) is super fun!",
       "social": "https://www.linkedin.com/in/olgakhvan/",
       "id": "project-18",
       "picid": "18.png"

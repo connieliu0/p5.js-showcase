@@ -4,6 +4,7 @@
     "viz2.1":"autodidactas",
     "viz2.2":"y animadores, artistas, creadores de juegos, tecnologistas creatives, educadores, diseñadores, diseñadores gráficos, editores gráficos, diseñadores de experiencias educativas, gerentes de proyectos, ingenieres de software, estudiantes, profesores escolares, profesores universitarios, investigadores de visuales",
     "viz2.3":"con todo nivel de experiencias",
+    "Directionsmap":"¡Haz click en la estrella para obtener más información!",
     "Directions":"¡Haz click en el texto rosado para revelar las gráficas!",
     "Directions2":"¡Presiona la barra espaciadora para interactuar con esta visualización!",
 "Created By":"Creado Por",
@@ -337,7 +338,7 @@
       "answer3": "p5.js is used to composite the text over the background image, and to allow uploading one's own imagery to produce a körpe from.",
       "answer4": "The web editor!",
       "answer5": "I wasn't able to find a color halftone feature, and am interested in contributing one, perhaps to the p5.riso library.",
-      "answer6": "Some of our inspirations: https://www.instagram.com/dotface_official/, https://www.instagram.com/explore/tags/protestbannerlendinglibrary/ (by https://www.instagram.com/aramhansifuentes/)",
+      "answer6": "Some of our inspirations: [@dotface_official](https://www.instagram.com/dotface_official/), the instagram tag [protestbannerlendinglibrary](https://www.instagram.com/explore/tags/protestbannerlendinglibrary/) by ([@aramhansifuentes](https://www.instagram.com/aramhansifuentes/))",
       "social": "http://towardsanidealplace.com/,https://www.instagram.com/columnine/,https://unterbahn.com/",
       "id": "project-1",
       "picid": "1.png"

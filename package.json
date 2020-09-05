@@ -13,7 +13,6 @@
     "i18next-browser-languagedetector": "^5.0.0",
     "i18next-xhr-backend": "^3.2.2",
     "leaflet": "^1.6.0",
-    "mappa-mundi": "0.0.5",
     "p5": "^1.1.9",
     "react": "^16.13.1",
     "react-chartjs-2": "^2.9.0",
@@ -27,7 +26,6 @@
     "react-router-dom": "^5.2.0",
     "react-router-ga": "^1.2.3",
     "react-router-hash-link": "^2.0.0",
-    "react-router-modal": "^1.5.2",
     "react-scripts": "3.4.1"
   },
   "scripts": {
