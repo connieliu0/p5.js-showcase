@@ -532,6 +532,8 @@ float:right;
   background-size: 200%;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
+  color: #DB3B60;
+
 }
 .twentyviz button{
   padding: 0px 0px 0px 10px;
