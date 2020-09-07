@@ -28,6 +28,7 @@ body{
 
 #root{
   width: 100%;
+  overflow-x: hidden;
 }
 
 .leaflet-container {
@@ -178,10 +179,8 @@ h3 a:hover{
 }
 
 .body{
-  margin-top: 40px;
-  margin-left: 120px;
-  margin-right: 120px;
-  margin-bottom: 120px;
+  margin: 0;
+  padding: 40px 120px 120px 120px;
 }
 /* TestCard 2019 Page */
 .card2019 .Description{
@@ -739,17 +738,20 @@ h1.tenpx{
   margin-top: 20px;
 }
 
+
+
 @media (max-width: 900px) {
   .column{
     flex: 100%;
   }
 
   .body{
-    margin-left: 20px;
-    margin-right: 20px;  }
+    padding-left: 20px;
+    padding-right: 20px;
+  }
   .detailsbody{
     margin-left: 20px;
-  margin-right: 20px;
+    margin-right: 20px;
   }
   .details-image img{
     margin-right: 0px;
@@ -793,6 +795,12 @@ h1.tenpx{
     margin: 10px 37px 0 0;
   }
 
+}
+
+@media(max-width: 426px){
+  .cover2020 h1{
+    font-size: 3rem;
+  }
 }
 
 @media (max-width: 375px){
