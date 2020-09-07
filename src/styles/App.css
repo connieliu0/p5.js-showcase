@@ -14,18 +14,23 @@
   @font-face{
     font-family: "Montserrat ExtraBold";
     src: url("fonts/Montserrat-ExtraBold.ttf");
-  } 
+  }
   @font-face{
     font-family: "Montserrat SemiBold";
     src: url("fonts/Montserrat-SemiBold.ttf");
   }
-.right{
-  float: right;
-}
+
 body{
-    font-family: "Montserrat";
-    margin-bottom: 40px;
-  }
+  font-family: "Montserrat";
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+#root{
+  width: 100%;
+  overflow-x: hidden;
+}
+
 .leaflet-container {
     height: 400px;
     width: 100%;
@@ -68,18 +73,37 @@ body{
   font-size: .8em;
 }
 
-.navigation .item{
-  margin-right: 20px;
-  color: #DB3B60;
-  text-decoration: none;
-}
-.navigation .item:hover{
-color: #FFB6C1;
-}
-.navigation{
+.navigation {
   background-color: #FFF2F2;
-  padding: 40px;
+  padding: 40px 0 40px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
+.navigation .left{
+  margin-left: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.navigation .left .item {
+  margin-right: 20px;
+}
+
+.navigation .right{
+  margin-right: 40px;
+}
+
+.navigation .right button {
+  padding: 8px 0;
+  margin: 0 0 0 37px;
+  cursor: pointer;
+}
+
+
 .Examples-Container {
   display: flex;
 }
@@ -132,7 +156,7 @@ p a:hover{
     background-size: 200%;
     -webkit-transition: all 0.4s;
     transition: all 0.4s;
-  
+
 }
 h2 a:hover{
   background-image: -webkit-linear-gradient(left, white 50%, rgb(255, 228, 233) 50%);
@@ -155,15 +179,13 @@ h3 a:hover{
 }
 
 .body{
-  margin-top: 40px;
-  margin-left: 120px;
-  margin-right: 120px;
-  margin-bottom: 120px;
+  margin: 0;
+  padding: 40px 120px 120px 120px;
 }
 /* TestCard 2019 Page */
 .card2019 .Description{
   margin-bottom: 25px;
-} 
+}
 .card2019 .bigcard{
   border-style: dashed;
   border-width: 3px;
@@ -314,66 +336,66 @@ h3 a:hover{
 }
 #Visual.active {
   -webkit-text-fill-color: pink;
-  text-shadow: 
+  text-shadow:
   2px 2px #ff1f8f;
 }
 #Game.active{
   -webkit-text-fill-color: pink;
-  text-shadow: 
+  text-shadow:
   2px 2px #ff1f8f;
 }#Data.active{
   -webkit-text-fill-color: pink;
-  text-shadow: 
+  text-shadow:
   2px 2px #ff1f8f;
 }#World.active{
   -webkit-text-fill-color: pink;
-  text-shadow: 
+  text-shadow:
   2px 2px #ff1f8f;
 }#All.active{
   -webkit-text-fill-color: pink;
-  text-shadow: 
+  text-shadow:
   2px 2px #ff1f8f;
 }
 #Text.active{
   -webkit-text-fill-color: pink;
-  text-shadow: 
+  text-shadow:
   2px 2px #ff1f8f;
 }
 #Sound.active{
   -webkit-text-fill-color: pink;
-  text-shadow: 
+  text-shadow:
   2px 2px #ff1f8f;
 }
 #Educational.active{
   -webkit-text-fill-color: pink;
-  text-shadow: 
+  text-shadow:
   2px 2px #ff1f8f;
 }
 #Teaching.active{
   -webkit-text-fill-color: pink;
-  text-shadow: 
+  text-shadow:
   2px 2px #ff1f8f;
 }
 #Simulation.active{
   -webkit-text-fill-color: pink;
-  text-shadow: 
+  text-shadow:
   2px 2px #ff1f8f;
 }
 #Tool.active{
   -webkit-text-fill-color: pink;
-  text-shadow: 
+  text-shadow:
   2px 2px #ff1f8f;
 }
 #Camera.active{
   -webkit-text-fill-color: pink;
-  text-shadow: 
+  text-shadow:
   2px 2px #ff1f8f;
 }
 .filterlist button:hover{
   -webkit-text-fill-color: pink;
   display: inline-block;
   color: #DB3B60;
-  text-shadow: 
+  text-shadow:
   2px 2px #ff1f8f;
   padding-top:5px;
   padding-bottom:5px;
@@ -390,7 +412,7 @@ h3 a:hover{
   font-size:32px;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #FF2457;
-  text-shadow: 
+  text-shadow:
   2px 2px #ff1f8f;
   display: inline-block;
   margin-bottom: 10px;
@@ -406,7 +428,7 @@ h3 a:hover{
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: #FF2457;
   color: white;
-  text-shadow: 
+  text-shadow:
     2px 2px #fec3e0,
     4px 4px #ff77b9,
     6px 6px #ff1f8f;
@@ -427,7 +449,7 @@ h3 a:hover{
   -webkit-text-stroke-color: #FF2457;
   color: white;
   margin-top:0px;
-  text-shadow: 
+  text-shadow:
     2px 2px #fec3e0,
     4px 4px #ff77b9,
     6px 6px #ff1f8f;
@@ -436,7 +458,7 @@ img.downarrow{
   -webkit-text-stroke-color: #FFF2F2;
   -webkit-text-stroke-width: 8px;
   -webkit-text-stroke-color:  #ff8ba6;
-  text-shadow: 
+  text-shadow:
   -2px -2px #ff77b9;
   margin-left: 0px;
   margin: 0 auto;
@@ -554,7 +576,7 @@ h1.tenpx{
   font-family: "Montserrat ExtraBold";
   margin-top: 10px;
   -webkit-text-fill-color: white;
-  text-shadow: 
+  text-shadow:
   2px 2px #ff1f8f;
 }
 .Name2020 a:hover{
@@ -716,17 +738,20 @@ h1.tenpx{
   margin-top: 20px;
 }
 
+
+
 @media (max-width: 900px) {
   .column{
     flex: 100%;
   }
 
   .body{
-    margin-left: 20px;
-    margin-right: 20px;  }
+    padding-left: 20px;
+    padding-right: 20px;
+  }
   .detailsbody{
     margin-left: 20px;
-  margin-right: 20px;
+    margin-right: 20px;
   }
   .details-image img{
     margin-right: 0px;
@@ -752,7 +777,37 @@ h1.tenpx{
   .home p{
     margin-left: 0px;
   }
-  .right{
-    float: left;
+}
+
+@media (max-width: 768px){
+  .navigation{
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .navigation .right{
+    margin-left: 40px;
+    margin-right: 0;
+  }
+
+  .navigation .right button {
+    margin: 10px 37px 0 0;
+  }
+
+}
+
+@media(max-width: 426px){
+  .cover2020 h1{
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 375px){
+  .navigation .left{
+    margin-left: 20px;
+  }
+  .navigation .right{
+    margin-left: 20px;
   }
 }
