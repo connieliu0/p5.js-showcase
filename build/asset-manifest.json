@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.5cdb7daf.chunk.css",
+    "main.css": "/static/css/main.4b02db5d.chunk.css",
     "main.js": "/static/js/main.cfe559b5.chunk.js",
     "main.js.map": "/static/js/main.cfe559b5.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.83c3e0c4.js",
@@ -8,9 +8,9 @@
     "static/js/2.d691b08a.chunk.js": "/static/js/2.d691b08a.chunk.js",
     "static/js/2.d691b08a.chunk.js.map": "/static/js/2.d691b08a.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.ed43f20f5734be5e440f4a3034c772b2.js": "/precache-manifest.ed43f20f5734be5e440f4a3034c772b2.js",
+    "precache-manifest.96fc5248d76e2be631a75a936814c1a9.js": "/precache-manifest.96fc5248d76e2be631a75a936814c1a9.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.5cdb7daf.chunk.css.map": "/static/css/main.5cdb7daf.chunk.css.map",
+    "static/css/main.4b02db5d.chunk.css.map": "/static/css/main.4b02db5d.chunk.css.map",
     "static/js/2.d691b08a.chunk.js.LICENSE.txt": "/static/js/2.d691b08a.chunk.js.LICENSE.txt",
     "static/media/02 - Mecanica Sci.png": "/static/media/02 - Mecanica Sci.00312a88.png",
     "static/media/1.png": "/static/media/1.e601fb1f.png",
@@ -95,7 +95,7 @@
   "entrypoints": [
     "static/js/runtime-main.83c3e0c4.js",
     "static/js/2.d691b08a.chunk.js",
-    "static/css/main.5cdb7daf.chunk.css",
+    "static/css/main.4b02db5d.chunk.css",
     "static/js/main.cfe559b5.chunk.js"
   ]
 }
