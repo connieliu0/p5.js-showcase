@@ -1,10 +1,12 @@
 {
     "Acknowledgements":"Agradecimientos",
-    "Acknowledgements_Description": "Me gustaría agradecer a [GSoC](https://summerofcode.withgoogle.com/) y a [Processing Foundation](https://processingfoundation.org/) por el financiamiento de este proyecto. También me gustaría agradecer a mis maravilloses mentores Yining Shi y Joey Lee por ayudarme. Finalmente,me gustaría agraedecer a Lauren McCarthy, Saber Khan, Inhwa Yeom, Aarón Montoya-Moraga y a les mantenedores y contribuyentes a p5 por ayudarme en mi camino de fuente abierta y este proyecto.",
+    "Acknowledgements_Description": "Me gustaría agradecer a [GSoC](https://summerofcode.withgoogle.com/) y a [Processing Foundation](https://processingfoundation.org/) por el financiamiento de este proyecto. También me gustaría agradecer a mis maravilloses mentores Yining Shi y Joey Lee por ayudarme. Finalmente,me gustaría agraedecer a Lauren McCarthy, Saber Khan, Inhwa Yeom, Aarón Montoya-Moraga, Ashley Kang y a les mantenedores y contribuyentes a p5 por ayudarme en mi camino de fuente abierta y este proyecto.",
     "viz2.1":"autodidactas",
     "viz2.2":"y animadores, artistas, creadores de juegos, tecnologistas creatives, educadores, diseñadores, diseñadores gráficos, editores gráficos, diseñadores de experiencias educativas, gerentes de proyectos, ingenieres de software, estudiantes, profesores escolares, profesores universitarios, investigadores de visuales",
     "viz2.3":"con todo nivel de experiencias",
+    "Directionsmap":"¡Haz click en la estrella para obtener más información!",
     "Directions":"¡Haz click en el texto rosado para revelar las gráficas!",
+    "Directions2":"¡Presiona la barra espaciadora para interactuar con esta visualización!",
 "Created By":"Creado Por",
 "2020Gallery_Intro":"Para aprender más sobre el proyecto y cómo fue realizado, haz click en la imagen correspondiente. Te invitamos a dejar cualquier sugerencia o comentario en nuestro [libro de visitas](https://forms.gle/nJ4Z6v31z2HZ6boaA)!",
  "Project Links":"Enlaces de los proyectos",
@@ -34,7 +36,7 @@
  "Viz1":"este año tenemos contribuciones de...",
  "Viz2":"nuestras personas contribuyentes son...",
  "Viz3":"para elles p5.js es...",
- "Viz4":"¡revisa los proyectos!",
+ "Viz4":"¡revisa los proyectos! →",
  "Jump to":"Salta a",
  "filter by":"filtra según",
  "filters":[
@@ -321,7 +323,7 @@
 "showcase2020":
 [
     {
-      "author": "Aisha Jandosova, Kuat Abeshev, Jeffrey Yoo Warren",
+      "author": "Aisha Jandosova, Kuat Abeshev, Jeffrey Yoo Warren, Irina Mednikova",
       "pronouns": "Aisha: ella, Kuat: él, Jeff: él",
       "location": "Almaty, Kazakhstan; Munich, Alemania; Providence, Rhode Island",
       "title": "ProtestKor.pe",
@@ -336,7 +338,7 @@
       "answer3": "p5.js is used to composite the text over the background image, and to allow uploading one's own imagery to produce a körpe from.",
       "answer4": "The web editor!",
       "answer5": "I wasn't able to find a color halftone feature, and am interested in contributing one, perhaps to the p5.riso library.",
-      "answer6": "Some of our inspirations: https://www.instagram.com/dotface_official/, https://www.instagram.com/explore/tags/protestbannerlendinglibrary/ (by https://www.instagram.com/aramhansifuentes/)",
+      "answer6": "Some of our inspirations: [@dotface_official](https://www.instagram.com/dotface_official/), the instagram tag [protestbannerlendinglibrary](https://www.instagram.com/explore/tags/protestbannerlendinglibrary/) by ([@aramhansifuentes](https://www.instagram.com/aramhansifuentes/))",
       "social": "http://towardsanidealplace.com/,https://www.instagram.com/columnine/,https://unterbahn.com/",
       "id": "project-1",
       "picid": "1.png"
