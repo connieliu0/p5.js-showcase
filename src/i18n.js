@@ -7,6 +7,7 @@ import { initReactI18next } from "react-i18next";
 import en from './locales/en/translation.json'
 import es from './locales/es/translation.json'
 import zh_Hans from './locales/zh_Hans/translation.json'
+import ko from './locales/ko/translation.json'
 
 i18n
   // load translation using http -> see /public/locales (i.e. https://github.com/i18next/react-i18next/tree/master/example/react/public/locales)
@@ -20,7 +21,7 @@ i18n
   // for all options read: https://www.i18next.com/overview/configuration-options
 
   .init({
-    whitelist: ['es', 'en', 'zh_Hans'],
+    whitelist: ['es', 'en', 'zh_Hans', 'ko'],
     nonExplicitWhitelist: true,
     load: 'languageOnly',
     resources: {
@@ -32,6 +33,9 @@ i18n
         },
         zh_Hans: {
           translations: zh_Hans
+        },
+        ko: {
+          translations: ko
         }
       },
       ns: ["translations"],

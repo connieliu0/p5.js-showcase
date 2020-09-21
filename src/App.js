@@ -41,6 +41,7 @@ export default function App() {
           <button onClick={() => changeLanguage('en')}>English</button>
           <button onClick={() => changeLanguage('es')}>Español</button>
           <button onClick={() => changeLanguage('zh_Hans')}>简体中文</button>
+          <button onClick={() => changeLanguage('ko')}>한국어</button>
         </div>
       </div>
       <Switch>
