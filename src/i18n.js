@@ -33,7 +33,7 @@ i18n
         },
         zh_Hans: {
           translations: zh_Hans
-        }
+        },
         ko: {
           translations: ko
         }
