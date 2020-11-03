@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "99a4bb865f84fd3540371ecfa729a71c",
+    "revision": "fed2e177bd5be1b3fd0709c709eef31b",
     "url": "/index.html"
   },
   {
-    "revision": "90881eab91b91a608c81",
-    "url": "/static/css/main.63020b0e.chunk.css"
+    "revision": "e3aae2871345fbe4a01d",
+    "url": "/static/css/main.4392c88d.chunk.css"
   },
   {
     "revision": "8eedec8d771c9be1ea45",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.e5aacdd6.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "90881eab91b91a608c81",
-    "url": "/static/js/main.57332c98.chunk.js"
+    "revision": "e3aae2871345fbe4a01d",
+    "url": "/static/js/main.cb93ad20.chunk.js"
   },
   {
     "revision": "73635f645c271e35ff15",
@@ -28,8 +28,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/02 - Mecanica Sci.00312a88.png"
   },
   {
-    "revision": "e601fb1f61d478d85cef561587f5d642",
-    "url": "/static/media/1.e601fb1f.png"
+    "revision": "1b8d21d8c9ebe9ba10f3b270a397749d",
+    "url": "/static/media/1.1b8d21d8.png"
   },
   {
     "revision": "162789b65b43feaed60adb41fb56d10c",
