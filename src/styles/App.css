@@ -262,6 +262,7 @@ h3 a:hover{
   border-radius: 12px 12px 0px 0px;
   opacity: .9;
   width: 500px;
+filter: blur(3px);
 }
 .cardimage{
   background:#DB3B60;
@@ -445,9 +446,11 @@ h3 a:hover{
     6px 6px #ff1f8f;
   margin-bottom: 20px;
   margin-right:0px;
+  margin-top: 20px;
+
 }
 .cover2020{
-  margin-top: 50px;
+  margin-top: 30px;
   margin-bottom: 140px;
 }
 .cover2020 h1{
@@ -590,7 +593,7 @@ h1.tenpx{
   margin-top: 10px;
   -webkit-text-fill-color: white;
   text-shadow:
-  2px 2px #ff1f8f;
+  2px 2px #db3b60;
 }
 .Name2020 a:hover{
   -webkit-text-fill-color: pink;
@@ -697,10 +700,7 @@ h1.tenpx{
 
 }
 .detailsbody{
-  margin-top: 40px;
-  margin-left:90px;
-  margin-right: 90px;
-  margin-bottom: 120px;
+  margin: 40px 300px 120px 300px;
 }
 .detailsbody h3{
   margin-top: 0px;
