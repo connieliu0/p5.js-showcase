@@ -12,9 +12,10 @@ var Markdown = require('react-markdown');
 const { t } = useTranslation();
 const toolslisted=toolslist;
 return (
-      <div className="detailsbody">
+  <div>
           <ScrollToTop/>
-        <div className="row">
+          <div className="details-header">
+          <div className="row">
           <div className="details-image">
             <img
               src={
@@ -45,9 +46,11 @@ return (
                       );
                       })}
                 </div>
+                </div>
             </div>
           </div>
           </div>
+                <div className="detailsbody">
           <div className="QnA">
           <h1>Q and A</h1>
           <h2>{t('Question1')}</h2>
@@ -65,6 +68,7 @@ return (
           <div className="center">
             <Link to="/2019">← Back to Gallery</Link>
           </div>
+      </div>
       </div>
     );
   }

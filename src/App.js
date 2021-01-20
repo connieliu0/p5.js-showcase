@@ -84,6 +84,7 @@ function Gallerynineteen() {
   return (
     <div className="body">
       <div className="gallery">
+        <div id="intro2019">
         <h1>p5.js 2019 Showcase!</h1>
         <h3><Markdown source={t('2019about')} /></h3>
         <div class="row">
@@ -104,6 +105,7 @@ function Gallerynineteen() {
           ))}
         </div>
       </div>
+    </div>
     </div>
   );
 }
@@ -223,9 +225,9 @@ function Gallerytwenty() {
             }
           </div>
         </div>
-        <div id="viz3" className="flex column">
+        <div id="viz3" className="column">
           <h1>{t('Viz3')}</h1>
-          <p><em>{t('Directions2')}</em></p>
+          <div className="flex"><p><em>{t('Directions2')}</em></p></div>
           <div id="P5Wrapper" style={{ position: 'relative' }}>
             <P5Wrapper sketch={sketch} />
           </div>

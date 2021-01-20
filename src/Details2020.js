@@ -15,7 +15,8 @@ const { t } = useTranslation();
 const toolslisted=toolslist;
 const filterid="/2020-"+filter+"/";
 return (
-      <div className="detailsbody">
+  <div>
+          <div className="details-header">
           <ScrollToTop/>
         <div className="row">
           <div className="details-image">
@@ -53,9 +54,11 @@ return (
                       );
                       })}
                 </div>
+                </div>
             </div>
           </div>
           </div>
+          <div className="detailsbody">
           <p>{<Markdown source={description}/>}</p>
           <p>{<Markdown source={extradesc}/>}</p>
 
@@ -77,6 +80,7 @@ return (
           <div className="center">
           <Link to={filterid}>← Back to Gallery</Link>
           </div>
+      </div>
       </div>
     );
   }

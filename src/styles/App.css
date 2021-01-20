@@ -112,7 +112,7 @@ h1{
   font-family: "Montserrat Bold";
   color: #DB3B60;
   line-height:1em;
-  width: 90%;
+  /* width: 90%; */
   margin-right: 0px;
 }
 
@@ -145,6 +145,10 @@ button{
     font-size: 16px;
 }
 /* hover styles */
+.bigcard:hover{
+filter: none;
+}
+.cardimg
 button:hover{
   color: #FFB6C1;
 }
@@ -215,9 +219,14 @@ h3 a:hover{
   margin-bottom:0px;
 }
 
-.bigcard:hover{
+.bigcard:hover {
   border-color: #FFB6C1;
   color: #FFB6C1;
+}
+.bigcard img:hover{
+  filter:none;
+  -webkit-transition: all 0.4s;
+transition: all 0.4s;
 }
 
 .Description{
@@ -262,7 +271,10 @@ h3 a:hover{
   border-radius: 12px 12px 0px 0px;
   opacity: .9;
   width: 500px;
-filter: blur(3px);
+  filter: blur(3px);
+}
+.cardimage:hover{
+filter: none;
 }
 .cardimage{
   background:#DB3B60;
@@ -329,7 +341,6 @@ filter: blur(3px);
   font-family: "Montserrat ExtraBold";
   margin-bottom: 20px;
   letter-spacing: 1.5px;
-
 }
 .filterlist button{
   letter-spacing: 1.5px;
@@ -430,11 +441,17 @@ filter: blur(3px);
   margin-bottom: 10px;
   margin-top: 10px;
 }
+#intro2019 h1{
+  color: #ff577e;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px #AD1349;
+}
 .intro2020 h1{
   text-align: center;
   font-family: "Montserrat ExtraBold";
   font-weight: bolder;
-  font-size:72px;
+  font-size:3.5em;
 	letter-spacing:0.1em;
   -webkit-text-fill-color: #FFF2F2;
   -webkit-text-stroke-width: 2px;
@@ -456,7 +473,8 @@ filter: blur(3px);
 .cover2020 h1{
   font-family: "Montserrat ExtraBold";
   font-weight: bolder;
-  font-size:4em;
+  font-size:3.75em;
+  margin-right: 20px;
 	letter-spacing:0.1em;
   -webkit-text-fill-color: #FFF2F2;
   -webkit-text-stroke-width: 2px;
@@ -509,12 +527,13 @@ img.downarrow{
   font-size: 20px;
 }
 .column{
-  flex: 50%;
+  flex: 50% 1;
 }
 .flex{
   display: flex;
   flex-wrap:wrap;
 }
+
 /* 2020 visualization */
 .twentyviz h1{
   font-family: "Montserrat";
@@ -680,6 +699,7 @@ h1.tenpx{
   margin-bottom: 0px;
   margin-top: 10px;
   font-size: 3.5em;
+  text-decoration: underline dotted #ffd3de;
 }
 .home{
   margin-top: 80px;
@@ -687,12 +707,17 @@ h1.tenpx{
 }
 .home img{
   height: 100%;
-  max-height: 70px;
+  max-height: 50px;
   width: 100%;
-  max-width: 70px;
+  max-width: 50px;
   margin-right: 10px;
 }
 /* Details Page */
+.details-header{
+  width: 1000px;
+  margin: auto;
+  margin-top: 60px;
+}
 .detailsbody p{
   font-size: 16px;
   white-space: pre-line;
@@ -702,7 +727,7 @@ h1.tenpx{
 .detailsbody{
   margin: 40px 300px 120px 300px;
 }
-.detailsbody h3{
+.details-header h3{
   margin-top: 0px;
   margin-bottom: 0px;
 }
@@ -712,23 +737,33 @@ h1.tenpx{
   flex-direction: column;
 }
 .details-image{
-  width: 475px;
+  width: 425px;
   height: auto;
-  margin-right: 40px;
+  margin-right: 60px;
 }
 .details-image img{
-  width: 475px;
+  width: 430px;
   height: auto;
   margin-right: 40px;
-  margin-bottom: 40px;
   border-radius: 25px;
   border: dotted  #DB3B60;;
   padding: 5px;
+}
+.details-header h1{
+  font-size: 48px;
+  font-family: "Montserrat Medium";
+  margin-bottom: 10px;
 }
 .detailsbody h1{
   font-size: 48px;
   font-family: "Montserrat Medium";
   margin-bottom: 10px;
+}
+.details-header h2{
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-family: "Montserrat";
 }
 .detailsbody h2{
   margin-top: 20px;
@@ -742,6 +777,9 @@ h1.tenpx{
 .detailsbody{
   font-size: 18px;
 }
+.details-header{
+  font-size: 18px;
+}
 .small{
   font-size: 16px;
   font-style: italic;
@@ -752,6 +790,9 @@ h1.tenpx{
 }
 
 @media (max-width: 900px) {
+  .details-header{
+    width: 760px;
+  }
   .column{
     flex: 100%;
   }
@@ -765,6 +806,7 @@ h1.tenpx{
     margin-right: 20px;
   }
   .details-image img{
+    width: 90vw;
     margin-right: 0px;
     margin-left: 0px;
     max-width: 100%;
@@ -791,6 +833,16 @@ h1.tenpx{
 }
 
 @media (max-width: 768px){
+  .row{
+    flex-direction: column;
+  }
+
+  .details-header{
+    margin-top: 60px;
+    margin-right:auto;
+    margin-left: auto;
+    width: 94vw;
+  }
   .navigation{
     flex-direction: column;
     justify-content: flex-start;
@@ -809,15 +861,22 @@ h1.tenpx{
 }
 
 @media(max-width: 426px){
+  .intro2020{
+    text-align:left;
+  }
+  .filterlist button{
+    font-size: 24px;
+    -webkit-text-stroke-width:.75px;
+  }
   .card2019 .bigcard{
     width:90vw;
   }
   .gallery h1{
-    font-size: 50px;
+    font-size: 48px;
   }
   .intro2020 h1{
     text-align: left;
-    font-size: 50px;
+    font-size: 48px;
   }
   .filterlist button{
     text-align: left;
