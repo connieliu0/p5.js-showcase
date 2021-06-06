@@ -2,9 +2,9 @@
 
 The p5.js [showcase](https://p5js.org/showcase/) can be maintained in the following way. Currently, contributors can nominate themselves through this [form](https://forms.gle/SKJdvBNKRo4o8Rh9A) which is a apart of the p5.js google drive. If you wish to be the maintainer/co-maintainer for the showcase for the year, please email the Processing Foundation for further directions and access to the form results. The handling and recruitment for the showcase is currently done with GSoC and will vary year to year.
 
-Current maintainer: [Connie Liu](https://connieliu0.github.io/#/) 
+Current maintainer: [Katie Chan](https://katiechan.cargo.site) 
 
-Past maintainers: [Ashley Kang](https://ashleykang.dev/)
+Past maintainers: [Connie Liu](https://connieliu0.github.io/#/), [Ashley Kang](https://ashleykang.dev/)
 
 Please contact them if you have questions!
 
