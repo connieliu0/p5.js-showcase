@@ -197,7 +197,7 @@ function Gallerytwenty() {
   const [graph2Displayed, showGraph2] = useState(false);
   return (
     <div className="body">
-      <div className="2021showcasenotice">
+      <div className="2021notice">
       <div class="gradient-border" id="box">
       <h2>{t('2021_notice1')}</h2>
       </div>
