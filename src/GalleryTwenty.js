@@ -62,6 +62,11 @@ function GalleryTwenty (props){
 
   return (
     <div className="body">
+    <div className="2021notice">
+      <div class="gradient-border" id="box">
+      <h2>{t('2021_notice1')}</h2>
+      </div>
+      </div>
     <div className="intro2020">
     <h1>p5.js 2020 Showcase</h1>
     <h3><em>{<Markdown source={t('2020Gallery_Intro')}/>}</em></h3>
