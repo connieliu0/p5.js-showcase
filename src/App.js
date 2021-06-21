@@ -244,7 +244,7 @@ function Gallerytwenty() {
   );
 }
 
-function DetailedPage() {
+{/* function DetailedPage() {
   let { id } = useParams();
   let entries = i18next.t('showcase2019', { returnObjects: true });
   let piece = entries.find(x => x.id === id);
@@ -256,7 +256,7 @@ function DetailedPage() {
       piece={piece}
     />
   );
-}
+} */}
 
 function Detailed2020Page() {
   let { id, filter } = useParams();
