@@ -199,7 +199,7 @@ function Gallerytwenty() {
     <div className="body">
       <div className="2021notice">
       <div class="gradient-border" id="box">
-      <h3>{t('2021_notice1')}</h3>
+      <h3><Markdown source={t('2021_notice1')}/></h3>
       </div>
       <div className="cover2020">
         <div className="flex">
