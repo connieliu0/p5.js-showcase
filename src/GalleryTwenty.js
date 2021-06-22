@@ -64,7 +64,7 @@ function GalleryTwenty (props){
     <div className="body">
     <div className="2021notice">
       <div class="gradient-border" id="box">
-      <h2>{t('2021_notice1')}</h2>
+      <h3>{t('2021_notice1')}</h3>
       </div>
       </div>
     <div className="intro2020">
