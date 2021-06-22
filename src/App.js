@@ -33,7 +33,7 @@ export default function App() {
         <div className="left">
           <Link to="/" className="item">Foreword</Link>
           <Link to="/2020-All" className="item">Gallery</Link>
-          <Link to="/2019" className="item">2019</Link>
+          <Link to="/archive" className="item">Archive</Link>
           <Link to="/about" className="item">About</Link>
           <a href="https://p5js.org">p5.js</a>
         </div>
@@ -47,7 +47,7 @@ export default function App() {
       <Switch>
         <Analytics id="UA-175461618-2" debug>
           <Route exact path="/" children={<Gallerytwenty />} />
-          <Route exact path="/2019" children={<Gallerynineteen />} />
+          <Route exact path="/archive" children={<Archive />} />
           <Route exact path="/2019/:id" children={<DetailedPage />} />
           <Route exact path="/2020-:filter/" children={<GalleryTwenty />} />
           <Route exact path="/2020-:filter/:id" children={<Detailed2020Page />} />
@@ -76,6 +76,40 @@ function About() {
     </div>
   );
 }
+
+function Archive() {
+  var Markdown = require('react-markdown');
+  const { t, i18n } = useTranslation();
+  ScrollToTop();
+  return (
+    <div className="body">
+      <div className="gallery">
+        <div id="intro2019">
+        <h1>Archive</h1>
+        <h3><Markdown source={t('Archiveabout')} /></h3>
+        <div class="row">
+          {t('archive', { returnObjects: true }).map(({ id, title, author, description, image }) => (
+            <Link
+              key={id}
+              to={{
+                pathname: `/archive/${id}/`,
+              }}
+            >
+              <TestCard key={`card-${id}`}
+                id={id}
+                title={title}
+                author={author}
+                description={description}
+                image={image} />
+            </Link>
+          ))}
+        </div>
+      </div>
+    </div>
+    </div>
+  );
+}
+
 
 function Gallerynineteen() {
   var Markdown = require('react-markdown');
@@ -163,11 +197,15 @@ function Gallerytwenty() {
   const [graph2Displayed, showGraph2] = useState(false);
   return (
     <div className="body">
+      <div className="2021notice">
+      <div class="gradient-border" id="box">
+      <h3><Markdown source={t('2021_notice1')}/></h3>
+      </div>
       <div className="cover2020">
         <div className="flex">
           <div className="column">
             <h1>{t('Welcome')}</h1>
-            <p><em>{t('Created By')} Connie Liu</em></p>
+            <p><em>{t('Created By')} Katie Chan</em></p>
             <h2>{t('Jump to')} <HashLink smooth to="#twentyviz">{t('Visualizations')}</HashLink> | <Link to="/2020-All">{t('Projects')}</Link></h2>
             <HashLink smooth to="#twentyviz"><img className="downarrow" src={process.env.PUBLIC_URL + '/down.svg'} alt="p5.js down arrow" /></HashLink>
 
@@ -180,6 +218,7 @@ function Gallerytwenty() {
             </div>
           </div>
         </div>
+      </div>
       </div>
       <div className="twentyviz" id="twentyviz">
         <div className="flex column">
