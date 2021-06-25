@@ -699,8 +699,9 @@ h1.tenpx{
   display: inline-block;
   margin-bottom: 0px;
   margin-top: 10px;
-  font-size: 3.5em;
+  font-size: 2em;
   text-decoration: underline dotted #ffd3de;
+  word-break: break-all;
 }
 .home{
   margin-top: 80px;
@@ -708,9 +709,9 @@ h1.tenpx{
 }
 .home img{
   height: 100%;
-  max-height: 50px;
+  max-height: 30px;
   width: 100%;
-  max-width: 50px;
+  max-width: 30px;
   margin-right: 10px;
 }
 /* Details Page */
