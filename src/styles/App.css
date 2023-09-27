@@ -1,49 +1,54 @@
+@font-face {
+  font-family: "Montserrat Bold";
+  src: url("fonts/Montserrat-Bold.ttf");
+}
 
-@font-face{
-    font-family: "Montserrat Bold";
-    src: url("fonts/Montserrat-Bold.ttf");
-  }
-@font-face{
-    font-family: "Montserrat";
-    src: url("fonts/Montserrat-Regular.ttf");
-  }
-  @font-face{
-    font-family: "Montserrat Medium";
-    src: url("fonts/Montserrat-Medium.ttf");
-  }
-  @font-face{
-    font-family: "Montserrat ExtraBold";
-    src: url("fonts/Montserrat-ExtraBold.ttf");
-  }
-  @font-face{
-    font-family: "Montserrat SemiBold";
-    src: url("fonts/Montserrat-SemiBold.ttf");
-  }
+@font-face {
+  font-family: "Montserrat";
+  src: url("fonts/Montserrat-Regular.ttf");
+}
 
-body{
+@font-face {
+  font-family: "Montserrat Medium";
+  src: url("fonts/Montserrat-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Montserrat ExtraBold";
+  src: url("fonts/Montserrat-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: "Montserrat SemiBold";
+  src: url("fonts/Montserrat-SemiBold.ttf");
+}
+
+body {
   font-family: "Montserrat";
   margin-bottom: 40px;
   width: 100%;
 }
 
-#root{
+#root {
   width: 100%;
   overflow-x: hidden;
   overflow-y: hidden;
 }
 
 .leaflet-container {
-    height: 400px;
-    width: 100%;
+  height: 400px;
+  width: 100%;
 }
-.column h2, h3{
+
+.column h2, h3 {
   font-family: "Montserrat";
   font-weight: normal;
 }
 
-.column h1{
-  margin-bottom:0px;
+.column h1 {
+  margin-bottom: 0px;
 }
+
 .App-header {
   background-color: white;
   display: flex;
@@ -58,19 +63,21 @@ body{
   height: 40px;
 }
 
-.Name{
+.Name {
   position: absolute;
   bottom: 55%;
   left: 20px;
 }
-.Name h2{
+
+.Name h2 {
   margin-bottom: 0px;
   font-family: "Montserrat Bold";
   color: white;
   text-shadow: 2px 2px 4px #AD1349;
   margin-top: 10px;
 }
-.Name h2 em{
+
+.Name h2 em {
   font-size: .8em;
 }
 
@@ -83,7 +90,8 @@ body{
   align-items: center;
   width: 100%;
 }
-.navigation .left{
+
+.navigation .left {
   margin-left: 40px;
   display: flex;
   flex-direction: row;
@@ -94,7 +102,7 @@ body{
   margin-right: 20px;
 }
 
-.navigation .right{
+.navigation .right {
   margin-right: 40px;
 }
 
@@ -108,142 +116,159 @@ body{
 .Examples-Container {
   display: flex;
 }
-h1{
+
+h1 {
   font-size: 4em;
   font-family: "Montserrat Bold";
   color: #DB3B60;
-  line-height:1em;
+  line-height: 1em;
   /* width: 90%; */
   margin-right: 0px;
 }
 
-a{
+a {
   text-decoration: none;
   color: #DB3B60;
 }
-p{
+
+p {
   letter-spacing: .001em;
 }
-.home a:hover{
+
+.home a:hover {
   background-image: -webkit-linear-gradient(left, white 50%, rgb(255, 228, 233) 50%);
-  background-image: linear-gradient(to right,white 50%, rgb(255, 228, 233) 50%);
+  background-image: linear-gradient(to right, white 50%, rgb(255, 228, 233) 50%);
   background-position: -100%;
   background-size: 200%;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
-button{
+
+button {
   outline: none;
   border-radius: 25px;
-   margin-left: 10px;
-    background-color: transparent; /* Green */
-    border: none;
-    color: #DB3B60;
-    padding: 8px 14px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
+  margin-left: 10px;
+  background-color: transparent;
+  /* Green */
+  border: none;
+  color: #DB3B60;
+  padding: 8px 14px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }
+
 /* hover styles */
-.bigcard:hover{
-filter: none;
+.bigcard:hover {
+  filter: none;
 }
-.cardimg
-button:hover{
+
+.cardimg button:hover {
   color: #FFB6C1;
 }
-a:hover{
+
+a:hover {
   color: #FFB6C1;
 }
-#box a:hover{
+
+#box a:hover {
   color: #FFB6C1;
 }
-.map a:hover{
+
+.map a:hover {
   color: #0078A8;
 }
 
-p a:hover{
-    background-image: -webkit-linear-gradient(left, white 50%, rgb(255, 228, 233) 50%);
-    background-image: linear-gradient(to right,white 50%, rgb(255, 228, 233) 50%);
-    background-position: -100%;
-    background-size: 200%;
-    -webkit-transition: all 0.4s;
-    transition: all 0.4s;
-    color: #DB3B60;
-}
-h2 a:hover{
+p a:hover {
   background-image: -webkit-linear-gradient(left, white 50%, rgb(255, 228, 233) 50%);
-  background-image: linear-gradient(to right,white 50%, rgb(255, 228, 233) 50%);
+  background-image: linear-gradient(to right, white 50%, rgb(255, 228, 233) 50%);
   background-position: -100%;
   background-size: 200%;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
   color: #DB3B60;
 }
-h3 a:hover{
+
+h2 a:hover {
   background-image: -webkit-linear-gradient(left, white 50%, rgb(255, 228, 233) 50%);
-  background-image: linear-gradient(to right,white 50%, rgb(255, 228, 233) 50%);
+  background-image: linear-gradient(to right, white 50%, rgb(255, 228, 233) 50%);
   background-position: -100%;
   background-size: 200%;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
   color: #DB3B60;
 }
-.enter{
+
+h3 a:hover {
+  background-image: -webkit-linear-gradient(left, white 50%, rgb(255, 228, 233) 50%);
+  background-image: linear-gradient(to right, white 50%, rgb(255, 228, 233) 50%);
+  background-position: -100%;
+  background-size: 200%;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  color: #DB3B60;
+}
+
+.enter {
   font-size: 2em;
 }
 
-.body{
+.body {
   margin: 0;
   padding: 40px 120px 120px 120px;
 }
+
 /* TestCard 2019 Page */
-.card2019 .Description{
+.card2019 .Description {
   margin-bottom: 25px;
 }
-.card2019 .bigcard{
+
+.card2019 .bigcard {
   border-style: dashed;
   border-width: 3px;
 }
+
 /* TestCard 2020 Page */
 
-.bigcard{
+.bigcard {
   border-width: 3px;
   border-radius: 15px;
-  border-style:  solid;
+  border-style: solid;
   width: 450px;
   margin-right: 40px;
   padding-bottom: 0px;
   position: relative;
   border-color: #FF2457;
-  margin-bottom:0px;
+  margin-bottom: 0px;
 }
 
 .bigcard:hover {
   border-color: #FFB6C1;
   color: #FFB6C1;
 }
-.bigcard img:hover{
-  filter:none;
+
+.bigcard img:hover {
+  filter: none;
   -webkit-transition: all 0.4s;
-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
-.Description{
+.Description {
   margin-top: 20px;
-  padding-left:10px;
-  padding-right:10px;
+  padding-left: 10px;
+  padding-right: 10px;
   color: darkred;
   overflow: hidden;
 }
 
-.Description p{
+.Description p {
   overflow: hidden;
   text-overflow: ellipsis;
   font-size: 16px;
   width: 350px;
 }
+
 /* clamp styles */
 .clamp-lines {
   border-radius: .25em;
@@ -251,7 +276,7 @@ transition: all 0.4s;
   margin: 1em;
 }
 
-.clamp-lines > span {
+.clamp-lines>span {
   display: block;
 }
 
@@ -260,7 +285,7 @@ transition: all 0.4s;
 
 .clamp-lines.custom-class .clamp-lines__button {
   border: 1px solid transparent;
-    display: block;
+  display: block;
   margin: .75em auto 0;
   padding: .5em;
   text-align: center;
@@ -268,44 +293,51 @@ transition: all 0.4s;
   width: 100%;
 }
 
-.cardimage img{
+.cardimage img {
   border-radius: 12px 12px 0px 0px;
   opacity: .9;
   width: 500px;
   filter: blur(3px);
 }
-.cardimage:hover{
-filter: none;
+
+.cardimage:hover {
+  filter: none;
 }
-.cardimage{
-  background:#DB3B60;
+
+.cardimage {
+  background: #DB3B60;
   border-radius: 12px 12px 0px 0px;
   height: 250px;
   overflow: hidden;
 }
+
 .bigcard {
   width: 360px;
   margin-bottom: 25px;
   margin-right: 8px;
   margin-left: 8px;
 }
-.row{
+
+.row {
   width: 100%;
   display: flex;
   flex-direction: row;
 }
 
-.gallery .row{
+.gallery .row {
   flex-wrap: wrap;
   justify-content: center;
-  align-items:center;
+  align-items: center;
 }
-.body.row{
+
+.body.row {
   flex-wrap: wrap;
 }
-.row a{
+
+.row a {
   margin-right: 15px;
 }
+
 /* 2020 Page Borderbox */
 
 #box {
@@ -314,12 +346,14 @@ filter: none;
   padding: 20px 20px;
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
+
 .gradient-border {
   --borderWidth: 4px;
   background: #FFF2F2;
   position: relative;
   border-radius: var(--borderWidth);
 }
+
 .gradient-border:after {
   content: '';
   position: absolute;
@@ -327,7 +361,7 @@ filter: none;
   left: calc(-1 * var(--borderWidth));
   height: calc(100% + var(--borderWidth) * 2);
   width: calc(100% + var(--borderWidth) * 2);
-  background: linear-gradient(60deg, #fec3e0,#ff77b9, #ff1f8f, #ff4ef9, #ff07f7);
+  background: linear-gradient(60deg, #fec3e0, #ff77b9, #ff1f8f, #ff4ef9, #ff07f7);
   border-radius: calc(2 * var(--borderWidth));
   z-index: -1;
   animation: animatedgradient 3s ease alternate infinite;
@@ -335,15 +369,17 @@ filter: none;
 }
 
 /* 2020 Page */
-.Description2020{
-  margin-top:20px;
+.Description2020 {
+  margin-top: 20px;
 }
-.filterlist{
+
+.filterlist {
   font-family: "Montserrat ExtraBold";
   margin-bottom: 20px;
   letter-spacing: 1.5px;
 }
-.filterlist button{
+
+.filterlist button {
   letter-spacing: 1.5px;
   font-family: "Montserrat ExtraBold";
   -webkit-text-fill-color: white;
@@ -353,76 +389,92 @@ filter: none;
   background-color: transparent;
   color: #DB3B60;
   border-radius: 25px;
-  padding-top:5px;
-  padding-bottom:5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   padding-right: 0px;
   font-size: 32px;
 }
+
 #Visual.active {
   -webkit-text-fill-color: pink;
   text-shadow:
-  2px 2px #ff1f8f;
+    2px 2px #ff1f8f;
 }
-#Game.active{
+
+#Game.active {
   -webkit-text-fill-color: pink;
   text-shadow:
-  2px 2px #ff1f8f;
-}#Data.active{
-  -webkit-text-fill-color: pink;
-  text-shadow:
-  2px 2px #ff1f8f;
-}#World.active{
-  -webkit-text-fill-color: pink;
-  text-shadow:
-  2px 2px #ff1f8f;
-}#All.active{
-  -webkit-text-fill-color: pink;
-  text-shadow:
-  2px 2px #ff1f8f;
+    2px 2px #ff1f8f;
 }
-#Text.active{
+
+#Data.active {
   -webkit-text-fill-color: pink;
   text-shadow:
-  2px 2px #ff1f8f;
+    2px 2px #ff1f8f;
 }
-#Sound.active{
+
+#World.active {
   -webkit-text-fill-color: pink;
   text-shadow:
-  2px 2px #ff1f8f;
+    2px 2px #ff1f8f;
 }
-#Educational.active{
+
+#All.active {
   -webkit-text-fill-color: pink;
   text-shadow:
-  2px 2px #ff1f8f;
+    2px 2px #ff1f8f;
 }
-#Teaching.active{
+
+#Text.active {
   -webkit-text-fill-color: pink;
   text-shadow:
-  2px 2px #ff1f8f;
+    2px 2px #ff1f8f;
 }
-#Simulation.active{
+
+#Sound.active {
   -webkit-text-fill-color: pink;
   text-shadow:
-  2px 2px #ff1f8f;
+    2px 2px #ff1f8f;
 }
-#Tool.active{
+
+#Educational.active {
   -webkit-text-fill-color: pink;
   text-shadow:
-  2px 2px #ff1f8f;
+    2px 2px #ff1f8f;
 }
-#Camera.active{
+
+#Teaching.active {
   -webkit-text-fill-color: pink;
   text-shadow:
-  2px 2px #ff1f8f;
+    2px 2px #ff1f8f;
 }
-.filterlist button:hover{
+
+#Simulation.active {
+  -webkit-text-fill-color: pink;
+  text-shadow:
+    2px 2px #ff1f8f;
+}
+
+#Tool.active {
+  -webkit-text-fill-color: pink;
+  text-shadow:
+    2px 2px #ff1f8f;
+}
+
+#Camera.active {
+  -webkit-text-fill-color: pink;
+  text-shadow:
+    2px 2px #ff1f8f;
+}
+
+.filterlist button:hover {
   -webkit-text-fill-color: pink;
   display: inline-block;
   color: #DB3B60;
   text-shadow:
-  2px 2px #ff1f8f;
-  padding-top:5px;
-  padding-bottom:5px;
+    2px 2px #ff1f8f;
+  padding-top: 5px;
+  padding-bottom: 5px;
   transition: all .3s;
   transition-property: all;
   transition-duration: 0.3s;
@@ -431,29 +483,31 @@ filter: none;
 
 }
 
-.filterlist h2{
+.filterlist h2 {
   -webkit-text-fill-color: #FFF2F2;
-  font-size:32px;
+  font-size: 32px;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #FF2457;
   text-shadow:
-  2px 2px #ff1f8f;
+    2px 2px #ff1f8f;
   display: inline-block;
   margin-bottom: 10px;
   margin-top: 10px;
 }
-#intro2019 h1{
+
+#intro2019 h1 {
   color: #ff577e;
   margin-top: 20px;
   margin-bottom: 20px;
   text-shadow: 2px 2px 4px #AD1349;
 }
-.intro2020 h1{
+
+.intro2020 h1 {
   text-align: center;
   font-family: "Montserrat ExtraBold";
   font-weight: bolder;
-  font-size:3.5em;
-	letter-spacing:0.1em;
+  font-size: 3.5em;
+  letter-spacing: 0.1em;
   -webkit-text-fill-color: #FFF2F2;
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: #FF2457;
@@ -463,36 +517,39 @@ filter: none;
     4px 4px #ff77b9,
     6px 6px #ff1f8f;
   margin-bottom: 20px;
-  margin-right:0px;
+  margin-right: 0px;
   margin-top: 20px;
 
 }
-.cover2020{
+
+.cover2020 {
   margin-top: 30px;
   margin-bottom: 140px;
 }
-.cover2020 h1{
+
+.cover2020 h1 {
   font-family: "Montserrat ExtraBold";
   font-weight: bolder;
-  font-size:3.75em;
+  font-size: 3.75em;
   margin-right: 20px;
-	letter-spacing:0.1em;
+  letter-spacing: 0.1em;
   -webkit-text-fill-color: #FFF2F2;
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: #FF2457;
   color: white;
-  margin-top:0px;
+  margin-top: 0px;
   text-shadow:
     2px 2px #fec3e0,
     4px 4px #ff77b9,
     6px 6px #ff1f8f;
 }
-img.downarrow{
+
+img.downarrow {
   -webkit-text-stroke-color: #FFF2F2;
   -webkit-text-stroke-width: 8px;
-  -webkit-text-stroke-color:  #ff8ba6;
+  -webkit-text-stroke-color: #ff8ba6;
   text-shadow:
-  -2px -2px #ff77b9;
+    -2px -2px #ff77b9;
   margin-left: 0px;
   margin: 0 auto;
   display: block;
@@ -500,57 +557,77 @@ img.downarrow{
   height: 30px;
   margin-top: 65px;
 }
-img.downarrow{
-  -webkit-animation: mover 1s infinite  alternate;
-  animation: mover 1s infinite  alternate;
-}
-img.downarrow{
-  -webkit-animation: mover 1s infinite  alternate;
-  animation: mover 1s infinite  alternate;
-}
-@-webkit-keyframes mover {
-  0% { transform: translateY(0); }
-  100% { transform: translateY(-8px); }
-}
-@keyframes mover {
-  0% { transform: translateY(0); }
-  100% { transform: translateY(-8px); }
+
+img.downarrow {
+  -webkit-animation: mover 1s infinite alternate;
+  animation: mover 1s infinite alternate;
 }
 
-.intro2020 p{
+img.downarrow {
+  -webkit-animation: mover 1s infinite alternate;
+  animation: mover 1s infinite alternate;
+}
+
+@-webkit-keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-8px);
+  }
+}
+
+.intro2020 p {
   margin: 0px;
-  color:#ff8ba6;
+  color: #ff8ba6;
   text-align: center;
 }
-.flex p em{
+
+.flex p em {
   margin-top: 20px;
-  color:#ff8ba6;
+  color: #ff8ba6;
   font-size: 20px;
 }
-.column{
+
+.column {
   flex: 50% 1;
 }
-.flex{
+
+.flex {
   display: flex;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
 }
 
 /* 2020 visualization */
-.twentyviz h1{
+.twentyviz h1 {
   font-family: "Montserrat";
   font-size: 54px;
 }
-.twentyviz h1 a{
-float:right;
+
+.twentyviz h1 a {
+  float: right;
 }
-.twentyviz h2{
+
+.twentyviz h2 {
   line-height: 30px;
   display: inline;
   color: gray;
 }
-.twentyviz a:hover{
+
+.twentyviz a:hover {
   background-image: -webkit-linear-gradient(left, white 50%, rgb(255, 228, 233) 50%);
-  background-image: linear-gradient(to right,white 50%, rgb(255, 228, 233) 50%);
+  background-image: linear-gradient(to right, white 50%, rgb(255, 228, 233) 50%);
   background-position: -100%;
   background-size: 200%;
   -webkit-transition: all 0.4s;
@@ -558,16 +635,18 @@ float:right;
   color: #DB3B60;
 
 }
-.twentyviz button{
+
+.twentyviz button {
   padding: 0px 0px 0px 10px;
   margin-right: 10px;
-  font-size:1.5em;
+  font-size: 1.5em;
   font-family: Montserrat;
   margin-left: 0px;
 }
-.twentyviz button:hover{
+
+.twentyviz button:hover {
   background-image: -webkit-linear-gradient(left, white 50%, rgb(255, 228, 233) 50%);
-  background-image: linear-gradient(to right,white 50%, rgb(255, 228, 233) 50%);
+  background-image: linear-gradient(to right, white 50%, rgb(255, 228, 233) 50%);
   background-position: -100%;
   background-size: 200%;
   -webkit-transition: all 0.4s;
@@ -578,33 +657,39 @@ float:right;
 canvas {
   display: block;
 }
-#graph1.active{
+
+#graph1.active {
   background-image: -webkit-linear-gradient(left, white 50%, rgb(255, 228, 233) 50%);
-  background-image: linear-gradient(to right,white 50%, rgb(255, 228, 233) 50%);
+  background-image: linear-gradient(to right, white 50%, rgb(255, 228, 233) 50%);
   background-position: -100%;
   background-size: 200%;
   color: #DB3B60;
 }
-#graph2.active{
+
+#graph2.active {
   background-image: -webkit-linear-gradient(left, white 50%, rgb(255, 228, 233) 50%);
-  background-image: linear-gradient(to right,white 50%, rgb(255, 228, 233) 50%);
+  background-image: linear-gradient(to right, white 50%, rgb(255, 228, 233) 50%);
   background-position: -100%;
   background-size: 200%;
   color: #DB3B60;
 }
+
 /* card 2020 */
-h1.tenpx{
-  margin-bottom:0px;
+h1.tenpx {
+  margin-bottom: 0px;
 }
-.box.full{
-  width:360px;
+
+.box.full {
+  width: 360px;
 }
-.Name2020{
+
+.Name2020 {
   position: absolute;
   top: 5%;
   left: 10px;
 }
-.Name2020 h2{
+
+.Name2020 h2 {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #DB3B60;
   font-size: 1.45em;
@@ -613,56 +698,65 @@ h1.tenpx{
   margin-top: 10px;
   -webkit-text-fill-color: white;
   text-shadow:
-  2px 2px #db3b60;
+    2px 2px #db3b60;
 }
-.Name2020 a:hover{
+
+.Name2020 a:hover {
   -webkit-text-fill-color: pink;
 }
-.Name2020 h2 em{
+
+.Name2020 h2 em {
   font-size: .8em;
 }
 
-.links{
+.links {
   text-align: center;
   display: flex;
 }
-.links a{
+
+.links a {
   margin-right: 0px;
   text-align: center;
 }
-.box{
-  padding:5px 0px 0px 0px;
+
+.box {
+  padding: 5px 0px 0px 0px;
   height: 25px;
   border: #FF2457;
   border-bottom-style: solid;
   width: 180px;
 }
-.links a:first-child{
+
+.links a:first-child {
   border: #FF2457;
   border-right-style: solid;
 }
-.box:hover{
-  color:white;
+
+.box:hover {
+  color: white;
   background-color: #FFB6C1;
 }
+
 .tags {
   margin: 0px;
-  display:inline-block;
+  display: inline-block;
   padding: 0px;
   overflow: auto;
   white-space: nowrap;
   width: 350px;
 }
-.tags ul{
-  list-style:none;
+
+.tags ul {
+  list-style: none;
   display: inline-block;
-  margin:0px;
-  padding:0px;
+  margin: 0px;
+  padding: 0px;
 }
-.tags li{
+
+.tags li {
   padding: 0px;
   margin-top: 0px;
-  margin-bottom:10px;
+  margin-bottom: 10px;
   margin-left: 10px;
   max-height: 30px;
   display: inline-block;
@@ -673,11 +767,13 @@ h1.tenpx{
   padding-left: 0px;
   padding-right: 0px;
 }
-.tags a:hover{
-  background-color:#FFB6C1;
-  color:white;
+
+.tags a:hover {
+  background-color: #FFB6C1;
+  color: white;
 }
-.tags a{
+
+.tags a {
   font-size: 14px;
   padding: 6px 14px;
   overflow: wrap;
@@ -688,169 +784,199 @@ h1.tenpx{
 }
 
 /* About Page */
-.home p{
+.home p {
   width: 85%;
   margin-left: 70px;
   line-height: 1.5em;
   display: inline-block;
   margin-top: 15px;
 }
-.home h1{
+
+.home h1 {
   display: inline-block;
   margin-bottom: 0px;
   margin-top: 10px;
   font-size: 3.5em;
   text-decoration: underline dotted #ffd3de;
 }
-.home{
+
+.home {
   margin-top: 80px;
   margin-left: 130px;
 }
-.home img{
+
+.home img {
   height: 100%;
   max-height: 50px;
   width: 100%;
   max-width: 50px;
   margin-right: 10px;
 }
+
 /* Details Page */
-.details-header{
+.details-header {
   width: 1000px;
   margin: auto;
   margin-top: 60px;
 }
-.detailsbody p{
+
+.detailsbody p {
   font-size: 16px;
   white-space: pre-line;
   line-height: 1.6;
 
 }
-.detailsbody{
+
+.detailsbody {
   margin: 40px 300px 120px 300px;
 }
-.details-header h3{
+
+.details-header h3 {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.col{
+
+.col {
   width: 100%;
   display: flex;
   flex-direction: column;
 }
-.details-image{
+
+.details-image {
   width: 425px;
   height: auto;
   margin-right: 60px;
 }
-.details-image img{
+
+.details-image img {
   width: 430px;
   height: auto;
   margin-right: 40px;
   border-radius: 25px;
-  border: dotted  #DB3B60;;
+  border: dotted #DB3B60;
+  ;
   padding: 5px;
 }
-.details-header h1{
+
+.details-header h1 {
   font-size: 48px;
   font-family: "Montserrat Medium";
   margin-bottom: 10px;
 }
-.detailsbody h1{
+
+.detailsbody h1 {
   font-size: 48px;
   font-family: "Montserrat Medium";
   margin-bottom: 10px;
 }
-.details-header h2{
+
+.details-header h2 {
   margin-top: 20px;
   margin-bottom: 10px;
   font-size: 24px;
   font-family: "Montserrat";
 }
-.detailsbody h2{
+
+.detailsbody h2 {
   margin-top: 20px;
   margin-bottom: 10px;
   font-size: 24px;
   font-family: "Montserrat";
 }
-.QnA h2{
+
+.QnA h2 {
   margin-top: 40px;
 }
-.detailsbody{
+
+.detailsbody {
   font-size: 18px;
 }
-.details-header{
+
+.details-header {
   font-size: 18px;
 }
-.small{
+
+.small {
   font-size: 16px;
   font-style: italic;
 }
-.center{
+
+.center {
   text-align: center;
   margin-top: 20px;
 }
 
 @media (max-width: 900px) {
-  .details-header{
+  .details-header {
     width: 760px;
   }
-  .column{
+
+  .column {
     flex: 100%;
   }
 
-  .body{
+  .body {
     padding-left: 20px;
     padding-right: 20px;
   }
-  .detailsbody{
+
+  .detailsbody {
     margin-left: 20px;
     margin-right: 20px;
   }
-  .details-image img{
+
+  .details-image img {
     width: 90vw;
     margin-right: 0px;
     margin-left: 0px;
     max-width: 100%;
   }
-  .detailsbody .row{
+
+  .detailsbody .row {
     flex-wrap: wrap;
   }
-  .detailsbody h1{
+
+  .detailsbody h1 {
     margin-top: 20px;
   }
-  .home{
+
+  .home {
     margin-top: 30px;
     margin-left: 20px;
   }
-  .gallery h1{
+
+  .gallery h1 {
     width: 100%;
   }
-  .home p{
+
+  .home p {
     width: 100%;
   }
-  .home p{
+
+  .home p {
     margin-left: 0px;
   }
 }
 
-@media (max-width: 768px){
-  .row{
+@media (max-width: 768px) {
+  .row {
     flex-direction: column;
   }
 
-  .details-header{
+  .details-header {
     margin-top: 60px;
-    margin-right:auto;
+    margin-right: auto;
     margin-left: auto;
     width: 94vw;
   }
-  .navigation{
+
+  .navigation {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
   }
 
-  .navigation .right{
+  .navigation .right {
     margin-left: 40px;
     margin-right: 0;
   }
@@ -861,40 +987,48 @@ h1.tenpx{
 
 }
 
-@media(max-width: 426px){
-  .intro2020{
-    text-align:left;
+@media(max-width: 426px) {
+  .intro2020 {
+    text-align: left;
   }
-  .filterlist button{
+
+  .filterlist button {
     font-size: 24px;
-    -webkit-text-stroke-width:.75px;
+    -webkit-text-stroke-width: .75px;
   }
-  .card2019 .bigcard{
-    width:90vw;
+
+  .card2019 .bigcard {
+    width: 90vw;
   }
-  .gallery h1{
+
+  .gallery h1 {
     font-size: 48px;
   }
-  .intro2020 h1{
+
+  .intro2020 h1 {
     text-align: left;
     font-size: 48px;
   }
-  .filterlist button{
+
+  .filterlist button {
     text-align: left;
   }
-  .cover2020 h1{
+
+  .cover2020 h1 {
     font-size: 3rem;
   }
-  .twentyviz h1{
+
+  .twentyviz h1 {
     font-size: 40px;
   }
 }
 
-@media (max-width: 375px){
-  .navigation .left{
+@media (max-width: 375px) {
+  .navigation .left {
     margin-left: 20px;
   }
-  .navigation .right{
+
+  .navigation .right {
     margin-left: 20px;
   }
 }
