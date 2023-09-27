@@ -2,31 +2,32 @@
 <html lang="en">
   <head>
     <link
-  rel="stylesheet"
-  href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
-  integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
-  crossorigin=""
-/>
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+      integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+      crossorigin=""
+    />
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="shortcut icon" href="/public/favicon.ico" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
       content="p5.js Showcase displays creative work using p5.js by the international community"
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="apple-touch-icon" href="/public/logo192.png" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="manifest" href="/public/manifest.json" />
+    <link rel="stylesheet" href="../src/styles/App.css" />
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
       Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      Unlike "/favicon.ico" or "favicon.ico", "/public/favicon.ico" will
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
@@ -34,7 +35,947 @@
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <div id="root">
+      <div class="navigation">
+        <div class="left">
+          <a class="item" href="#/">Foreword</a
+          ><a class="item" href="#/2020-All">Gallery</a
+          ><a class="item" href="#/2019">2019</a
+          ><a class="item" href="#/about">About</a
+          ><a href="https://p5js.org" target="_blank">p5.js</a>
+        </div>
+        <div class="right">
+          <button>English</button><button>Español</button
+          ><button>简体中文</button><button>한국어</button>
+        </div>
+      </div>
+      <div class="body">
+        <div class="cover2020">
+          <div class="flex">
+            <div class="column">
+              <h1>Welcome to the p5.js 2020 showcase!</h1>
+              <p><em>Created By Connie Liu</em></p>
+              <h2>
+                Jump to: <a href="#/#twentyviz">Visualizations</a> |
+                <a href="#/2020-All">Projects</a>
+              </h2>
+              <a href="#/#twentyviz"
+                ><img
+                  class="downarrow"
+                  src="/public/down.svg"
+                  alt="p5.js down arrow"
+              /></a>
+            </div>
+            <div class="column">
+              <div class="gradient-border" id="box">
+                <h3>
+                  During Summer 2020 we asked the p5.js community around the
+                  world to submit their pieces for a new and expanded edition of
+                  the Showcase. Below you'll find all kinds of works ranging
+                  from sound-based visualizations to educational games to
+                  mathematical simulations.
+                </h3>
+                <h3>
+                  <p>
+                    Personally as the curator for this year's Showcase, I can
+                    only describe the experience in one word: <em>inspired</em>.
+                    The amount of passion and creative curiosity that beams from
+                    everyone's work has me in awe - and I truly believes
+                    encapsulates the spirit of the p5.js community.
+                  </p>
+                </h3>
+                <h2>
+                  <a href="#/#twentyviz"
+                    ><p>Learn more about the p5.js community below!</p></a
+                  >
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="twentyviz" id="twentyviz">
+          <div class="flex column">
+            <h1>this year we got submissions from...</h1>
+            <p><em>Click on the stars to learn more!</em></p>
+          </div>
+          <div
+            class="leaflet-container leaflet-fade-anim leaflet-grab leaflet-touch-drag"
+            style="position: relative"
+            tabindex="0"
+          >
+            <div
+              class="leaflet-pane leaflet-map-pane"
+              style="transform: translate3d(0px, 0px, 0px)"
+            >
+              <div class="leaflet-pane leaflet-tile-pane">
+                <div class="leaflet-layer" style="z-index: 1; opacity: 1">
+                  <div
+                    class="leaflet-tile-container leaflet-zoom-animated"
+                    style="
+                      z-index: 18;
+                      transform: translate3d(0px, 0px, 0px) scale(1);
+                    "
+                  >
+                    <img
+                      alt=""
+                      role="presentation"
+                      src="c.tile.openstreetmap.org/2/1/1.png"
+                      class="leaflet-tile leaflet-tile-loaded"
+                      style="
+                        width: 256px;
+                        height: 256px;
+                        transform: translate3d(298px, -56px, 0px);
+                        opacity: 1;
+                      "
+                    /><img
+                      alt=""
+                      role="presentation"
+                      src="https://a.tile.openstreetmap.org/2/2/1.png"
+                      class="leaflet-tile leaflet-tile-loaded"
+                      style="
+                        width: 256px;
+                        height: 256px;
+                        transform: translate3d(554px, -56px, 0px);
+                        opacity: 1;
+                      "
+                    /><img
+                      alt=""
+                      role="presentation"
+                      src="https://a.tile.openstreetmap.org/2/1/2.png"
+                      class="leaflet-tile leaflet-tile-loaded"
+                      style="
+                        width: 256px;
+                        height: 256px;
+                        transform: translate3d(298px, 200px, 0px);
+                        opacity: 1;
+                      "
+                    /><img
+                      alt=""
+                      role="presentation"
+                      src="https://b.tile.openstreetmap.org/2/2/2.png"
+                      class="leaflet-tile leaflet-tile-loaded"
+                      style="
+                        width: 256px;
+                        height: 256px;
+                        transform: translate3d(554px, 200px, 0px);
+                        opacity: 1;
+                      "
+                    /><img
+                      alt=""
+                      role="presentation"
+                      src="https://b.tile.openstreetmap.org/2/0/1.png"
+                      class="leaflet-tile leaflet-tile-loaded"
+                      style="
+                        width: 256px;
+                        height: 256px;
+                        transform: translate3d(42px, -56px, 0px);
+                        opacity: 1;
+                      "
+                    /><img
+                      alt=""
+                      role="presentation"
+                      src="https://b.tile.openstreetmap.org/2/3/1.png"
+                      class="leaflet-tile leaflet-tile-loaded"
+                      style="
+                        width: 256px;
+                        height: 256px;
+                        transform: translate3d(810px, -56px, 0px);
+                        opacity: 1;
+                      "
+                    /><img
+                      alt=""
+                      role="presentation"
+                      src="https://c.tile.openstreetmap.org/2/0/2.png"
+                      class="leaflet-tile leaflet-tile-loaded"
+                      style="
+                        width: 256px;
+                        height: 256px;
+                        transform: translate3d(42px, 200px, 0px);
+                        opacity: 1;
+                      "
+                    /><img
+                      alt=""
+                      role="presentation"
+                      src="https://c.tile.openstreetmap.org/2/3/2.png"
+                      class="leaflet-tile leaflet-tile-loaded"
+                      style="
+                        width: 256px;
+                        height: 256px;
+                        transform: translate3d(810px, 200px, 0px);
+                        opacity: 1;
+                      "
+                    /><img
+                      alt=""
+                      role="presentation"
+                      src="https://b.tile.openstreetmap.org/2/3/1.png"
+                      class="leaflet-tile leaflet-tile-loaded"
+                      style="
+                        width: 256px;
+                        height: 256px;
+                        transform: translate3d(-214px, -56px, 0px);
+                        opacity: 1;
+                      "
+                    /><img
+                      alt=""
+                      role="presentation"
+                      src="https://b.tile.openstreetmap.org/2/0/1.png"
+                      class="leaflet-tile leaflet-tile-loaded"
+                      style="
+                        width: 256px;
+                        height: 256px;
+                        transform: translate3d(1066px, -56px, 0px);
+                        opacity: 1;
+                      "
+                    /><img
+                      alt=""
+                      role="presentation"
+                      src="https://c.tile.openstreetmap.org/2/3/2.png"
+                      class="leaflet-tile leaflet-tile-loaded"
+                      style="
+                        width: 256px;
+                        height: 256px;
+                        transform: translate3d(-214px, 200px, 0px);
+                        opacity: 1;
+                      "
+                    /><img
+                      alt=""
+                      role="presentation"
+                      src="https://c.tile.openstreetmap.org/2/0/2.png"
+                      class="leaflet-tile leaflet-tile-loaded"
+                      style="
+                        width: 256px;
+                        height: 256px;
+                        transform: translate3d(1066px, 200px, 0px);
+                        opacity: 1;
+                      "
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="leaflet-pane leaflet-shadow-pane"></div>
+              <div class="leaflet-pane leaflet-overlay-pane">
+                <svg
+                  pointer-events="none"
+                  class="leaflet-zoom-animated"
+                  width="1331"
+                  height="480"
+                  viewBox="-111 -40 1331 480"
+                  style="transform: translate3d(-111px, -40px, 0px)"
+                >
+                  <g></g>
+                </svg>
+              </div>
+              <div class="leaflet-pane leaflet-marker-pane">
+                <div
+                  class="leaflet-marker-icon marker-cluster-custom leaflet-zoom-animated leaflet-interactive"
+                  tabindex="0"
+                  style="
+                    margin-left: -20px;
+                    margin-top: -20px;
+                    width: 40px;
+                    height: 40px;
+                    transform: translate3d(950px, 90px, 0px);
+                    z-index: 90;
+                  "
+                >
+                  <span>3</span>
+                </div>
+                <div
+                  class="leaflet-marker-icon marker-cluster-custom leaflet-zoom-animated leaflet-interactive"
+                  tabindex="0"
+                  style="
+                    margin-left: -20px;
+                    margin-top: -20px;
+                    width: 40px;
+                    height: 40px;
+                    transform: translate3d(915px, 85px, 0px);
+                    z-index: 85;
+                  "
+                >
+                  <span>3</span>
+                </div>
+                <img
+                  src="/p5.js-showcase/static/media/asterisk-01.b1dc80ed.svg"
+                  class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
+                  alt=""
+                  tabindex="0"
+                  style="
+                    margin-left: -20px;
+                    margin-top: -40px;
+                    width: 32px;
+                    height: 32px;
+                    transform: translate3d(335px, 235px, 0px);
+                    z-index: 235;
+                  "
+                />
+                <div
+                  class="leaflet-marker-icon marker-cluster-custom leaflet-zoom-animated leaflet-interactive"
+                  tabindex="0"
+                  style="
+                    margin-left: -20px;
+                    margin-top: -20px;
+                    width: 40px;
+                    height: 40px;
+                    transform: translate3d(353px, 301px, 0px);
+                    z-index: 301;
+                  "
+                >
+                  <span>3</span>
+                </div>
+                <img
+                  src="/p5.js-showcase/static/media/asterisk-01.b1dc80ed.svg"
+                  class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
+                  alt=""
+                  tabindex="0"
+                  style="
+                    margin-left: -20px;
+                    margin-top: -40px;
+                    width: 32px;
+                    height: 32px;
+                    transform: translate3d(1044px, 333px, 0px);
+                    z-index: 333;
+                  "
+                /><img
+                  src="/p5.js-showcase/static/media/asterisk-01.b1dc80ed.svg"
+                  class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
+                  alt=""
+                  tabindex="0"
+                  style="
+                    margin-left: -20px;
+                    margin-top: -40px;
+                    width: 32px;
+                    height: 32px;
+                    transform: translate3d(985px, 299px, 0px);
+                    z-index: 299;
+                  "
+                /><img
+                  src="/p5.js-showcase/static/media/asterisk-01.b1dc80ed.svg"
+                  class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
+                  alt=""
+                  tabindex="0"
+                  style="
+                    margin-left: -20px;
+                    margin-top: -40px;
+                    width: 32px;
+                    height: 32px;
+                    transform: translate3d(841px, 89px, 0px);
+                    z-index: 89;
+                  "
+                /><img
+                  src="/p5.js-showcase/static/media/asterisk-01.b1dc80ed.svg"
+                  class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
+                  alt=""
+                  tabindex="0"
+                  style="
+                    margin-left: -20px;
+                    margin-top: -40px;
+                    width: 32px;
+                    height: 32px;
+                    transform: translate3d(773px, 63px, 0px);
+                    z-index: 63;
+                  "
+                /><img
+                  src="/p5.js-showcase/static/media/asterisk-01.b1dc80ed.svg"
+                  class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
+                  alt=""
+                  tabindex="0"
+                  style="
+                    margin-left: -20px;
+                    margin-top: -40px;
+                    width: 32px;
+                    height: 32px;
+                    transform: translate3d(784px, 121px, 0px);
+                    z-index: 121;
+                  "
+                /><img
+                  src="/p5.js-showcase/static/media/asterisk-01.b1dc80ed.svg"
+                  class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
+                  alt=""
+                  tabindex="0"
+                  style="
+                    margin-left: -20px;
+                    margin-top: -40px;
+                    width: 32px;
+                    height: 32px;
+                    transform: translate3d(805px, 134px, 0px);
+                    z-index: 134;
+                  "
+                /><img
+                  src="/p5.js-showcase/static/media/asterisk-01.b1dc80ed.svg"
+                  class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
+                  alt=""
+                  tabindex="0"
+                  style="
+                    margin-left: -20px;
+                    margin-top: -40px;
+                    width: 32px;
+                    height: 32px;
+                    transform: translate3d(354px, 56px, 0px);
+                    z-index: 56;
+                  "
+                />
+                <div
+                  class="leaflet-marker-icon marker-cluster-custom leaflet-zoom-animated leaflet-interactive"
+                  tabindex="0"
+                  style="
+                    margin-left: -20px;
+                    margin-top: -20px;
+                    width: 40px;
+                    height: 40px;
+                    transform: translate3d(320px, 112px, 0px);
+                    z-index: 112;
+                  "
+                >
+                  <span>2</span>
+                </div>
+                <div
+                  class="leaflet-marker-icon marker-cluster-custom leaflet-zoom-animated leaflet-interactive"
+                  tabindex="0"
+                  style="
+                    margin-left: -20px;
+                    margin-top: -20px;
+                    width: 40px;
+                    height: 40px;
+                    transform: translate3d(324px, 71px, 0px);
+                    z-index: 71;
+                  "
+                >
+                  <span>3</span>
+                </div>
+                <div
+                  class="leaflet-marker-icon marker-cluster-custom leaflet-zoom-animated leaflet-interactive"
+                  tabindex="0"
+                  style="
+                    margin-left: -20px;
+                    margin-top: -20px;
+                    width: 40px;
+                    height: 40px;
+                    transform: translate3d(341px, 72px, 0px);
+                    z-index: 72;
+                  "
+                >
+                  <span>19</span>
+                </div>
+                <img
+                  src="/p5.js-showcase/static/media/asterisk-01.b1dc80ed.svg"
+                  class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
+                  alt=""
+                  tabindex="0"
+                  style="
+                    margin-left: -20px;
+                    margin-top: -40px;
+                    width: 32px;
+                    height: 32px;
+                    transform: translate3d(260px, 140px, 0px);
+                    z-index: 140;
+                  "
+                />
+                <div
+                  class="leaflet-marker-icon marker-cluster-custom leaflet-zoom-animated leaflet-interactive"
+                  tabindex="0"
+                  style="
+                    margin-left: -20px;
+                    margin-top: -20px;
+                    width: 40px;
+                    height: 40px;
+                    transform: translate3d(269px, 77px, 0px);
+                    z-index: 77;
+                  "
+                >
+                  <span>2</span>
+                </div>
+                <div
+                  class="leaflet-marker-icon marker-cluster-custom leaflet-zoom-animated leaflet-interactive"
+                  tabindex="0"
+                  style="
+                    margin-left: -20px;
+                    margin-top: -20px;
+                    width: 40px;
+                    height: 40px;
+                    transform: translate3d(205px, 53px, 0px);
+                    z-index: 53;
+                  "
+                >
+                  <span>2</span>
+                </div>
+                <div
+                  class="leaflet-marker-icon marker-cluster-custom leaflet-zoom-animated leaflet-interactive"
+                  tabindex="0"
+                  style="
+                    margin-left: -20px;
+                    margin-top: -20px;
+                    width: 40px;
+                    height: 40px;
+                    transform: translate3d(211px, 85px, 0px);
+                    z-index: 85;
+                  "
+                >
+                  <span>3</span>
+                </div>
+                <div
+                  class="leaflet-marker-icon marker-cluster-custom leaflet-zoom-animated leaflet-interactive"
+                  tabindex="0"
+                  style="
+                    margin-left: -20px;
+                    margin-top: -20px;
+                    width: 40px;
+                    height: 40px;
+                    transform: translate3d(706px, 120px, 0px);
+                    z-index: 120;
+                  "
+                >
+                  <span>2</span>
+                </div>
+                <div
+                  class="leaflet-marker-icon marker-cluster-custom leaflet-zoom-animated leaflet-interactive"
+                  tabindex="0"
+                  style="
+                    margin-left: -20px;
+                    margin-top: -20px;
+                    width: 40px;
+                    height: 40px;
+                    transform: translate3d(771px, 143px, 0px);
+                    z-index: 143;
+                  "
+                >
+                  <span>2</span>
+                </div>
+                <div
+                  class="leaflet-marker-icon marker-cluster-custom leaflet-zoom-animated leaflet-interactive"
+                  tabindex="0"
+                  style="
+                    margin-left: -20px;
+                    margin-top: -20px;
+                    width: 40px;
+                    height: 40px;
+                    transform: translate3d(775px, 163px, 0px);
+                    z-index: 163;
+                  "
+                >
+                  <span>2</span>
+                </div>
+                <div
+                  class="leaflet-marker-icon marker-cluster-custom leaflet-zoom-animated leaflet-interactive"
+                  tabindex="0"
+                  style="
+                    margin-left: -20px;
+                    margin-top: -20px;
+                    width: 40px;
+                    height: 40px;
+                    transform: translate3d(561px, 29px, 0px);
+                    z-index: 29;
+                  "
+                >
+                  <span>6</span>
+                </div>
+              </div>
+              <div class="leaflet-pane leaflet-tooltip-pane"></div>
+              <div class="leaflet-pane leaflet-popup-pane"></div>
+              <div class="leaflet-proxy leaflet-zoom-animated"></div>
+            </div>
+            <div class="leaflet-control-container">
+              <div class="leaflet-top leaflet-left">
+                <div class="leaflet-control-zoom leaflet-bar leaflet-control">
+                  <a
+                    class="leaflet-control-zoom-in"
+                    href="#"
+                    title="Zoom in"
+                    role="button"
+                    aria-label="Zoom in"
+                    >+</a
+                  ><a
+                    class="leaflet-control-zoom-out"
+                    href="#"
+                    title="Zoom out"
+                    role="button"
+                    aria-label="Zoom out"
+                    >−</a
+                  >
+                </div>
+              </div>
+              <div class="leaflet-top leaflet-right"></div>
+              <div class="leaflet-bottom leaflet-left"></div>
+              <div class="leaflet-bottom leaflet-right">
+                <div class="leaflet-control-attribution leaflet-control">
+                  <a
+                    href="https://leafletjs.com"
+                    title="A JS library for interactive maps"
+                    >Leaflet</a
+                  >
+                  | ©
+                  <a href="http://osm.org/copyright">OpenStreetMap</a>
+                  contributors
+                </div>
+              </div>
+            </div>
+          </div>
+          <h1 class="tenpx">our submitters are...</h1>
+          <div class="flex">
+            <div class="column">
+              <p><em>Click on the pink text to change graphs!</em></p>
+              <button type="button" id="graph1" class="active">
+                <span>self-learners</span>
+              </button>
+              <h2>
+                <em
+                  >...and animators, artists, game makers,
+                  creative-technologists, curriculum planners, designers,
+                  graphic designers, graphics editors, learning experience
+                  designers, project managers, software engineer, student,
+                  teachers, university faculty members, visualization
+                  researchers</em
+                >
+              </h2>
+              <button type="button" id="graph2" class="">
+                <span>w/ all kinds of experiences</span>
+              </button>
+            </div>
+            <div class="column">
+              <div class="chartjs-size-monitor">
+                <div class="chartjs-size-monitor-expand">
+                  <div class=""></div>
+                </div>
+                <div class="chartjs-size-monitor-shrink">
+                  <div class=""></div>
+                </div>
+              </div>
+              <canvas
+                height="280"
+                width="1109"
+                style="display: block; width: 1109px; height: 280px"
+                class="chartjs-render-monitor"
+              ></canvas>
+            </div>
+          </div>
+          <div id="viz3" class="column">
+            <h1>to them p5.js is...</h1>
+            <div class="flex">
+              <p><em>Press space to interact with this visualization!</em></p>
+            </div>
+            <div id="P5Wrapper" style="position: relative">
+              <div>
+                <canvas
+                  id="defaultCanvas0"
+                  class="p5Canvas"
+                  style="width: 966px; height: 200px"
+                  width="966"
+                  height="200"
+                ></canvas>
+              </div>
+              <div>
+                <div
+                  style="
+                    font-size: 18px;
+                    position: absolute;
+                    left: 100px;
+                    top: 80px;
+                    width: 250px;
+                    font-family: sans-serif;
+                    color: rgb(255, 139, 201);
+                    transform-origin: -15px 15px;
+                    transform: rotateZ(93.75deg);
+                  "
+                >
+                  <div>Words</div>
+                </div>
+                <div
+                  style="
+                    font-size: 18px;
+                    position: absolute;
+                    left: 100px;
+                    top: 80px;
+                    width: 250px;
+                    font-family: sans-serif;
+                    color: rgb(255, 139, 201);
+                    transform-origin: -15px 15px;
+                    transform: rotateZ(165.75deg);
+                  "
+                >
+                  <div>Versatile</div>
+                </div>
+                <div
+                  style="
+                    font-size: 18px;
+                    position: absolute;
+                    left: 100px;
+                    top: 80px;
+                    width: 250px;
+                    font-family: sans-serif;
+                    color: rgb(255, 139, 201);
+                    transform-origin: -15px 15px;
+                    transform: rotateZ(237.75deg);
+                  "
+                >
+                  <div>Creative</div>
+                </div>
+                <div
+                  style="
+                    font-size: 18px;
+                    position: absolute;
+                    left: 100px;
+                    top: 80px;
+                    width: 250px;
+                    font-family: sans-serif;
+                    color: rgb(255, 139, 201);
+                    transform-origin: -15px 15px;
+                    transform: rotateZ(309.75deg);
+                  "
+                >
+                  <div>Flexible</div>
+                </div>
+                <div
+                  style="
+                    font-size: 18px;
+                    position: absolute;
+                    left: 100px;
+                    top: 80px;
+                    width: 250px;
+                    font-family: sans-serif;
+                    color: rgb(255, 139, 201);
+                    transform-origin: -15px 15px;
+                    transform: rotateZ(381.75deg);
+                  "
+                >
+                  <div>Awesome</div>
+                </div>
+              </div>
+              <div>
+                <div
+                  style="
+                    font-size: 18px;
+                    position: absolute;
+                    left: 400px;
+                    top: 80px;
+                    width: 250px;
+                    font-family: sans-serif;
+                    color: rgb(255, 154, 186);
+                    transform-origin: -15px 15px;
+                    transform: rotateZ(93.75deg);
+                  "
+                >
+                  <div>Inclusive</div>
+                </div>
+                <div
+                  style="
+                    font-size: 18px;
+                    position: absolute;
+                    left: 400px;
+                    top: 80px;
+                    width: 250px;
+                    font-family: sans-serif;
+                    color: rgb(255, 154, 186);
+                    transform-origin: -15px 15px;
+                    transform: rotateZ(165.75deg);
+                  "
+                >
+                  <div>Creation and learning</div>
+                </div>
+                <div
+                  style="
+                    font-size: 18px;
+                    position: absolute;
+                    left: 400px;
+                    top: 80px;
+                    width: 250px;
+                    font-family: sans-serif;
+                    color: rgb(255, 154, 186);
+                    transform-origin: -15px 15px;
+                    transform: rotateZ(237.75deg);
+                  "
+                >
+                  <div>Many-Possibilities</div>
+                </div>
+                <div
+                  style="
+                    font-size: 18px;
+                    position: absolute;
+                    left: 400px;
+                    top: 80px;
+                    width: 250px;
+                    font-family: sans-serif;
+                    color: rgb(255, 154, 186);
+                    transform-origin: -15px 15px;
+                    transform: rotateZ(309.75deg);
+                  "
+                >
+                  <div>Category-defining</div>
+                </div>
+                <div
+                  style="
+                    font-size: 18px;
+                    position: absolute;
+                    left: 400px;
+                    top: 80px;
+                    width: 250px;
+                    font-family: sans-serif;
+                    color: rgb(255, 154, 186);
+                    transform-origin: -15px 15px;
+                    transform: rotateZ(381.75deg);
+                  "
+                >
+                  <div>Do everything but not everything</div>
+                </div>
+              </div>
+              <div>
+                <div
+                  style="
+                    font-size: 18px;
+                    position: absolute;
+                    left: 700px;
+                    top: 80px;
+                    width: 250px;
+                    font-family: sans-serif;
+                    color: rgb(255, 169, 171);
+                    transform-origin: -15px 15px;
+                    transform: rotateZ(93.75deg);
+                  "
+                >
+                  <div>Inspirational</div>
+                </div>
+                <div
+                  style="
+                    font-size: 18px;
+                    position: absolute;
+                    left: 700px;
+                    top: 80px;
+                    width: 250px;
+                    font-family: sans-serif;
+                    color: rgb(255, 169, 171);
+                    transform-origin: -15px 15px;
+                    transform: rotateZ(165.75deg);
+                  "
+                >
+                  <div>Easy</div>
+                </div>
+                <div
+                  style="
+                    font-size: 18px;
+                    position: absolute;
+                    left: 700px;
+                    top: 80px;
+                    width: 250px;
+                    font-family: sans-serif;
+                    color: rgb(255, 169, 171);
+                    transform-origin: -15px 15px;
+                    transform: rotateZ(237.75deg);
+                  "
+                >
+                  <div>Friendly</div>
+                </div>
+                <div
+                  style="
+                    font-size: 18px;
+                    position: absolute;
+                    left: 700px;
+                    top: 80px;
+                    width: 250px;
+                    font-family: sans-serif;
+                    color: rgb(255, 169, 171);
+                    transform-origin: -15px 15px;
+                    transform: rotateZ(309.75deg);
+                  "
+                >
+                  <div>Enabling</div>
+                </div>
+                <div
+                  style="
+                    font-size: 18px;
+                    position: absolute;
+                    left: 700px;
+                    top: 80px;
+                    width: 250px;
+                    font-family: sans-serif;
+                    color: rgb(255, 169, 171);
+                    transform-origin: -15px 15px;
+                    transform: rotateZ(381.75deg);
+                  "
+                >
+                  <div>Liberating</div>
+                </div>
+              </div>
+              <div>
+                <div
+                  style="
+                    font-size: 18px;
+                    position: absolute;
+                    left: 1000px;
+                    top: 80px;
+                    width: 250px;
+                    font-family: sans-serif;
+                    color: rgb(255, 184, 156);
+                    transform-origin: -15px 15px;
+                    transform: rotateZ(93.75deg);
+                  "
+                >
+                  <div>Funtastic</div>
+                </div>
+                <div
+                  style="
+                    font-size: 18px;
+                    position: absolute;
+                    left: 1000px;
+                    top: 80px;
+                    width: 250px;
+                    font-family: sans-serif;
+                    color: rgb(255, 184, 156);
+                    transform-origin: -15px 15px;
+                    transform: rotateZ(165.75deg);
+                  "
+                >
+                  <div>Limitless</div>
+                </div>
+                <div
+                  style="
+                    font-size: 18px;
+                    position: absolute;
+                    left: 1000px;
+                    top: 80px;
+                    width: 250px;
+                    font-family: sans-serif;
+                    color: rgb(255, 184, 156);
+                    transform-origin: -15px 15px;
+                    transform: rotateZ(237.75deg);
+                  "
+                >
+                  <div>Hopeful</div>
+                </div>
+                <div
+                  style="
+                    font-size: 18px;
+                    position: absolute;
+                    left: 1000px;
+                    top: 80px;
+                    width: 250px;
+                    font-family: sans-serif;
+                    color: rgb(255, 184, 156);
+                    transform-origin: -15px 15px;
+                    transform: rotateZ(309.75deg);
+                  "
+                >
+                  <div>Visual</div>
+                </div>
+                <div
+                  style="
+                    font-size: 18px;
+                    position: absolute;
+                    left: 1000px;
+                    top: 80px;
+                    width: 250px;
+                    font-family: sans-serif;
+                    color: rgb(255, 184, 156);
+                    transform-origin: -15px 15px;
+                    transform: rotateZ(381.75deg);
+                  "
+                >
+                  <div>Accessible</div>
+                </div>
+              </div>
+            </div>
+            <h1><a href="#/2020-All">view the projects →</a></h1>
+          </div>
+        </div>
+      </div>
+    </div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.

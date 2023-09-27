@@ -85,27 +85,27 @@ function Archive() {
     <div className="body">
       <div className="gallery">
         <div id="intro2019">
-        <h1>Archive</h1>
-        <h3><Markdown source={t('Archiveabout')} /></h3>
-        <div class="row">
-          {t('archive', { returnObjects: true }).map(({ id, title, author, description, image }) => (
-            <Link
-              key={id}
-              to={{
-                pathname: `/archive/${id}/`,
-              }}
-            >
-              <TestCard key={`card-${id}`}
-                id={id}
-                title={title}
-                author={author}
-                description={description}
-                image={image} />
-            </Link>
-          ))}
+          <h1>Archive</h1>
+          <h3><Markdown source={t('Archiveabout')} /></h3>
+          <div class="row">
+            {t('archive', { returnObjects: true }).map(({ id, title, author, description, image }) => (
+              <Link
+                key={id}
+                to={{
+                  pathname: `/archive/${id}/`,
+                }}
+              >
+                <TestCard key={`card-${id}`}
+                  id={id}
+                  title={title}
+                  author={author}
+                  description={description}
+                  image={image} />
+              </Link>
+            ))}
+          </div>
         </div>
       </div>
-    </div>
     </div>
   );
 }
@@ -119,27 +119,27 @@ function Gallerynineteen() {
     <div className="body">
       <div className="gallery">
         <div id="intro2019">
-        <h1>p5.js 2019 Showcase!</h1>
-        <h3><Markdown source={t('2019about')} /></h3>
-        <div class="row">
-          {t('showcase2019', { returnObjects: true }).map(({ id, title, author, description, image }) => (
-            <Link
-              key={id}
-              to={{
-                pathname: `/2019/${id}/`,
-              }}
-            >
-              <TestCard key={`card-${id}`}
-                id={id}
-                title={title}
-                author={author}
-                description={description}
-                image={image} />
-            </Link>
-          ))}
+          <h1>p5.js 2019 Showcase!</h1>
+          <h3><Markdown source={t('2019about')} /></h3>
+          <div class="row">
+            {t('showcase2019', { returnObjects: true }).map(({ id, title, author, description, image }) => (
+              <Link
+                key={id}
+                to={{
+                  pathname: `/2019/${id}/`,
+                }}
+              >
+                <TestCard key={`card-${id}`}
+                  id={id}
+                  title={title}
+                  author={author}
+                  description={description}
+                  image={image} />
+              </Link>
+            ))}
+          </div>
         </div>
       </div>
-    </div>
     </div>
   );
 }
@@ -198,27 +198,27 @@ function Gallerytwenty() {
   return (
     <div className="body">
       <div className="2021notice">
-      <div class="gradient-border" id="box">
-      <h3><Markdown source={t('2021_notice1')}/></h3>
-      </div>
-      <div className="cover2020">
-        <div className="flex">
-          <div className="column">
-            <h1>{t('Welcome')}</h1>
-            <p><em>{t('Created By')} Katie Chan</em></p>
-            <h2>{t('Jump to')} <HashLink smooth to="#twentyviz">{t('Visualizations')}</HashLink> | <Link to="/2020-All">{t('Projects')}</Link></h2>
-            <HashLink smooth to="#twentyviz"><img className="downarrow" src={process.env.PUBLIC_URL + '/down.svg'} alt="p5.js down arrow" /></HashLink>
+        <div class="gradient-border" id="box">
+          <h3><Markdown source={t('2021_notice1')} /></h3>
+        </div>
+        <div className="cover2020">
+          <div className="flex">
+            <div className="column">
+              <h1>{t('Welcome')}</h1>
+              <p><em>{t('Created By')} Katie Chan</em></p>
+              <h2>{t('Jump to')} <HashLink smooth to="#twentyviz">{t('Visualizations')}</HashLink> | <Link to="/2020-All">{t('Projects')}</Link></h2>
+              <HashLink smooth to="#twentyviz"><img className="downarrow" src={process.env.PUBLIC_URL + '/down.svg'} alt="p5.js down arrow" /></HashLink>
 
-          </div>
-          <div className="column">
-            <div class="gradient-border" id="box">
-              <h3>{t('2020_intro1')}</h3>
-              <h3><Markdown source={t('2020_intro1.5')} /></h3>
-              <h2><HashLink smooth to="#twentyviz"><Markdown source={t('2020_intro2')} /></HashLink></h2>
+            </div>
+            <div className="column">
+              <div class="gradient-border" id="box">
+                <h3>{t('2020_intro1')}</h3>
+                <h3><Markdown source={t('2020_intro1.5')} /></h3>
+                <h2><HashLink smooth to="#twentyviz"><Markdown source={t('2020_intro2')} /></HashLink></h2>
+              </div>
             </div>
           </div>
         </div>
-      </div>
       </div>
       <div className="twentyviz" id="twentyviz">
         <div className="flex column">
