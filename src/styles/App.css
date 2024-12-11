@@ -97,6 +97,9 @@ body{
 .navigation .right{
   margin-right: 40px;
 }
+.navigation .right button: hover{
+	color: #FFB6C1;
+}
 
 .navigation .right button {
   padding: 8px 0;
