@@ -18,17 +18,17 @@
 }
 .map h2{
   font-family: "Montserrat Bold";
-  color: #DB3B60;
+  color: #4169a1;
 }
 .map p{
     font-size: 1em;
     line-height: 5px;
 }
 .marker-cluster-custom {
-  background: #ff7d9b;
-  border: 3px solid #ffefef;
+  background: #37373c;
+  border: 3px solid #d28d8d;
   border-radius: 50%;
-  color: #ededed;
+  color: #ada7a7;
   height: 20px;
   line-height: 37px;
   text-align: center;
